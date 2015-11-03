@@ -1,0 +1,24 @@
+2015/11/03 08:22:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "sgii".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sgii')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\yii\Contable\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/Contable/sgii
+---
+2015/11/03 08:22:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('gii')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\yii\Contable\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/Contable/gii
+---
+2015/11/03 08:22:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii/crud".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('gii/crud')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\yii\Contable\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/Contable/gii/crud
+---
