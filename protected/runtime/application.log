@@ -8675,3 +8675,39 @@ Stack trace:
 REQUEST_URI=/yii/Contable/js/vendor/modernizr-2.6.2.min.js
 HTTP_REFERER=http://localhost:5080/yii/Contable/
 ---
+2015/11/03 23:56:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "usuarios/list".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('usuarios/list')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\yii\Contable\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/Contable/usuarios/list
+HTTP_REFERER=http://localhost:5080/yii/Contable/site/home
+---
+2015/11/04 00:13:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "usuarios/list".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('usuarios/list')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\yii\Contable\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/Contable/usuarios/list
+HTTP_REFERER=http://localhost:5080/yii/Contable/site/home
+---
+2015/11/04 00:13:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "usuarios/list".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('usuarios/list')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\yii\Contable\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/Contable/usuarios/list
+HTTP_REFERER=http://localhost:5080/yii/Contable/site/home
+---
+2015/11/04 00:21:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "usuarios/list".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('usuarios/list')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\yii\Contable\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/Contable/usuarios/list
+HTTP_REFERER=http://localhost:5080/yii/Contable/index.php/site/home
+---

@@ -4,7 +4,13 @@
 $this->pageTitle=Yii::app()->name;
 ?>
 <div class="container">
-	<h1>Bienvenido al Módulo Contable <i><?php echo CHtml::encode(Yii::app()->name); ?></i></h1>
+	<div class="row">
+		<div class="col-md-3"></div>
+		<div class="col-md-6 text-center">
+			<h1>Bienvenido al Módulo Contable</h1>
+		</div>
+		<div class="col-md-3"></div>
+	</div>	
 	<div class="col-md-4"></div>
 	<div class="col-md-4">
 		<contenido>
@@ -18,11 +24,13 @@ $this->pageTitle=Yii::app()->name;
 					          	<div class="col-md-1">		          		
 					          	</div>
 					          	<div class="col-md-10">
-					          		<button type="button" class="btn btn-primary btn-lg btn-block">GOA</button>
-									<button type="button" class="btn btn-primary btn-lg btn-block">GCOV</button>
-									<button type="button" class="btn btn-primary btn-lg btn-block">ECPV</button>
-									<button type="button" class="btn btn-primary btn-lg btn-block">Administrar Terceros</button>
-									<button type="button" class="btn btn-primary btn-lg btn-block">Administrar Cuentas PUC</button>	
+
+									<?php echo CHtml::submitButton('GOA', array('submit'=>array('usuarios/list'),'class'=>'btn btn-primary btn-lg btn-block')); ?>
+									<?php echo CHtml::submitButton('GCOV', array('submit'=>array('usuarios/list'),'class'=>'btn btn-primary btn-lg btn-block')); ?>
+									<?php echo CHtml::submitButton('ECPV', array('submit'=>array('usuarios/list'),'class'=>'btn btn-primary btn-lg btn-block')); ?>
+									<?php echo CHtml::submitButton('Administrar Terceros', array('submit'=>array('proveedor/index'),'class'=>'btn btn-primary btn-lg btn-block')); ?>
+									<?php echo CHtml::submitButton('Administrar Cuentas PUC', array('submit'=>array('usuarios/list'),'class'=>'btn btn-primary btn-lg btn-block')); ?>									
+														          		
 					          	</div>
 					          	<div class="col-md-1">        		
 				          		</div>
