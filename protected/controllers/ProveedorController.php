@@ -65,11 +65,13 @@ class ProveedorController extends Controller
 		$model=new Proveedor;
 
 		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
-
+		$this->performAjaxValidation($model);
+			$model->Usuario_idUsuario=1;
 		if(isset($_POST['Proveedor']))
 		{
 			$model->attributes=$_POST['Proveedor'];
+			
+
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->idProveedor));
 		}

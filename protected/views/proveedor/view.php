@@ -8,15 +8,15 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Proveedor', 'url'=>array('index')),
-	array('label'=>'Create Proveedor', 'url'=>array('create')),
-	array('label'=>'Update Proveedor', 'url'=>array('update', 'id'=>$model->idProveedor)),
-	array('label'=>'Delete Proveedor', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->idProveedor),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'Manage Proveedor', 'url'=>array('admin')),
+	array('label'=>'Mostrar Proveedores', 'url'=>array('index')),
+	array('label'=>'Crear Provedores', 'url'=>array('create')),
+	array('label'=>'Actualizar Provedores', 'url'=>array('uptdate', 'id'=>$model->idProveedor)),
+	array('label'=>'Eliminar Provedores', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->idProveedor),'confirm'=>'¿Estas seguro que quieres eliminar este registro?')),
+	array('label'=>'Administrar Provedores', 'url'=>array('admin')),
 );
 ?>
 
-<h1>View Proveedor #<?php echo $model->idProveedor; ?></h1>
+<h1>Ver Proveedor #<?php echo $model->idProveedor; ?></h1>
 
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,
