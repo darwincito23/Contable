@@ -44,12 +44,10 @@ or <b>=</b>) al comienzo de cada uno de sus valores de búsqueda para especifica
 	'id'=>'registrocontablegastos-grid',
 	'dataProvider'=>$model->search(),
 	'filter'=>$model,
-	'columns'=>array(
-		'idRegistroContableGastos',
+	'columns'=>array(		
 		'fecha',
 		'valorRegistroContable',
-		'descripcion',
-		'Usuario_idUsuario',
+		'descripcion',	
 		array(
 			'class'=>'CButtonColumn',
 		),

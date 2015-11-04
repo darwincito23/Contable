@@ -2,9 +2,9 @@
 
 class ConsolidadogoaController extends Controller
 {
-	public function actionConsolidadogoa()
+	public function actionIndex()
 	{
-		$this->render('consolidadogoa');
+		$this->render('index');
 	}
 
 	// Uncomment the following methods and override them if needed

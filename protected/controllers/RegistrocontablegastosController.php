@@ -66,7 +66,7 @@ class RegistrocontablegastosController extends Controller
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
-
+		$model->Usuario_idUsuario=1;
 		if(isset($_POST['Registrocontablegastos']))
 		{
 			$model->attributes=$_POST['Registrocontablegastos'];

@@ -34,6 +34,7 @@ class Registrocontablegastos extends CActiveRecord
 	{
 		return 'registrocontablegastos';
 	}
+	
 
 	/**
 	 * @return array validation rules for model attributes.
@@ -96,7 +97,8 @@ class Registrocontablegastos extends CActiveRecord
 		$criteria->compare('fecha',$this->fecha,true);
 		$criteria->compare('valorRegistroContable',$this->valorRegistroContable);
 		$criteria->compare('descripcion',$this->descripcion,true);
-		$criteria->compare('Usuario_idUsuario',$this->Usuario_idUsuario);
+		$criteria->compare('Usuario_idUsuario',$this->Usuario_idUsuario);		
+
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
