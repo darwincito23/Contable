@@ -16,23 +16,10 @@
 	<?php echo $form->errorSummary($model); ?>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'fecha'); ?>	
-
-		<?php  $this->widget('zii.widgets.jui.CJuiDatePicker',array(
-      						'model'=>$model,
-      						'attribute'=>'fecha',
-      						// additional javascript options for the date picker plugin
-      						'options'=>array(
-         					'showAnim'=>'fold',
-      						),
-      						'htmlOptions'=>array(
-          					'style'=>'height:20px;'
-      						),
-  							),true);?>
-		<?php  echo $form->textField($model,'fecha');?>
+		<?php echo $form->labelEx($model,'fecha'); ?>
+		<?php echo $form->textField($model,'fecha'); ?>
 		<?php echo $form->error($model,'fecha'); ?>
 	</div>
-	
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'valorRegistroContable'); ?>
@@ -47,9 +34,21 @@
 	</div>
 
 	<div class="row">
-		<?php //echo $form->labelEx($model,'Usuario_idUsuario'); ?>
-		<?php //echo $form->textField($model,'Usuario_idUsuario'); ?>
-		<?php //echo $form->error($model,'Usuario_idUsuario'); ?>
+		<?php echo $form->labelEx($model,'Usuario_idUsuario'); ?>
+		<?php echo $form->textField($model,'Usuario_idUsuario'); ?>
+		<?php echo $form->error($model,'Usuario_idUsuario'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'Proveedor_idProveedor'); ?>
+		<?php echo $form->textField($model,'Proveedor_idProveedor',array('size'=>30,'maxlength'=>30)); ?>
+		<?php echo $form->error($model,'Proveedor_idProveedor'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'CuentaPuc_idCuentaPuc'); ?>
+		<?php echo $form->textField($model,'CuentaPuc_idCuentaPuc',array('size'=>30,'maxlength'=>30)); ?>
+		<?php echo $form->error($model,'CuentaPuc_idCuentaPuc'); ?>
 	</div>
 
 	<div class="row buttons">

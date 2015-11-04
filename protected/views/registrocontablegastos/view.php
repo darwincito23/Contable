@@ -26,5 +26,7 @@ $this->menu=array(
 		'valorRegistroContable',
 		'descripcion',
 		'Usuario_idUsuario',
+		'Proveedor_idProveedor',
+		'CuentaPuc_idCuentaPuc',
 	),
 )); ?>

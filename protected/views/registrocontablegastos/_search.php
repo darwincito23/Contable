@@ -36,8 +36,18 @@
 		<?php echo $form->textField($model,'Usuario_idUsuario'); ?>
 	</div>
 
+	<div class="row">
+		<?php echo $form->label($model,'Proveedor_idProveedor'); ?>
+		<?php echo $form->textField($model,'Proveedor_idProveedor',array('size'=>30,'maxlength'=>30)); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->label($model,'CuentaPuc_idCuentaPuc'); ?>
+		<?php echo $form->textField($model,'CuentaPuc_idCuentaPuc',array('size'=>30,'maxlength'=>30)); ?>
+	</div>
+
 	<div class="row buttons">
-		<?php echo CHtml::submitButton('Buscar'); ?>
+		<?php echo CHtml::submitButton('Search'); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

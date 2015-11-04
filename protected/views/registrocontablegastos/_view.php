@@ -25,5 +25,13 @@
 	<?php echo CHtml::encode($data->Usuario_idUsuario); ?>
 	<br />
 
+	<b><?php echo CHtml::encode($data->getAttributeLabel('Proveedor_idProveedor')); ?>:</b>
+	<?php echo CHtml::encode($data->Proveedor_idProveedor); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('CuentaPuc_idCuentaPuc')); ?>:</b>
+	<?php echo CHtml::encode($data->CuentaPuc_idCuentaPuc); ?>
+	<br />
+
 
 </div>

@@ -5,17 +5,17 @@
 $this->breadcrumbs=array(
 	'Registrocontablegastoses'=>array('index'),
 	$model->idRegistroContableGastos=>array('view','id'=>$model->idRegistroContableGastos),
-	'Actualizar',
+	'Update',
 );
 
 $this->menu=array(
-	array('label'=>'Lista de Registroscontables de gastos', 'url'=>array('index')),
-	array('label'=>'Crear Registro contable de gastos', 'url'=>array('create')),
-	array('label'=>'Ver Registro contable de gastos', 'url'=>array('view', 'id'=>$model->idRegistroContableGastos)),
-	array('label'=>'Administrar Registro contable de gastos', 'url'=>array('admin')),
+	array('label'=>'List Registrocontablegastos', 'url'=>array('index')),
+	array('label'=>'Create Registrocontablegastos', 'url'=>array('create')),
+	array('label'=>'View Registrocontablegastos', 'url'=>array('view', 'id'=>$model->idRegistroContableGastos)),
+	array('label'=>'Manage Registrocontablegastos', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Actualizar Registros contables de gastos <?php echo $model->idRegistroContableGastos; ?></h1>
+<h1>Update Registrocontablegastos <?php echo $model->idRegistroContableGastos; ?></h1>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>

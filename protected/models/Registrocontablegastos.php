@@ -15,6 +15,7 @@
  * @property Usuario $usuarioIdUsuario
  * @property Proveedor[] $proveedors
  */
+
 class Registrocontablegastos extends CActiveRecord
 {
 	/**
@@ -90,17 +91,18 @@ class Registrocontablegastos extends CActiveRecord
 	{
 		// Warning: Please modify the following code to remove attributes that
 		// should not be searched.
-
-		$criteria=new CDbCriteria;
-
+		$criteria= new CDbCriteria;	
 		$criteria->compare('idRegistroContableGastos',$this->idRegistroContableGastos,true);
 		$criteria->compare('fecha',$this->fecha,true);
 		$criteria->compare('valorRegistroContable',$this->valorRegistroContable);
 		$criteria->compare('descripcion',$this->descripcion,true);
-		$criteria->compare('Usuario_idUsuario',$this->Usuario_idUsuario);		
+		$criteria->compare('nombreProveedor',$CARProveedor->nombreProveedor,true);
+		//$criteria->compare('descripcion',$CARProveedor->codigoProveedor,true);
+		//$criteria->compare('Usuario_idUsuario',$this->Usuario_idUsuario);
 
 
-		return new CActiveDataProvider($this, array(
+
+		return new CActiveDataProvider(array(), array(
 			'criteria'=>$criteria,
 		));
 	}
