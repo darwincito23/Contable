@@ -5,7 +5,7 @@
 
 $this->pageTitle=Yii::app()->name . ' - GOA';
 $this->breadcrumbs=array(
-	'Consolidado GOA',
+	'Consolidado GOA/GOV',
 );
 ?>
 <div class="panel panel-default">

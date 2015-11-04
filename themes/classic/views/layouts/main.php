@@ -30,7 +30,7 @@
 			'items'=>array(
 				array('label'=>'Inicio', 'url'=>array('/site/home')),
 				array('label'=>'GOA', 'url'=>array('/site/goa')),
-				array('label'=>'GOV', 'url'=>array('/site/page', 'view'=>'about')),
+				array('label'=>'GOV', 'url'=>array('/site/gov')),
 				array('label'=>'ECPV', 'url'=>array('/site/home')),					
 				array('label'=>'Administrar Terceros', 'url'=>array('/proveedor/index')),
 				array('label'=>'Administrar Cuentas PUC', 'url'=>array('/proveedor/index')),											

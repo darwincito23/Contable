@@ -71,6 +71,13 @@ class SiteController extends Controller
 		$this->render('home');
 	}
 
+	/**
+	 * Displays the contact page
+	 */
+	public function actionGov()
+	{
+		$this->render('gov');
+	}
 	
 	/**
 	 * Displays the contact page
