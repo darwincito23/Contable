@@ -78,6 +78,7 @@ class RegistrocontablegastosController extends Controller
 			'model'=>$model,
 		));
 	}
+	
 
 	/**
 	 * Updates a particular model.

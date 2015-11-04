@@ -29,10 +29,11 @@
 		<?php $this->widget('zii.widgets.CMenu',array(
 			'items'=>array(
 				array('label'=>'Inicio', 'url'=>array('/site/home')),
-				array('label'=>'Proveedores', 'url'=>array('/proveedor/index')),
-				array('label'=>'ECPV', 'url'=>array('/site/home')),
-				array('label'=>'GOA', 'url'=>array('/site/page', 'view'=>'about')),
-				array('label'=>'GCOV', 'url'=>array('/site/contact')),
+				array('label'=>'GOA', 'url'=>array('/site/goa')),
+				array('label'=>'GOV', 'url'=>array('/site/page', 'view'=>'about')),
+				array('label'=>'ECPV', 'url'=>array('/site/home')),					
+				array('label'=>'Administrar Terceros', 'url'=>array('/proveedor/index')),
+				array('label'=>'Administrar Cuentas PUC', 'url'=>array('/proveedor/index')),											
 				array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
 				array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
 			),

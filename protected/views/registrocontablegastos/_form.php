@@ -16,10 +16,23 @@
 	<?php echo $form->errorSummary($model); ?>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'fecha'); ?>
-		<?php echo $form->textField($model,'fecha'); ?>
+		<?php echo $form->labelEx($model,'fecha'); ?>	
+
+		<?php  $this->widget('zii.widgets.jui.CJuiDatePicker',array(
+      						'model'=>$model,
+      						'attribute'=>'fecha',
+      						// additional javascript options for the date picker plugin
+      						'options'=>array(
+         					'showAnim'=>'fold',
+      						),
+      						'htmlOptions'=>array(
+          					'style'=>'height:20px;'
+      						),
+  							),true);?>
+		<?php  echo $form->textField($model,'fecha');?>
 		<?php echo $form->error($model,'fecha'); ?>
 	</div>
+	
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'valorRegistroContable'); ?>
