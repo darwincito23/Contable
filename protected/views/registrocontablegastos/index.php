@@ -3,16 +3,16 @@
 /* @var $dataProvider CActiveDataProvider */
 
 $this->breadcrumbs=array(
-	'Registrocontablegastoses',
+	'Registro contable de Gastos',
 );
 
 $this->menu=array(
-	array('label'=>'Create Registrocontablegastos', 'url'=>array('create')),
-	array('label'=>'Manage Registrocontablegastos', 'url'=>array('admin')),
+	array('label'=>'Crear Registro Contable de Gastos', 'url'=>array('create')),
+	array('label'=>'Administrar Registro Contable de Gastos', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Registrocontablegastoses</h1>
+<h1>Registro Contable de Gastos</h1>
 
 <?php $this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$dataProvider,

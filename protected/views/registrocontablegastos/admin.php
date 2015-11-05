@@ -45,12 +45,39 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 	'dataProvider'=>$model->search(),
 	'filter'=>$model,
 	'columns'=>array(
-		'idRegistroContableGastos',
-		'fecha',
+		
+		array(
+			'name'=>'CuentaPuc_idCuentaPuc',
+			'value'=>'$data->cuentaPucIdCuentaPuc->nombreCuentaPuc',
+			'filter'=>$model->getListCuentaPuc('nombre'),
+			),
+		
+		array(
+			'name'=>'ccuenta',
+			'value'=>'$data->cuentaPucIdCuentaPuc->codigoCuentaPuc',
+			'filter'=>$model->getListCuentaPuc('codigo'),
+			'header'=>'Codigo cuenta',
+			),
+		
+		array(
+			'name'=>'Proveedor_idProveedor',
+			'value'=>'$data->proveedorIdProveedor->nombreProveedor',
+			'filter'=>$model->getListProveedor('nombre'),
+
+			),
+		array(
+			'name'=>'cprovedor',
+			'header'=>'Codigo Proveedor',
+			'value'=>'$data->proveedorIdProveedor->codigoProveedor',
+			'filter'=>$model->getListProveedor('codigo'),
+		),
+		
+		'fecha',	
 		'valorRegistroContable',
 		'descripcion',
-		'Usuario_idUsuario',
-		'Proveedor_idProveedor',
+		
+		
+		
 		/*
 		'CuentaPuc_idCuentaPuc',
 		*/

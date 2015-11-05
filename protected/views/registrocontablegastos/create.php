@@ -4,15 +4,15 @@
 
 $this->breadcrumbs=array(
 	'Registrocontablegastoses'=>array('index'),
-	'Create',
+	'Crear',
 );
 
 $this->menu=array(
-	array('label'=>'List Registrocontablegastos', 'url'=>array('index')),
-	array('label'=>'Manage Registrocontablegastos', 'url'=>array('admin')),
+	array('label'=>'Listado de Registros Contables de Gastos', 'url'=>array('index')),
+	array('label'=>'Administación de Registros Contables de  Gastos', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Create Registrocontablegastos</h1>
+<h1>Crear Registro Contable de Gastos</h1>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>
