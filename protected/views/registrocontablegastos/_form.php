@@ -40,13 +40,13 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'Proveedor_idProveedor'); ?>
+		<?php echo $form->labelEx($model,'idProveedor'); ?>
 		<?php echo $form->textField($model,'Proveedor_idProveedor',array('size'=>30,'maxlength'=>30)); ?>
 		<?php echo $form->error($model,'Proveedor_idProveedor'); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'CuentaPuc_idCuentaPuc'); ?>
+		<?php echo $form->labelEx($model,'idCuentaPuc'); ?>
 		<?php echo $form->textField($model,'CuentaPuc_idCuentaPuc',array('size'=>30,'maxlength'=>30)); ?>
 		<?php echo $form->error($model,'CuentaPuc_idCuentaPuc'); ?>
 	</div>

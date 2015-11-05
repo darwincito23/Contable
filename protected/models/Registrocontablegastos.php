@@ -84,9 +84,9 @@ class Registrocontablegastos extends CActiveRecord
 			'fecha' => 'Fecha',
 			'valorRegistroContable' => 'Valor',
 			'descripcion' => 'Descripcion',
-			'Usuario_idUsuario' => 'Usuario Id Usuario',
-			'Proveedor_idProveedor' => 'Nombre Proveedor',
-			'CuentaPuc_idCuentaPuc' => 'Nombre cuentapuc',
+			'Usuario_idUsuario' => 'Id Usuario',
+			'Proveedor_idProveedor' => 'Id Proveedor',
+			'CuentaPuc_idCuentaPuc' => 'Id cuentapuc',
 		);
 	}
 

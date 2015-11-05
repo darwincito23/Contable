@@ -50,6 +50,7 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 			'name'=>'CuentaPuc_idCuentaPuc',
 			'value'=>'$data->cuentaPucIdCuentaPuc->nombreCuentaPuc',
 			'filter'=>$model->getListCuentaPuc('nombre'),
+			'header'=>'Nombre cuenta',
 			),
 		
 		array(
@@ -63,7 +64,7 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 			'name'=>'Proveedor_idProveedor',
 			'value'=>'$data->proveedorIdProveedor->nombreProveedor',
 			'filter'=>$model->getListProveedor('nombre'),
-
+			'header'=>'Nombre Proveedor',
 			),
 		array(
 			'name'=>'cprovedor',
