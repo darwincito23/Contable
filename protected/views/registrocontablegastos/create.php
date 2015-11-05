@@ -7,8 +7,7 @@ $this->breadcrumbs=array(
 	'Crear',
 );
 
-$this->menu=array(
-	array('label'=>'Listado de Registros Contables de Gastos', 'url'=>array('index')),
+$this->menu=array(	
 	array('label'=>'Administación de Registros Contables de  Gastos', 'url'=>array('admin')),
 );
 ?>

@@ -3,12 +3,11 @@
 /* @var $model Registrocontablegastos */
 
 $this->breadcrumbs=array(
-	'Registrocontablegastoses'=>array('index'),
+	'Registrocontablegastos'=>array('index'),
 	'Manage',
 );
 
-$this->menu=array(
-	array('label'=>'List Registrocontablegastos', 'url'=>array('index')),
+$this->menu=array(	
 	array('label'=>'Create Registrocontablegastos', 'url'=>array('create')),
 );
 

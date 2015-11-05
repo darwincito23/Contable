@@ -9,7 +9,6 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Registrocontablegastos', 'url'=>array('index')),
 	array('label'=>'Create Registrocontablegastos', 'url'=>array('create')),
 	array('label'=>'View Registrocontablegastos', 'url'=>array('view', 'id'=>$model->idRegistroContableGastos)),
 	array('label'=>'Manage Registrocontablegastos', 'url'=>array('admin')),

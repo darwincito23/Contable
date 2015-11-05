@@ -5,56 +5,86 @@
 ?>
 
 <div class="form">
+		<br>
+		<br>
+		<br>
+		<?php $form=$this->beginWidget('CActiveForm', array(
+			'id'=>'registrocontablegastos-form',
+			'enableAjaxValidation'=>false,
+		)); ?>	
 
-<?php $form=$this->beginWidget('CActiveForm', array(
-	'id'=>'registrocontablegastos-form',
-	'enableAjaxValidation'=>false,
-)); ?>
+			<?php echo $form->errorSummary($model); ?>
 
-	<p class="note">Los campos con <span class="required">*</span> Son requeridos.</p>
-
-	<?php echo $form->errorSummary($model); ?>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'fecha'); ?>
-		<?php echo $form->textField($model,'fecha'); ?>
-		<?php echo $form->error($model,'fecha'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'valorRegistroContable'); ?>
-		<?php echo $form->textField($model,'valorRegistroContable'); ?>
-		<?php echo $form->error($model,'valorRegistroContable'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'descripcion'); ?>
-		<?php echo $form->textArea($model,'descripcion',array('rows'=>6, 'cols'=>50)); ?>
-		<?php echo $form->error($model,'descripcion'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'Usuario_idUsuario'); ?>
-		<?php echo $form->textField($model,'Usuario_idUsuario'); ?>
-		<?php echo $form->error($model,'Usuario_idUsuario'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'idProveedor'); ?>
-		<?php echo $form->textField($model,'Proveedor_idProveedor',array('size'=>30,'maxlength'=>30)); ?>
-		<?php echo $form->error($model,'Proveedor_idProveedor'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'idCuentaPuc'); ?>
-		<?php echo $form->textField($model,'CuentaPuc_idCuentaPuc',array('size'=>30,'maxlength'=>30)); ?>
-		<?php echo $form->error($model,'CuentaPuc_idCuentaPuc'); ?>
-	</div>
-
-	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
-	</div>
-
-<?php $this->endWidget(); ?>
-
+		<p class="note">Los campos con <span class="required">*</span> Son requeridos.</p>
+				<table class="table table-bordered table-striped">
+				    <thead>
+				        <tr>
+				            
+				        </tr>
+				    </thead>
+				    <tbody>
+				        <tr>
+				            <td>
+					            <?php echo $form->labelEx($model,'fecha'); ?>
+								<?php echo $form->textField($model,'fecha'); ?>
+								<?php echo $form->error($model,'fecha'); ?>
+							</td>
+				            <td>
+				            	<?php echo $form->labelEx($model,'nombre_Proveedor'); ?>
+								<?php echo $form->dropDownList($model,'Proveedor_idProveedor',
+									CHtml::listData(Proveedor::model()->findAll(),'nombreProveedor','nombreProveedor'),
+									array(
+											'ajax'=>array(
+												'type'=>'POST',
+												'url'=>CController::createUrl('Registrocontablegastos/Selectcodigoproveedor'),
+												'update'=>'#'.CHtml::activeId($model,'Codigo_Proveedor'),
+												)
+										)
+								); ?>
+								<?php echo $form->error($model,'nombreProveedor'); ?>
+				            </td>
+				             <td>
+				            	<?php echo $form->labelEx($model,'Codigo_Proveedor'); ?>
+								<?php echo $form->dropDownList($model,'cprovedor',
+									CHtml::listData(Proveedor::model()->findAll(),'codigoProveedor','codigoProveedor')
+								); ?>
+								<?php echo $form->error($model,'cprovedor'); ?>
+				            </td>
+				            <td>
+				            	<?php echo $form->labelEx($model,'Nombre Cuenta'); ?>
+								<?php echo $form->dropDownList($model,'CuentaPuc_idCuentaPuc',
+									CHtml::listData(Cuentapuc::model()->findAll(),'nombreCuentaPuc','nombreCuentaPuc')
+								); ?>
+								<?php echo $form->error($model,'CuentaPuc_idCuentaPuc'); ?>
+				            </td>
+				              <td>
+					            <?php echo $form->labelEx($model,'codigoCuentaPuc'); ?>
+								<?php echo $form->dropDownList($model,'ccuenta',
+									CHtml::listData(Cuentapuc::model()->findAll(),'codigoCuentaPuc','codigoCuentaPuc')
+								); ?>
+								<?php echo $form->error($model,'ccuenta'); ?>
+				            </td>
+				            <td>
+				            	<?php echo $form->labelEx($model,'valorRegistroContable'); ?>
+								<?php echo $form->textField($model,'valorRegistroContable'); ?>
+								<?php echo $form->error($model,'valorRegistroContable'); ?>
+				            </td>				          
+				        </tr> 
+				    </tbody>		
+				</table>
+			<div class="container text-center">
+			<div class="col-md-6">
+				<?php echo $form->labelEx($model,'descripcion'); ?>
+					<?php echo $form->textArea($model,'descripcion',array('rows'=>6, 'cols'=>50)); ?>
+					<?php echo $form->error($model,'descripcion'); ?>			
+					<div class="row buttons">
+						<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
+					</div>
+			</div>
+			<div class="col-md-6"></div>
+						
+			</div>	
+			
+		<?php $this->endWidget(); ?>
 </div><!-- form -->
+<?php //echo $form->dropDownList($model, 'valorRegistroContable', array('MASCULINO'=>'MASCULINO', 'FEMENINO'=>'FEMENINO', 'OTRO'=>'OTRO')); ?>

@@ -29,7 +29,7 @@ $this->breadcrumbs=array(
 					          	</div>
 					          	<div class="col-md-10">
 
-									<?php echo CHtml::submitButton('CRUD', array('submit'=>array('registrocontablegastos/index'),'class'=>'btn btn-primary btn-lg btn-block')); ?>
+									<?php echo CHtml::submitButton('CRUD', array('submit'=>array('registrocontablegastos/admin'),'class'=>'btn btn-primary btn-lg btn-block')); ?>
 									<?php echo CHtml::submitButton('Consolidado', array('submit'=>array('consolidadogoa/index'),'class'=>'btn btn-primary btn-lg btn-block')); ?>
 											          		
 					          	</div>
