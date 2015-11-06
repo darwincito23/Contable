@@ -8,7 +8,7 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-
+	array('label'=>'Ver Registros', 'url'=>array('index')),
 	array('label'=>'Crear Registro', 'url'=>array('create')),
 	array('label'=>'Actualiza Registro', 'url'=>array('update', 'id'=>$model->idRegistroContableGastos)),
 	array('label'=>'Borrar Registro', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->idRegistroContableGastos),'confirm'=>'Are you sure you want to delete this item?')),

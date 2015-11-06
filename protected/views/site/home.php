@@ -28,7 +28,7 @@ $this->pageTitle=Yii::app()->name;
 									<?php echo CHtml::submitButton('GOA', array('submit'=>array('site/goa'),'class'=>'btn btn-success btn-md btn-block')); ?>
 									<?php echo CHtml::submitButton('GCOV', array('submit'=>array('site/gov'),'class'=>'btn btn-success btn-md btn-block')); ?>
 									<?php echo CHtml::submitButton('ECPV', array('submit'=>array('usuarios/list'),'class'=>'btn btn-success btn-md btn-block')); ?>
-									<?php echo CHtml::submitButton('Administrar Terceros', array('submit'=>array('proveedor/index'),'class'=>'btn btn-success btn-md btn-block')); ?>
+									<?php echo CHtml::submitButton('Administrar Terceros', array('submit'=>array('proveedor/admin'),'class'=>'btn btn-success btn-md btn-block')); ?>
 									<?php echo CHtml::submitButton('Administrar Cuentas PUC', array('submit'=>array('usuarios/list'),'class'=>'btn btn-success btn-md btn-block')); ?>									
 														          		
 					          	</div>
