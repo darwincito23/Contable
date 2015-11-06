@@ -17,33 +17,46 @@
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
 
-<body>
+<body class="container-fluid">
 
 <div class="container" id="page">
 
-	<div id="header">
-		<div id="logo"><?php echo CHtml::encode(Yii::app()->name); ?></div>
-	</div><!-- header -->
-
-	<div id="mainmenu">
-		<?php $this->widget('zii.widgets.CMenu',array(
-			'items'=>array(
-				array('label'=>'Inicio', 'url'=>array('/site/home')),
-				array('label'=>'GOA', 'url'=>array('/site/goa')),
-				array('label'=>'GOV', 'url'=>array('/site/gov')),
-				array('label'=>'ECPV', 'url'=>array('/site/home')),					
-				array('label'=>'Administrar Terceros', 'url'=>array('/proveedor/index')),
-				array('label'=>'Administrar Cuentas PUC', 'url'=>array('/proveedor/index')),											
-				array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
-				array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
-			),
-		)); ?>
-	</div><!-- mainmenu -->
-	<?php if(isset($this->breadcrumbs)):?>
-		<?php $this->widget('zii.widgets.CBreadcrumbs', array(
-			'links'=>$this->breadcrumbs,
-		)); ?><!-- breadcrumbs -->
-	<?php endif?>
+		<header class="container-fluid">	
+			
+			<div class="row">				
+				<div class="col-md-12 menu">
+						<div id="mainmenu">
+								<?php $this->widget('zii.widgets.CMenu',array(
+								'encodeLabel'=>false,
+								'items'=>array(
+								array('label'=>'<img src="'.Yii::app()->request->baseUrl.'/images/logo.png" />'),	
+								array('label'=>'Inicio', 'url'=>array('/site/home')),
+								array('label'=>'GOA', 'url'=>array('/site/goa')),
+								array('label'=>'GOV', 'url'=>array('/site/gov')),
+								array('label'=>'ECPV', 'url'=>array('/site/home')),					
+								array('label'=>'Administrar Terceros', 'url'=>array('/proveedor/index')),
+								array('label'=>'Administrar Cuentas PUC', 'url'=>array('/proveedor/index')),											
+								array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
+								array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
+								),
+								)); ?>
+						</div><!-- mainmenu -->
+				</div>
+			</div>
+			<div class="row">
+				
+				<div class="col-md-10">
+					<?php if(isset($this->breadcrumbs)):?>
+					<?php $this->widget('zii.widgets.CBreadcrumbs', array(
+					'links'=>$this->breadcrumbs,
+					)); ?><!-- breadcrumbs -->
+					<?php endif?>
+				</div>
+				<div class="col-md-2"></div>
+			</div>
+		</header><!-- header -->	
+	
+	
 
 	<?php echo $content; ?>
 

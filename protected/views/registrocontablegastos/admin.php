@@ -4,11 +4,11 @@
 
 $this->breadcrumbs=array(
 	'Registrocontablegastos'=>array('index'),
-	'Manage',
+	'Administrar',
 );
 
 $this->menu=array(	
-	array('label'=>'Create Registrocontablegastos', 'url'=>array('create')),
+	array('label'=>'Crear Registro contable de gastos', 'url'=>array('create')),
 );
 
 Yii::app()->clientScript->registerScript('search', "
@@ -25,12 +25,8 @@ $('.search-form form').submit(function(){
 ");
 ?>
 
-<h1>Manage Registrocontablegastoses</h1>
+<h1>Administrar Registro contable de gastos</h1>
 
-<p>
-You may optionally enter a comparison operator (<b>&lt;</b>, <b>&lt;=</b>, <b>&gt;</b>, <b>&gt;=</b>, <b>&lt;&gt;</b>
-or <b>=</b>) at the beginning of each of your search values to specify how the comparison should be done.
-</p>
 
 <?php echo CHtml::link('Advanced Search','#',array('class'=>'search-button')); ?>
 <div class="search-form" style="display:none">
@@ -46,13 +42,6 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 	'columns'=>array(
 		
 		array(
-			'name'=>'CuentaPuc_idCuentaPuc',
-			'value'=>'$data->cuentaPucIdCuentaPuc->nombreCuentaPuc',
-			'filter'=>$model->getListCuentaPuc('nombre'),
-			'header'=>'Nombre cuenta',
-			),
-		
-		array(
 			'name'=>'ccuenta',
 			'value'=>'$data->cuentaPucIdCuentaPuc->codigoCuentaPuc',
 			'filter'=>$model->getListCuentaPuc('codigo'),
@@ -60,17 +49,25 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 			),
 		
 		array(
-			'name'=>'Proveedor_idProveedor',
-			'value'=>'$data->proveedorIdProveedor->nombreProveedor',
-			'filter'=>$model->getListProveedor('nombre'),
-			'header'=>'Nombre Proveedor',
+			'name'=>'CuentaPuc_idCuentaPuc',
+			'value'=>'$data->cuentaPucIdCuentaPuc->nombreCuentaPuc',
+			'filter'=>$model->getListCuentaPuc('nombre'),
+			'header'=>'Nombre cuenta',
 			),
+		
 		array(
 			'name'=>'cprovedor',
 			'header'=>'Codigo Proveedor',
 			'value'=>'$data->proveedorIdProveedor->codigoProveedor',
 			'filter'=>$model->getListProveedor('codigo'),
 		),
+
+		array(
+			'name'=>'Proveedor_idProveedor',
+			'value'=>'$data->proveedorIdProveedor->nombreProveedor',
+			'filter'=>$model->getListProveedor('nombre'),
+			'header'=>'Nombre Proveedor',
+			),		
 		
 		'fecha',	
 		'valorRegistroContable',

@@ -27,7 +27,19 @@
 				            <td>
 					            <?php echo $form->labelEx($model,'fecha'); ?>
 								<?php echo $form->textField($model,'fecha'); ?>
-								<?php echo $form->error($model,'fecha'); ?>
+								<?php echo $form->error($model,'fecha'); ?>	
+								<?php  $this->widget('zii.widgets.jui.CJuiDatePicker',array(
+								      'model'=>$model,
+								      'attribute'=>'fecha',
+								      // additional javascript options for the date picker plugin
+								      'options'=>array(
+								          'showAnim'=>'fold',
+								      ),
+								      'htmlOptions'=>array(
+								          'style'=>'height:20px;'
+								      ),
+								  ),true);
+								?>						
 							</td>
 				            <td>
 				            	<?php echo $form->labelEx($model,'nombre_Proveedor'); ?>
