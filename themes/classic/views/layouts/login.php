@@ -19,7 +19,9 @@
 			<div class="row">
 				<div class="col-md-4"></div>
 				<div class="col-md-4 text-center">
+				<br />
 					<div id="logo"><?php echo CHtml::encode(Yii::app()->name); ?></div>
+					<br />
 				</div>
 				<div class="col-md-4"></div>
 			</div>
@@ -35,9 +37,11 @@
 		</section>	
 		<!-- container -->	
 	</body>
+	<br />
 <div class="clear"></div>
 
 	<div id="footer">
+	<br />
 		Copyright &copy; <?php echo date('Y'); ?> Distriguadua S.A.S.<br/>
 		All Rights Reserved.<br/>
 		<?php echo Yii::powered(); ?>

@@ -44,6 +44,7 @@ template {
 }
 a {
   background-color: transparent;
+
 }
 a:active,
 a:hover {
@@ -4031,7 +4032,9 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav > li > a {
   position: relative;
   display: block;
-  padding: 10px 15px;
+  padding-left: 0px;
+  padding-top: 15px;
+  color:#2E8B57;
 }
 .nav > li > a:hover,
 .nav > li > a:focus {
