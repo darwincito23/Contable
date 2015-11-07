@@ -8,15 +8,29 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
+<<<<<<< HEAD
 	array('label'=>'Ver Registros', 'url'=>array('index')),
 	array('label'=>'Crear Registro', 'url'=>array('create')),
 	array('label'=>'Actualiza Registro', 'url'=>array('update', 'id'=>$model->idRegistroContableGastos)),
 	array('label'=>'Borrar Registro', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->idRegistroContableGastos),'confirm'=>'Are you sure you want to delete this item?')),
 	array('label'=>'Administrar Registro', 'url'=>array('admin')),
+||||||| 256b063... Versión 1.6.1
+
+	array('label'=>'Crear Registro', 'url'=>array('create')),
+	array('label'=>'Actualiza Registro', 'url'=>array('update', 'id'=>$model->idRegistroContableGastos)),
+	array('label'=>'Borrar Registro', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->idRegistroContableGastos),'confirm'=>'Are you sure you want to delete this item?')),
+	array('label'=>'Administrar Registro', 'url'=>array('admin')),
+=======
+
+	array('label'=>'Create Registrocontablegastos', 'url'=>array('create')),
+	array('label'=>'Update Registrocontablegastos', 'url'=>array('update', 'id'=>$model->idRegistroContableGastos)),
+	array('label'=>'Delete Registrocontablegastos', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->idRegistroContableGastos),'confirm'=>'Are you sure you want to delete this item?')),
+	array('label'=>'Manage Registrocontablegastos', 'url'=>array('admin')),
+>>>>>>> parent of 256b063... Versión 1.6.1
 );
 ?>
 
-<h1>Vista de Registro Contable de Gastos Número: <?php echo $model->idRegistroContableGastos; ?></h1>
+<h1>View Registrocontablegastos #<?php echo $model->idRegistroContableGastos; ?></h1>
 
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,

@@ -2,11 +2,3 @@
 	padding-left: 0px;
 	padding-right: 0px;
 }
-
-a{
-	color:black;
-}
-
-.nav-pills > li + li{
-	margin-left:20px; 
-}
