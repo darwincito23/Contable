@@ -13,11 +13,14 @@ $this->menu=array(
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	array('label'=>'Create Registrocontablegastos', 'url'=>array('create')),
 	array('label'=>'Update Registrocontablegastos', 'url'=>array('update', 'id'=>$model->idRegistroContableGastos)),
 	array('label'=>'Delete Registrocontablegastos', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->idRegistroContableGastos),'confirm'=>'Are you sure you want to delete this item?')),
 	array('label'=>'Manage Registrocontablegastos', 'url'=>array('admin')),
 =======
+=======
+>>>>>>> parent of 5e93c15... Versión 1.6.2
 =======
 >>>>>>> parent of 5e93c15... Versión 1.6.2
 =======
