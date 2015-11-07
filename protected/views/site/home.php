@@ -25,19 +25,11 @@ $this->pageTitle=Yii::app()->name;
 					          	</div>
 					          	<div class="col-md-10">
 
-<<<<<<< HEAD
-									<?php echo CHtml::submitButton('GOA', array('submit'=>array('site/goa'),'class'=>'btn btn-primary btn-lg btn-block')); ?>
-									<?php echo CHtml::submitButton('GCOV', array('submit'=>array('site/gov'),'class'=>'btn btn-primary btn-lg btn-block')); ?>
-									<?php echo CHtml::submitButton('ECPV', array('submit'=>array('usuarios/list'),'class'=>'btn btn-primary btn-lg btn-block')); ?>
-									<?php echo CHtml::submitButton('Administrar Terceros', array('submit'=>array('proveedor/index'),'class'=>'btn btn-primary btn-lg btn-block')); ?>
-									<?php echo CHtml::submitButton('Administrar Cuentas PUC', array('submit'=>array('usuarios/list'),'class'=>'btn btn-primary btn-lg btn-block')); ?>									
-=======
 									<?php echo CHtml::submitButton('GOA', array('submit'=>array('site/goa'),'class'=>'btn btn-success btn-md btn-block')); ?>
 									<?php echo CHtml::submitButton('GCOV', array('submit'=>array('site/gov'),'class'=>'btn btn-success btn-md btn-block')); ?>
 									<?php echo CHtml::submitButton('ECPV', array('submit'=>array('usuarios/list'),'class'=>'btn btn-success btn-md btn-block')); ?>
 									<?php echo CHtml::submitButton('Administrar Terceros', array('submit'=>array('proveedor/index'),'class'=>'btn btn-success btn-md btn-block')); ?>
 									<?php echo CHtml::submitButton('Administrar Cuentas PUC', array('submit'=>array('usuarios/list'),'class'=>'btn btn-success btn-md btn-block')); ?>									
->>>>>>> parent of 5e93c15... Versión 1.6.2
 														          		
 					          	</div>
 					          	<div class="col-md-1">        		
