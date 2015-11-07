@@ -16,7 +16,7 @@ $this->menu=array(
 );
 ?>
 
-<h1>Vista de Proveedor Numero: <?php echo $model->idProveedor; ?></h1>
+<h1>Ver Proveedor #<?php echo $model->idProveedor; ?></h1>
 
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,

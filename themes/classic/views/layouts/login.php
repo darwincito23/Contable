@@ -39,7 +39,7 @@
 
 	<div id="footer">
 		Copyright &copy; <?php echo date('Y'); ?> Distriguadua S.A.S.<br/>
-		Todos los Derechos Reservados.<br/>
+		All Rights Reserved.<br/>
 		<?php echo Yii::powered(); ?>
 	</div><!-- footer -->
 

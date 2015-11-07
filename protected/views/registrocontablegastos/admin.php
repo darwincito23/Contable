@@ -13,8 +13,7 @@ $this->breadcrumbs=array(
 	<div class="row">
 		<?php 
 		$this->menu=array(	
-		array('label'=>'Crear Registro', 'url'=>array('create')),
-		array('label'=>'Ver Registro', 'url'=>array('index')),		
+		array('label'=>'Crear Registro contable de gastos', 'url'=>array('create'))		
 		);
 		?>
 	</div>
