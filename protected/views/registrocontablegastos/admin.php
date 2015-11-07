@@ -7,9 +7,21 @@ $this->breadcrumbs=array(
 	'Administrar',
 );
 
+<<<<<<< HEAD
 $this->menu=array(	
 	array('label'=>'Crear Registro contable de gastos', 'url'=>array('create')),
 );
+=======
+<div class="container">
+	
+	<div class="row">
+		<?php 
+		$this->menu=array(	
+		array('label'=>'Crear Registro contable de gastos', 'url'=>array('create'))		
+		);
+		?>
+	</div>
+>>>>>>> parent of 5e93c15... Versión 1.6.2
 
 Yii::app()->clientScript->registerScript('search', "
 $('.search-button').click(function(){
