@@ -2,7 +2,7 @@ body
 {
 	margin: 0;
 	padding: 0;
-	color: #555;
+	color: #2E8B57;
 	font: normal 10pt Arial,Helvetica,sans-serif;
 	background: #EFEFEF;
 }
@@ -53,7 +53,6 @@ body
 #mainmenu
 {
 	background:#2E8B57;
-
 }
 
 #mainmenu ul
@@ -146,12 +145,12 @@ div.view
 div.breadcrumbs
 {
 	font-size: 0.9em;
-	padding: 5px 20px;
+	padding: 5px 20px;	
 }
 
 div.breadcrumbs span
 {
-	font-weight: bold;
+	font-weight: bold;	
 }
 
 div.search-form
@@ -208,7 +207,7 @@ div.search-form
 {
 	list-style-type: none;
 	margin: 0;
-	padding: 0;
+	padding: 0;	
 }
 
 .operations li

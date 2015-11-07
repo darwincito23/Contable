@@ -4,10 +4,13 @@
 /* @var $form CActiveForm */
 ?>
 
+<div class="container">	
+	
+</div>
+<!-- endContainer-->
+
 <div class="form">
-		<br>
-		<br>
-		<br>
+	
 		<?php $form=$this->beginWidget('CActiveForm', array(
 			'id'=>'registrocontablegastos-form',
 			'enableAjaxValidation'=>false,
@@ -84,19 +87,19 @@
 				        </tr> 
 				    </tbody>		
 				</table>
-			<div class="container text-center">
-			<div class="col-md-6">
+			<div class="container{fluid text-center">
+	
 				<?php echo $form->labelEx($model,'descripcion'); ?>
 					<?php echo $form->textArea($model,'descripcion',array('rows'=>6, 'cols'=>50)); ?>
 					<?php echo $form->error($model,'descripcion'); ?>			
 					<div class="row buttons">
-						<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
+						<?php echo CHtml::submitButton($model->isNewRecord ? 'Guardar' : 'Save',array('class'=>'btn btn-success btn-md')); ?>
+						
+											          		
 					</div>
 			</div>
-			<div class="col-md-6"></div>
-						
-			</div>	
 			
+						
+			</div>				
 		<?php $this->endWidget(); ?>
 </div><!-- form -->
-<?php //echo $form->dropDownList($model, 'valorRegistroContable', array('MASCULINO'=>'MASCULINO', 'FEMENINO'=>'FEMENINO', 'OTRO'=>'OTRO')); ?>
