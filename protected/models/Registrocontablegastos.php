@@ -20,8 +20,11 @@
  */
 class Registrocontablegastos extends CActiveRecord
 {
+	public $nproveedor;
+	public $cproveedor;
 	public $cprovedor;
 	public $ccuenta;
+	public $ncuenta;
 	/**
 	 * Returns the static model of the specified AR class.
 	 * @param string $className active record class name.
@@ -31,6 +34,82 @@ class Registrocontablegastos extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+	
+	public function obtenerCodigoNombre($type)
+	{
+		$criteria = new CDbCriteria();
+		switch ($type) {
+				case 'proveedor':
+				$criteria->select='codigoProveedor,nombreProveedor'	;
+				//$criteria->condition = 'id=:id';
+				//$criteria->params = array(':id'=>$id);
+				$array=Proveedor::model()->findall($criteria);
+				$arr=array();
+				foreach ($array as $key => $value) {
+				$arr[]= $array[$key]->codigoProveedor.'<->'.$array[$key]->nombreProveedor;
+				}
+				
+				return $arr;
+			case 'cuentapuc':
+				
+				$criteria->select='codigoCuentaPuc,nombreCuentaPuc'	;
+				//$criteria->condition = 'id=:id';
+				//$criteria->params = array(':id'=>$id);
+				$array=Cuentapuc::model()->findall($criteria);
+				$arr=array();
+				foreach ($array as $key => $value) {
+				$arr[]= $array[$key]->codigoCuentaPuc.'<->'.$array[$key]->nombreCuentaPuc;
+				}
+				
+				return $arr;
+		}
+	}
+	public function obtenerUnCodigoNombre($type,$id)
+	{
+		$criteria = new CDbCriteria();
+		switch ($type) {
+				case 'proveedor':
+				$criteria->select='codigoProveedor,nombreProveedor'	;
+				$criteria->condition = 'idProveedor=:id';
+				$criteria->params = array(':id'=>$id);
+				$array=Proveedor::model()->find($criteria);
+				return $array->codigoProveedor.'<->'.$array->nombreProveedor;
+				
+				
+				
+			case 'cuentapuc':
+				
+				$criteria->select='codigoCuentaPuc,nombreCuentaPuc'	;
+				$criteria->condition = 'idCuentaPuc=:id';
+				$criteria->params = array(':id'=>$id);
+				$array=Cuentapuc::model()->find($criteria);
+				$arr=array();
+				return $array->codigoCuentaPuc.'<->'.$array->nombreCuentaPuc;
+			}
+	}
+	public function obtenerCodigo($type,$id)
+	{
+		$criteria = new CDbCriteria();
+		switch ($type) {
+				case 'proveedor':
+				$criteria->select='codigoProveedor'	;
+				$criteria->condition ='idProveedor=:id';
+				$criteria->params =array(':id'=>$id);
+				$array=Proveedor::model()->find($criteria);
+				return $array->codigoProveedor;
+				
+				
+				
+			case 'cuentapuc':
+				
+				$criteria->select='codigoCuentaPuc,nombreCuentaPuc'	;
+				$criteria->condition = 'idCuentaPuc=:id';
+				$criteria->params = array(':id'=>$id);
+				$array=Cuentapuc::model()->find($criteria);
+				$arr=array();
+				return $array->codigoCuentaPuc;
+			}
+	}
 
 	/**
 	 * @return string the associated database table name
@@ -38,6 +117,26 @@ class Registrocontablegastos extends CActiveRecord
 	public function tableName()
 	{
 		return 'registrocontablegastos';
+	}
+
+	public function findId($type,$value)
+	{
+		$criteria=new CDbCriteria();
+		
+		switch ($type) {
+			case 'proveedor':
+			$criteria->select='idProveedor';
+			$criteria->condition='codigoProveedor=:codigoProveedor';
+			$criteria->params=array(':codigoProveedor'=>$value);
+			$modelo=Proveedor::model()->find($criteria);
+			return $modelo->idProveedor;
+			case 'cuentapuc':
+			$criteria->select='idCuentaPuc';
+			$criteria->condition='codigoCuentaPuc=:codigoCuentaPuc';
+			$criteria->params=array(':codigoCuentaPuc'=>$value);
+			$modelo=CuentaPuc::model()->find($criteria);
+			return $modelo->idCuentaPuc;
+		}
 	}
 
 	/**
@@ -51,7 +150,7 @@ class Registrocontablegastos extends CActiveRecord
 			array('fecha, valorRegistroContable, Proveedor_idProveedor, CuentaPuc_idCuentaPuc', 'required'),
 			array('Usuario_idUsuario', 'numerical', 'integerOnly'=>true),
 			array('valorRegistroContable', 'numerical'),
-			array('Proveedor_idProveedor, CuentaPuc_idCuentaPuc', 'length', 'max'=>30),
+			array('Proveedor_idProveedor, CuentaPuc_idCuentaPuc', 'length', 'max'=>50),
 			array('descripcion', 'safe'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
@@ -127,7 +226,7 @@ class Registrocontablegastos extends CActiveRecord
 
 		$criteria->with=array('proveedorIdProveedor','cuentaPucIdCuentaPuc');
 		$criteria->compare('idRegistroContableGastos',$this->idRegistroContableGastos,true);
-		$criteria->compare('idRegistroContableGastos',$this->cprovedor,true);
+		$criteria->compare('Proveedor_idProveedor',$this->cprovedor,true);
 		$criteria->compare('fecha',$this->fecha,true);
 		$criteria->compare('valorRegistroContable',$this->valorRegistroContable);
 		$criteria->compare('descripcion',$this->descripcion,true);

@@ -1591,3 +1591,100 @@ Stack trace:
 REQUEST_URI=/yii/Contable/site/Homecpv
 HTTP_REFERER=http://localhost:8080/yii/Contable/site/ecpv
 ---
+2015/11/08 21:23:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\xampp\htdocs\yii\Contable\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(141): CWebApplication->runController('proveedor/index...')
+#3 C:\xampp\htdocs\yii\Contable\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\yii\Contable\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/Contable/proveedor/index.php/site/home
+---
+2015/11/08 21:28:41 [warning] [application] Failed to set unsafe attribute "cprovedor" of "Registrocontablegastos".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\RegistrocontablegastosController.php (72)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/08 21:28:41 [warning] [application] Failed to set unsafe attribute "ccuenta" of "Registrocontablegastos".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\RegistrocontablegastosController.php (72)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/08 21:28:45 [warning] [application] Failed to set unsafe attribute "cprovedor" of "Registrocontablegastos".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\RegistrocontablegastosController.php (72)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/08 21:28:45 [warning] [application] Failed to set unsafe attribute "ccuenta" of "Registrocontablegastos".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\RegistrocontablegastosController.php (72)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/08 21:31:27 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`distriguadua`.`cuentapuc`, CONSTRAINT `fk_CuentaPuc_CuentaPuc1` FOREIGN KEY (`CuentaPadre`) REFERENCES `cuentapuc` (`idCuentaPuc`) ON DELETE NO ACTION ON UPDATE NO ACTION). The SQL statement executed was: INSERT INTO `cuentapuc` (`CuentaPadre`, `nombreCuentaPuc`, `codigoCuentaPuc`, `TipoGasto_idTipoGasto`) VALUES (:yp0, :yp1, :yp2, :yp3).
+in C:\xampp\htdocs\yii\Contable\protected\controllers\CuentapucController.php (73)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/08 21:31:28 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`distriguadua`.`cuentapuc`, CONSTRAINT `fk_CuentaPuc_CuentaPuc1` FOREIGN KEY (`CuentaPadre`) REFERENCES `cuentapuc` (`idCuentaPuc`) ON DELETE NO ACTION ON UPDATE NO ACTION). The SQL statement executed was: INSERT INTO `cuentapuc` (`CuentaPadre`, `nombreCuentaPuc`, `codigoCuentaPuc`, `TipoGasto_idTipoGasto`) VALUES (:yp0, :yp1, :yp2, :yp3)' in C:\xampp\htdocs\yii\Contable\framework\db\CDbCommand.php:357
+Stack trace:
+#0 C:\xampp\htdocs\yii\Contable\framework\db\ar\CActiveRecord.php(1023): CDbCommand->execute()
+#1 C:\xampp\htdocs\yii\Contable\framework\db\ar\CActiveRecord.php(795): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\yii\Contable\protected\controllers\CuentapucController.php(73): CActiveRecord->save()
+#3 C:\xampp\htdocs\yii\Contable\framework\web\actions\CInlineAction.php(49): CuentapucController->actionCreate()
+#4 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\Contable\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\Contable\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\Contable\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\Contable\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(141): CWebApplication->runController('cuentaPuc/creat...')
+#14 C:\xampp\htdocs\yii\Contable\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\yii\Contable\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/yii/Contable/cuentaPuc/create
+HTTP_REFERER=http://localhost:8080/yii/Contable/cuentaPuc/create
+---
+2015/11/08 21:37:08 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`distriguadua`.`cuentapuc`, CONSTRAINT `fk_CuentaPuc_CuentaPuc1` FOREIGN KEY (`CuentaPadre`) REFERENCES `cuentapuc` (`idCuentaPuc`) ON DELETE NO ACTION ON UPDATE NO ACTION). The SQL statement executed was: INSERT INTO `cuentapuc` (`CuentaPadre`, `nombreCuentaPuc`, `codigoCuentaPuc`, `TipoGasto_idTipoGasto`) VALUES (:yp0, :yp1, :yp2, :yp3).
+in C:\xampp\htdocs\yii\Contable\protected\controllers\CuentapucController.php (73)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/08 21:37:08 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`distriguadua`.`cuentapuc`, CONSTRAINT `fk_CuentaPuc_CuentaPuc1` FOREIGN KEY (`CuentaPadre`) REFERENCES `cuentapuc` (`idCuentaPuc`) ON DELETE NO ACTION ON UPDATE NO ACTION). The SQL statement executed was: INSERT INTO `cuentapuc` (`CuentaPadre`, `nombreCuentaPuc`, `codigoCuentaPuc`, `TipoGasto_idTipoGasto`) VALUES (:yp0, :yp1, :yp2, :yp3)' in C:\xampp\htdocs\yii\Contable\framework\db\CDbCommand.php:357
+Stack trace:
+#0 C:\xampp\htdocs\yii\Contable\framework\db\ar\CActiveRecord.php(1023): CDbCommand->execute()
+#1 C:\xampp\htdocs\yii\Contable\framework\db\ar\CActiveRecord.php(795): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\yii\Contable\protected\controllers\CuentapucController.php(73): CActiveRecord->save()
+#3 C:\xampp\htdocs\yii\Contable\framework\web\actions\CInlineAction.php(49): CuentapucController->actionCreate()
+#4 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\Contable\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\Contable\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\Contable\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\Contable\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(141): CWebApplication->runController('cuentaPuc/creat...')
+#14 C:\xampp\htdocs\yii\Contable\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\yii\Contable\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/yii/Contable/cuentaPuc/create
+HTTP_REFERER=http://localhost:8080/yii/Contable/cuentaPuc/create
+---
+2015/11/08 21:37:12 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`distriguadua`.`cuentapuc`, CONSTRAINT `fk_CuentaPuc_CuentaPuc1` FOREIGN KEY (`CuentaPadre`) REFERENCES `cuentapuc` (`idCuentaPuc`) ON DELETE NO ACTION ON UPDATE NO ACTION). The SQL statement executed was: INSERT INTO `cuentapuc` (`CuentaPadre`, `nombreCuentaPuc`, `codigoCuentaPuc`, `TipoGasto_idTipoGasto`) VALUES (:yp0, :yp1, :yp2, :yp3).
+in C:\xampp\htdocs\yii\Contable\protected\controllers\CuentapucController.php (73)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/08 21:37:12 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`distriguadua`.`cuentapuc`, CONSTRAINT `fk_CuentaPuc_CuentaPuc1` FOREIGN KEY (`CuentaPadre`) REFERENCES `cuentapuc` (`idCuentaPuc`) ON DELETE NO ACTION ON UPDATE NO ACTION). The SQL statement executed was: INSERT INTO `cuentapuc` (`CuentaPadre`, `nombreCuentaPuc`, `codigoCuentaPuc`, `TipoGasto_idTipoGasto`) VALUES (:yp0, :yp1, :yp2, :yp3)' in C:\xampp\htdocs\yii\Contable\framework\db\CDbCommand.php:357
+Stack trace:
+#0 C:\xampp\htdocs\yii\Contable\framework\db\ar\CActiveRecord.php(1023): CDbCommand->execute()
+#1 C:\xampp\htdocs\yii\Contable\framework\db\ar\CActiveRecord.php(795): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\yii\Contable\protected\controllers\CuentapucController.php(73): CActiveRecord->save()
+#3 C:\xampp\htdocs\yii\Contable\framework\web\actions\CInlineAction.php(49): CuentapucController->actionCreate()
+#4 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\Contable\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\Contable\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\Contable\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\Contable\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(141): CWebApplication->runController('cuentaPuc/creat...')
+#14 C:\xampp\htdocs\yii\Contable\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\yii\Contable\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/yii/Contable/cuentaPuc/create
+HTTP_REFERER=http://localhost:8080/yii/Contable/cuentaPuc/create
+---
