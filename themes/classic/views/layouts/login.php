@@ -11,19 +11,24 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css" />
 	<!-- Latest compiled and minified CSS -->
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
-	<link href="<?php echo Yii::app()->theme->baseUrl ?>/css/bootstrap.min.css" rel="stylesheet">	
+	<link href="<?php echo Yii::app()->theme->baseUrl ?>/css/bootstrap.min.css" rel="stylesheet">
+	<link href="<?php echo Yii::app()->theme->baseUrl ?>/css/default.css" rel="stylesheet">	
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
 	<body>
-		<header class="container-fluid">		
+		<header class="container-fluid bodycolor">		
 			<div class="row">
 				<div class="col-md-4"></div>
 				<div class="col-md-4 text-center">
+					<br />
+					<br />
 					<div id="logo"><?php echo CHtml::encode(Yii::app()->name); ?></div>
+					<br />
 				</div>
 				<div class="col-md-4"></div>
 			</div>
 		</header>
+		<br />
 		<!-- header -->	
 		<section class="container-fluid">
 			
@@ -35,12 +40,15 @@
 		</section>	
 		<!-- container -->	
 	</body>
+	<br />
 <div class="clear"></div>
 
-	<div id="footer">
+	<div id="footer" class="bodycolor">
+		<br />
 		Copyright &copy; <?php echo date('Y'); ?> Distriguadua S.A.S.<br/>
 		All Rights Reserved.<br/>
 		<?php echo Yii::powered(); ?>
+		<br />
 	</div><!-- footer -->
 
 </div><!-- page -->

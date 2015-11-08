@@ -3,16 +3,16 @@
 /* @var $dataProvider CActiveDataProvider */
 
 $this->breadcrumbs=array(
-	'Cuentapucs',
+	'Cuenta Puc',
 );
 
 $this->menu=array(
-	array('label'=>'Create Cuentapuc', 'url'=>array('create')),
-	array('label'=>'Manage Cuentapuc', 'url'=>array('admin')),
+	array('label'=>'Crear Cuenta Puc', 'url'=>array('create')),
+	array('label'=>'Administrar Cuenta Puc', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Cuentapucs</h1>
+<h1>Cuenta Puc</h1>
 
 <?php $this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$dataProvider,

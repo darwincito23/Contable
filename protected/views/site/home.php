@@ -7,7 +7,7 @@ $this->pageTitle=Yii::app()->name;
 	<div class="row">
 		<div class="col-md-3"></div>
 		<div class="col-md-6 text-center">
-			<h1>Bienvenido al Módulo Contable</h1>
+			<h1>Bienvenido al MOCOD</h1>
 		</div>
 		<div class="col-md-3"></div>
 	</div>	

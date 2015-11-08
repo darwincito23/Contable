@@ -49,12 +49,8 @@
 		<br>
 		<div >
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Crear' : 'Guardar',array('class'=>'btn btn-success btn-md ')); ?>
-		</div>
-					          	
+		</div>       	
 	
-
-	
-
 <?php $this->endWidget(); ?>
 
 </div><!-- form -->

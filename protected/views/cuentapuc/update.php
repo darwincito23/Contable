@@ -5,17 +5,40 @@
 $this->breadcrumbs=array(
 	'Cuentapucs'=>array('index'),
 	$model->idCuentaPuc=>array('view','id'=>$model->idCuentaPuc),
-	'Update',
+	'Actualizar',
 );
 
 $this->menu=array(
-	array('label'=>'List Cuentapuc', 'url'=>array('index')),
-	array('label'=>'Create Cuentapuc', 'url'=>array('create')),
-	array('label'=>'View Cuentapuc', 'url'=>array('view', 'id'=>$model->idCuentaPuc)),
-	array('label'=>'Manage Cuentapuc', 'url'=>array('admin')),
+	array('label'=>'Lista de Cuentas Puc', 'url'=>array('index')),
+	array('label'=>'Crear Cuenta Puc', 'url'=>array('create')),
+	array('label'=>'Ver Cuenta Puc', 'url'=>array('view', 'id'=>$model->idCuentaPuc)),
+	array('label'=>'Adminsitrar Cuenta Puc', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Update Cuentapuc <?php echo $model->idCuentaPuc; ?></h1>
 
-<?php echo $this->renderPartial('_form', array('model'=>$model)); ?>
+
+<div class="container">
+	<div class="col-md-3"></div>
+	<div class="col-md-5">
+		<h1>Actualizar Cuenta Puc <?php echo $model->idCuentaPuc; ?></h1>
+			<div class="panel panel-default">
+				  <div class="panel-heading">
+					<h4 class="text-center">Cuenta Puc</h4>				  
+				  </div>
+				  <div class="panel-body">
+					   	<div class="row">
+						          	<div class="col-md-1"></div>      		
+						          	<div class="col-md-10">	
+
+										<?php echo $this->renderPartial('_form', array('model'=>$model)); ?>
+
+									</div>
+						          	<div class="col-md-1"></div>
+						</div>	 
+				  </div>
+			</div>	
+	</div>
+	<div class="col-md-4"></div>
+
+</div>
