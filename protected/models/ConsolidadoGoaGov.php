@@ -8,10 +8,10 @@
  * @property string $fecha_Inicio
  * @property string $fecha_fin
  * @property double $Total
+ * @property string $RegistroContableGastos_idRegistroContableGastos
  *
  * The followings are the available model relations:
- * @property ConsolidadoGoaGovRegistrocontablegastosProveedor[] $consolidadoGoaGovRegistrocontablegastosProveedors
- * @property CuentapucRegistrocontablegastosConsolidadoGoaGov[] $cuentapucRegistrocontablegastosConsolidadoGoaGovs
+ * @property Registrocontablegastos $registroContableGastosIdRegistroContableGastos
  */
 class ConsolidadoGoaGov extends CActiveRecord
 {
@@ -41,13 +41,13 @@ class ConsolidadoGoaGov extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('idConsolidado_GOA_GOV', 'required'),
+			array('idConsolidado_GOA_GOV, RegistroContableGastos_idRegistroContableGastos', 'required'),
 			array('Total', 'numerical'),
-			array('idConsolidado_GOA_GOV', 'length', 'max'=>30),
+			array('idConsolidado_GOA_GOV, RegistroContableGastos_idRegistroContableGastos', 'length', 'max'=>30),
 			array('fecha_Inicio, fecha_fin', 'safe'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('idConsolidado_GOA_GOV, fecha_Inicio, fecha_fin, Total', 'safe', 'on'=>'search'),
+			array('idConsolidado_GOA_GOV, fecha_Inicio, fecha_fin, Total, RegistroContableGastos_idRegistroContableGastos', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -59,8 +59,7 @@ class ConsolidadoGoaGov extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'consolidadoGoaGovRegistrocontablegastosProveedors' => array(self::HAS_MANY, 'ConsolidadoGoaGovRegistrocontablegastosProveedor', 'Consolidado_GOA_GOV_idConsolidado_GOA_GOV'),
-			'cuentapucRegistrocontablegastosConsolidadoGoaGovs' => array(self::HAS_MANY, 'CuentapucRegistrocontablegastosConsolidadoGoaGov', 'Consolidado_GOA_GOV_idGOA_GOV'),
+			'registroContableGastosIdRegistroContableGastos' => array(self::BELONGS_TO, 'Registrocontablegastos', 'RegistroContableGastos_idRegistroContableGastos'),
 		);
 	}
 
@@ -74,6 +73,7 @@ class ConsolidadoGoaGov extends CActiveRecord
 			'fecha_Inicio' => 'Fecha Inicio',
 			'fecha_fin' => 'Fecha Fin',
 			'Total' => 'Total',
+			'RegistroContableGastos_idRegistroContableGastos' => 'Registro Contable Gastos Id Registro Contable Gastos',
 		);
 	}
 
@@ -92,6 +92,7 @@ class ConsolidadoGoaGov extends CActiveRecord
 		$criteria->compare('fecha_Inicio',$this->fecha_Inicio,true);
 		$criteria->compare('fecha_fin',$this->fecha_fin,true);
 		$criteria->compare('Total',$this->Total);
+		$criteria->compare('RegistroContableGastos_idRegistroContableGastos',$this->RegistroContableGastos_idRegistroContableGastos,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

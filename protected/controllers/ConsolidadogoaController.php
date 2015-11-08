@@ -2,9 +2,30 @@
 
 class ConsolidadogoaController extends Controller
 {
+	public function actionForm()
+	{
+		$this->render('form');
+	}
+
 	public function actionIndex()
 	{
-		$this->render('index');
+		$model=new ConsolidadoGoaGov;
+
+		// Uncomment the following line if AJAX validation is needed
+		// $this->performAjaxValidation($model);
+		/*
+		if(isset($_POST['Cuentapuc']))
+		{
+			$model->attributes=$_POST['Cuentapuc'];
+			if($model->save())
+				$this->redirect(array('view','id'=>$model->idCuentaPuc));
+		}
+		*/
+		$this->render('index',array(
+			'model'=>$model,
+		));
+
+		
 	}
 
 	// Uncomment the following methods and override them if needed
