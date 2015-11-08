@@ -1592,6 +1592,7 @@ REQUEST_URI=/yii/Contable/site/Homecpv
 HTTP_REFERER=http://localhost:8080/yii/Contable/site/ecpv
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 2015/11/08 21:42:06 [warning] [application] Failed to set unsafe attribute "cprovedor" of "Registrocontablegastos".
 in C:\xampp\htdocs\yii\Contable\protected\controllers\RegistrocontablegastosController.php (72)
 in C:\xampp\htdocs\yii\Contable\index.php (13)
@@ -2008,3 +2009,5 @@ REQUEST_URI=/yii/Contable/cuentaPuc/create
 HTTP_REFERER=http://localhost:8080/yii/Contable/cuentaPuc/create
 >>>>>>> origin/master
 ---
+=======
+>>>>>>> parent of 6c67ba5... Versión 1.7.1
