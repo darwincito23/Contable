@@ -4,16 +4,15 @@
 /* @var $form CActiveForm */
 ?>
 
-<div class="form">
-		<br>
-		<br>
-		<br>
+<div class="container-fluid">
+	<div class="row">
+		<div class="form">
+		
 		<?php $form=$this->beginWidget('CActiveForm', array(
 			'id'=>'registrocontablegastos-form',
-			'enableAjaxValidation'=>false,
+			'enableAjaxValidation'=>true,
 		)); ?>	
-
-			<?php echo $form->errorSummary($model); ?>
+		<?php echo $form->errorSummary($model); ?>
 
 		<p class="note">Los campos con <span class="required">*</span> Son requeridos.</p>
 				<table class="table table-bordered table-striped">
@@ -23,7 +22,7 @@
 				        </tr>
 				    </thead>
 				    <tbody>
-				        <tr>
+				        <tr class="tablacolor">
 				            <td>
 					            <?php echo $form->labelEx($model,'fecha'); ?>
 								<?php echo $form->textField($model,'fecha'); ?>
@@ -84,19 +83,28 @@
 				        </tr> 
 				    </tbody>		
 				</table>
-			<div class="container text-center">
-			<div class="col-md-6">
-				<?php echo $form->labelEx($model,'descripcion'); ?>
+				<?php $this->endWidget(); ?>					
+		</div><!-- form -->	
+	</div>
+	<div class="row">
+		<div class="container-fluid text-center">
+			<div class="row">
+				<?php echo $form->labelEx($model,'descripcion');?>
+			</div>					
 					<?php echo $form->textArea($model,'descripcion',array('rows'=>6, 'cols'=>50)); ?>
 					<?php echo $form->error($model,'descripcion'); ?>			
-					<div class="row buttons">
-						<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
-					</div>
-			</div>
-			<div class="col-md-6"></div>
-						
-			</div>	
+					
+		</div>
+	</div>
+	<div class="row buttons text-center">
+	<br>
+		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save',array('class'=>'btn btn-success btn-md')); ?>
+	</div>		
+</div>
+	
+
+
+
+
+
 			
-		<?php $this->endWidget(); ?>
-</div><!-- form -->
-<?php //echo $form->dropDownList($model, 'valorRegistroContable', array('MASCULINO'=>'MASCULINO', 'FEMENINO'=>'FEMENINO', 'OTRO'=>'OTRO')); ?>

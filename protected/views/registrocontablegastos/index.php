@@ -7,8 +7,8 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'Crear Registro Contable de Gastos', 'url'=>array('create')),
-	array('label'=>'Administrar Registro Contable de Gastos', 'url'=>array('admin')),
+	array('label'=>'Crear Registro', 'url'=>array('create')),
+	array('label'=>'Administrar Registro', 'url'=>array('admin')),
 );
 ?>
 

@@ -2,3 +2,23 @@
 	padding-left: 0px;
 	padding-right: 0px;
 }
+
+a{
+	color:black;
+}
+
+.table-striped > tbody > tr:nth-of-type(2n+1){
+	background-color: 	#3CB371;
+}
+
+.panel-default > .panel-heading{
+	background-color: #3CB371;
+}
+
+h2{
+	color:white;
+}
+
+h4{
+	color:white;
+}

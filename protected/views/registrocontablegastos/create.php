@@ -8,7 +8,8 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(	
-	array('label'=>'Administación de Registros Contables de  Gastos', 'url'=>array('admin')),
+	array('label'=>'Administrar Registros', 'url'=>array('admin')),
+	array('label'=>'Ver Registros', 'url'=>array('index')),
 );
 ?>
 

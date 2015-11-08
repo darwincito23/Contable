@@ -8,7 +8,7 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'Mostrar Proveedores', 'url'=>array('index')),
+	array('label'=>'Ver Lista de Proveedores', 'url'=>array('index')),
 	array('label'=>'Crear Provedores', 'url'=>array('create')),
 	array('label'=>'Actualizar Provedores', 'url'=>array('uptdate', 'id'=>$model->idProveedor)),
 	array('label'=>'Eliminar Provedores', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->idProveedor),'confirm'=>'¿Estas seguro que quieres eliminar este registro?')),
@@ -16,17 +16,17 @@ $this->menu=array(
 );
 ?>
 
-<h1>Ver Proveedor #<?php echo $model->idProveedor; ?></h1>
+<h1>Vista de Proveedor Número: <?php echo $model->idProveedor; ?></h1>
 
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,
 	'attributes'=>array(
-		'idProveedor',
+		//'idProveedor',
 		'nombreProveedor',
 		'codigoProveedor',
 		'numeroContacto',
 		'direccion',
 		'NIT_CC',
-		'Usuario_idUsuario',
+		//'Usuario_idUsuario',
 	),
 )); ?>

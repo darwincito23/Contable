@@ -9,9 +9,10 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'Create Registrocontablegastos', 'url'=>array('create')),
-	array('label'=>'View Registrocontablegastos', 'url'=>array('view', 'id'=>$model->idRegistroContableGastos)),
-	array('label'=>'Manage Registrocontablegastos', 'url'=>array('admin')),
+	array('label'=>'Crear Registro', 'url'=>array('create')),
+	array('label'=>'Ver Registro', 'url'=>array('view', 'id'=>$model->idRegistroContableGastos)),
+	array('label'=>'Administrar Registro', 'url'=>array('admin')),
+	array('label'=>'Ver Lista de Registros', 'url'=>array('index')),
 );
 ?>
 

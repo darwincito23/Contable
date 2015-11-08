@@ -1,39 +1,21 @@
 <?php
 /* @var $this RegistrocontablegastosController */
 /* @var $model Registrocontablegastos */
-
-$this->breadcrumbs=array(
+	$this->breadcrumbs=array(
 	'Registrocontablegastos'=>array('index'),
 	'Administrar',
 );
-
-$this->menu=array(	
-	array('label'=>'Crear Registro contable de gastos', 'url'=>array('create')),
-);
-
-Yii::app()->clientScript->registerScript('search', "
-$('.search-button').click(function(){
-	$('.search-form').toggle();
-	return false;
-});
-$('.search-form form').submit(function(){
-	$('#registrocontablegastos-grid').yiiGridView('update', {
-		data: $(this).serialize()
-	});
-	return false;
-});
-");
 ?>
 
+<?php
+	$this->menu=array(	
+	array('label'=>'Crear Registro', 'url'=>array('create')),
+	array('label'=>'Ver Registro', 'url'=>array('index')),
+	);	
+?>
 <h1>Administrar Registro contable de gastos</h1>
 
-
-<?php echo CHtml::link('Advanced Search','#',array('class'=>'search-button')); ?>
-<div class="search-form" style="display:none">
-<?php $this->renderPartial('_search',array(
-	'model'=>$model,
-)); ?>
-</div><!-- search-form -->
+<?php echo CHtml::link('','#',array('class'=>'search-button')); ?>
 
 <?php $this->widget('zii.widgets.grid.CGridView', array(
 	'id'=>'registrocontablegastos-grid',
@@ -83,3 +65,9 @@ $('.search-form form').submit(function(){
 		),
 	),
 )); ?>
+
+<div class="search-form" style="display:none">
+<?php $this->renderPartial('_search',array(
+	'model'=>$model,
+)); ?>
+</div>
