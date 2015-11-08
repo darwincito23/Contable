@@ -4,15 +4,16 @@
 /* @var $form CActiveForm */
 ?>
 
-<div class="container-fluid">
-	<div class="row">
-		<div class="form">
-		
+<div class="form">
+		<br>
+		<br>
+		<br>
 		<?php $form=$this->beginWidget('CActiveForm', array(
 			'id'=>'registrocontablegastos-form',
-			'enableAjaxValidation'=>true,
+			'enableAjaxValidation'=>false,
 		)); ?>	
-		<?php echo $form->errorSummary($model); ?>
+
+			<?php echo $form->errorSummary($model); ?>
 
 		<p class="note">Los campos con <span class="required">*</span> Son requeridos.</p>
 				<table class="table table-bordered table-striped">
@@ -22,58 +23,86 @@
 				        </tr>
 				    </thead>
 				    <tbody>
-				        <tr class="tablacolor">
+				        <tr>
 				            <td>
-					            <?php echo $form->labelEx($model,'fecha'); ?>
-								<?php echo $form->textField($model,'fecha'); ?>
-								<?php echo $form->error($model,'fecha'); ?>	
-								<?php  $this->widget('zii.widgets.jui.CJuiDatePicker',array(
+					            <?php echo $form->labelEx($model,'fecha'); ?>				
+								<?php echo $this->widget('zii.widgets.jui.CJuiDatePicker',array(
 								      'model'=>$model,
 								      'attribute'=>'fecha',
 								      // additional javascript options for the date picker plugin
 								      'options'=>array(
 								          'showAnim'=>'fold',
+								          'dateFormat'=>'yy-mm-dd',
 								      ),
 								      'htmlOptions'=>array(
 								          'style'=>'height:20px;'
 								      ),
 								  ),true);
-								?>						
+								?>		
+								<?php echo $form->error($model,'fecha'); ?>					
 							</td>
+				            
 				            <td>
 				            	<?php echo $form->labelEx($model,'nombre_Proveedor'); ?>
-								<?php echo $form->dropDownList($model,'Proveedor_idProveedor',
-									CHtml::listData(Proveedor::model()->findAll(),'nombreProveedor','nombreProveedor'),
-									array(
-											'ajax'=>array(
-												'type'=>'POST',
-												'url'=>CController::createUrl('Registrocontablegastos/Selectcodigoproveedor'),
-												'update'=>'#'.CHtml::activeId($model,'Codigo_Proveedor'),
-												)
-										)
-								); ?>
+								
+								<?php $this->widget('zii.widgets.jui.CJuiAutoComplete',
+          								array(
+           								  	'model'=>$model,
+      										'attribute'=>'Proveedor_idProveedor',
+           								  	'source'=>$model->obtenerCodigoNombre('proveedor'), //match case when performing a lookup?	
+ 											'options'=>array(
+        								  					'minLength'=>'2',
+         								 					'select'=>'js:function( event, ui ) {
+          								  					var valor=ui.item.value;
+          								  					var sp=valor.split("<->");
+          								  					$("#codigop").val(sp[0]);
+          								  					$("#nombrep").val(sp[1]);                
+          								  					return true;  
+       								 						}',
+ 	   													),
+            								 'htmlOptions'=>array('size'=>'40'), 
+            								 ));?>
+
+    											
 								<?php echo $form->error($model,'nombreProveedor'); ?>
+								
+								<?php echo $form->hiddenField($model,'cproveedor',
+								array('id'=>'codigop'
+								)); ?>
+								<?php echo $form->hiddenField($model,'nproveedor',
+								array('id'=>'nombrep'
+								)); ?>
+								
 				            </td>
-				             <td>
-				            	<?php echo $form->labelEx($model,'Codigo_Proveedor'); ?>
-								<?php echo $form->dropDownList($model,'cprovedor',
-									CHtml::listData(Proveedor::model()->findAll(),'codigoProveedor','codigoProveedor')
-								); ?>
-								<?php echo $form->error($model,'cprovedor'); ?>
-				            </td>
+				            
 				            <td>
 				            	<?php echo $form->labelEx($model,'Nombre Cuenta'); ?>
-								<?php echo $form->dropDownList($model,'CuentaPuc_idCuentaPuc',
-									CHtml::listData(Cuentapuc::model()->findAll(),'nombreCuentaPuc','nombreCuentaPuc')
-								); ?>
+								<?php $this->widget('zii.widgets.jui.CJuiAutoComplete',
+          								array(
+           								  	'model'=>$model,
+      										'attribute'=>'CuentaPuc_idCuentaPuc',
+           								  	'source'=>$model->obtenerCodigoNombre('cuentapuc'), //match case when performing a lookup?	
+ 											'options'=>array(
+        								  					'minLength'=>'1',
+         								 					'select'=>'js:function( event, ui ) {
+          								  					var valor=ui.item.value;
+          								  					var sp=valor.split("<->");
+          								  					$("#codigoc").val(sp[0]);
+          								  					$("#nombrec").val(sp[1]);                
+          								  					return true;  
+       								 						}',
+ 	   													),
+            								 'htmlOptions'=>array('size'=>'40'), 
+            								 ));?>
+								
 								<?php echo $form->error($model,'CuentaPuc_idCuentaPuc'); ?>
-				            </td>
-				              <td>
-					            <?php echo $form->labelEx($model,'codigoCuentaPuc'); ?>
-								<?php echo $form->dropDownList($model,'ccuenta',
-									CHtml::listData(Cuentapuc::model()->findAll(),'codigoCuentaPuc','codigoCuentaPuc')
-								); ?>
-								<?php echo $form->error($model,'ccuenta'); ?>
+				            
+								<?php echo $form->hiddenField($model,'ncuenta',
+								array('id'=>'nombrec'
+								)); ?>
+								<?php echo $form->hiddenField($model,'ccuenta',
+								array('id'=>'codigoc'
+								)); ?>
 				            </td>
 				            <td>
 				            	<?php echo $form->labelEx($model,'valorRegistroContable'); ?>
@@ -83,28 +112,19 @@
 				        </tr> 
 				    </tbody>		
 				</table>
-				<?php $this->endWidget(); ?>					
-		</div><!-- form -->	
-	</div>
-	<div class="row">
-		<div class="container-fluid text-center">
-			<div class="row">
-				<?php echo $form->labelEx($model,'descripcion');?>
-			</div>					
+			<div class="container text-center">
+			<div class="col-md-6">
+				<?php echo $form->labelEx($model,'descripcion'); ?>
 					<?php echo $form->textArea($model,'descripcion',array('rows'=>6, 'cols'=>50)); ?>
 					<?php echo $form->error($model,'descripcion'); ?>			
-					
-		</div>
-	</div>
-	<div class="row buttons text-center">
-	<br>
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save',array('class'=>'btn btn-success btn-md')); ?>
-	</div>		
-</div>
-	
-
-
-
-
-
+					<div class="row buttons">
+						<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
+					</div>
+			</div>
+			<div class="col-md-6"></div>
+						
+			</div>	
 			
+		<?php $this->endWidget(); ?>
+</div><!-- form -->
+<?php //echo $form->dropDownList($model, 'valorRegistroContable', array('MASCULINO'=>'MASCULINO', 'FEMENINO'=>'FEMENINO', 'OTRO'=>'OTRO')); ?>

@@ -66,10 +66,18 @@ class RegistrocontablegastosController extends Controller
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
-
+		//if($_POST['Registrocontablegastos']===null){
+			
+		//}
+		
 		if(isset($_POST['Registrocontablegastos']))
 		{
+
+
+			$_POST['Registrocontablegastos']['Proveedor_idProveedor']=$model->findId('proveedor',$_POST['Registrocontablegastos']['cproveedor']);
+			$_POST['Registrocontablegastos']['CuentaPuc_idCuentaPuc']=$model->findId('cuentapuc',$_POST['Registrocontablegastos']['ccuenta']);
 			$model->attributes=$_POST['Registrocontablegastos'];
+			
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->idRegistroContableGastos));
 		}
@@ -90,9 +98,12 @@ class RegistrocontablegastosController extends Controller
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
-
+		//$_POST['Registrocontablegastos']['Proveedor_idProveedor']=$model->obtenerUnCodigoNombre('proveedor',$model->Proveedor_idProveedor);
+		//$_POST['Registrocontablegastos']['CuentaPuc_idCuentaPuc']=$model->obtenerUnCodigoNombre('cuentapuc',$model->CuentaPuc_idCuentaPuc);
 		if(isset($_POST['Registrocontablegastos']))
 		{
+			$_POST['Registrocontablegastos']['Proveedor_idProveedor']=$model->findId('proveedor',$_POST['Registrocontablegastos']['cproveedor']);
+			$_POST['Registrocontablegastos']['CuentaPuc_idCuentaPuc']=$model->findId('cuentapuc',$_POST['Registrocontablegastos']['ccuenta']);
 			$model->attributes=$_POST['Registrocontablegastos'];
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->idRegistroContableGastos));
@@ -153,6 +164,12 @@ class RegistrocontablegastosController extends Controller
 	public function loadModel($id)
 	{
 		$model=Registrocontablegastos::model()->findByPk($id);
+		$model->cproveedor=$model->obtenerCodigo('proveedor',$model->Proveedor_idProveedor);
+		$model->ccuenta=$model->obtenerCodigo('cuentapuc',$model->CuentaPuc_idCuentaPuc);
+		$model->Proveedor_idProveedor=$model->obtenerUnCodigoNombre('proveedor',$model->Proveedor_idProveedor);
+		$model->CuentaPuc_idCuentaPuc=$model->obtenerUnCodigoNombre('cuentapuc',$model->CuentaPuc_idCuentaPuc);
+		
+		
 		if($model===null)
 			throw new CHttpException(404,'The requested page does not exist.');
 		return $model;
