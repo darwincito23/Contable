@@ -87,6 +87,15 @@ class SiteController extends Controller
 		$this->render('goa');
 	}
 
+	public function actionEcpv()
+	{
+		$this->render('ecpv');
+	}
+
+	public function actionHomecpv()
+	{
+		$this->render('homecpv');
+	}
 
 	/**
 	 * Displays the login page

@@ -4,12 +4,12 @@
 
 $this->breadcrumbs=array(
 	'Cuentapucs'=>array('index'),
-	'Create',
+	'Crear',
 );
 
 $this->menu=array(
-	array('label'=>'List Cuentapuc', 'url'=>array('index')),
-	array('label'=>'Manage Cuentapuc', 'url'=>array('admin')),
+	array('label'=>'Lista de Cuentas Puc', 'url'=>array('index')),
+	array('label'=>'Administrar Cuenta Puc', 'url'=>array('admin')),
 );
 ?>
 
@@ -22,7 +22,7 @@ $this->menu=array(
 		
 			<div class="panel panel-default">
 				  <div class="panel-heading">
-					<h4 class="text-center">Proveedores</h4>				  
+					<h4 class="text-center">Cuenta Puc</h4>				  
 				  </div>
 				  <div class="panel-body">
 					   	<div class="row">

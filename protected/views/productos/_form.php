@@ -21,11 +21,11 @@
 		<?php echo $form->error($model,'nombreProducto'); ?>
 	</div>
 
-	<div class="row">
+	<!--<div class="row">
 		<?php echo $form->labelEx($model,'Usuario_idUsuario'); ?>
 		<?php echo $form->textField($model,'Usuario_idUsuario'); ?>
 		<?php echo $form->error($model,'Usuario_idUsuario'); ?>
-	</div>
+	</div>-->
 
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>

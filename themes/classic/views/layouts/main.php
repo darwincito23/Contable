@@ -33,7 +33,7 @@
 								array('label'=>'Inicio', 'url'=>array('/site/home')),
 								array('label'=>'GOA', 'url'=>array('/site/goa')),
 								array('label'=>'GOV', 'url'=>array('/site/gov')),
-								array('label'=>'ECPV', 'url'=>array('/site/home')),					
+								array('label'=>'ECPV', 'url'=>array('/site/ecpv')),					
 								array('label'=>'Administrar Terceros', 'url'=>array('/proveedor/admin')),
 								array('label'=>'Administrar Cuentas PUC', 'url'=>array('/cuentaPuc/admin')),											
 								array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),

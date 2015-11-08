@@ -16,6 +16,11 @@
 	<p class="note">Fields with <span class="required">*</span> are required.</p>
 
 	<?php echo $form->errorSummary($model); ?>
+	<div class="row">
+		<?php echo $form->labelEx($model,'CuentaPadre'); ?>
+		<?php echo $form->textField($model,'CuentaPadre',array('size'=>45,'maxlength'=>30)); ?>
+		<?php echo $form->error($model,'CuentaPadre'); ?>
+	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'nombreCuentaPuc'); ?>
@@ -28,24 +33,20 @@
 		<?php echo $form->textField($model,'codigoCuentaPuc',array('size'=>45,'maxlength'=>255)); ?>
 		<?php echo $form->error($model,'codigoCuentaPuc'); ?>
 	</div>
-
+	
 	<div class="row">
 		<?php echo $form->labelEx($model,'TipoGasto_idTipoGasto'); ?>
 		<?php echo $form->textField($model,'TipoGasto_idTipoGasto',array('size'=>45,'maxlength'=>10)); ?>
 		<?php echo $form->error($model,'TipoGasto_idTipoGasto'); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'CuentaPadre'); ?>
-		<?php echo $form->textField($model,'CuentaPadre',array('size'=>45,'maxlength'=>30)); ?>
-		<?php echo $form->error($model,'CuentaPadre'); ?>
-	</div>
-
+	
+	<!--
 	<div class="row">
 		<?php echo $form->labelEx($model,'Usuario_idUsuario'); ?>
 		<?php echo $form->textField($model,'Usuario_idUsuario',array('size'=>45,'maxlength'=>30)); ?>
 		<?php echo $form->error($model,'Usuario_idUsuario'); ?>
-	</div>
+	</div>-->
 
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save',array('class'=>'btn btn-success btn-md ')); ?>

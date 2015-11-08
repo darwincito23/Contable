@@ -40,7 +40,7 @@ class Frenteaprovechamiento extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('nombreFrenteAprovechamiento, Usuario_idUsuario', 'required'),
+			array('nombreFrenteAprovechamiento', 'required'),
 			array('Usuario_idUsuario', 'numerical', 'integerOnly'=>true),
 			array('nombreFrenteAprovechamiento', 'length', 'max'=>255),
 			// The following rule is used by search().
