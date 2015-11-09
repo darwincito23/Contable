@@ -4,15 +4,16 @@
 
 $this->breadcrumbs=array(
 	'Frenteaprovechamientos'=>array('index'),
-	'Create',
+	'Crear',
 );
 
 $this->menu=array(
-	array('label'=>'List Frenteaprovechamiento', 'url'=>array('index')),
-	array('label'=>'Manage Frenteaprovechamiento', 'url'=>array('admin')),
+	array('label'=>'Lista de Frentes', 'url'=>array('index')),
+	array('label'=>'Administrar Frente', 'url'=>array('admin')),
 );
 ?>
+<div class="container-fluid text-center">
+	<h1>Crear Frenteaprovechamiento</h1>
+	<?php echo $this->renderPartial('_form', array('model'=>$model)); ?>
+</div>
 
-<h1>Create Frenteaprovechamiento</h1>
-
-<?php echo $this->renderPartial('_form', array('model'=>$model)); ?>

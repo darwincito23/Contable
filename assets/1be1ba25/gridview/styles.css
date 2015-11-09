@@ -23,12 +23,7 @@
 	padding: 0.3em;
 }
 
-.grid-view table.items th
-{
-	color: white;
-	background: url("bg.gif") repeat-x scroll left top white;
-	text-align: center;
-}
+
 
 .grid-view table.items th a
 {
@@ -59,10 +54,7 @@
 	background: #F8F8F8;
 }
 
-.grid-view table.items tr.odd
-{
-	background: #E5F1F4;
-}
+
 
 .grid-view table.items tr.selected
 {

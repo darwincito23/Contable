@@ -5,17 +5,18 @@
 $this->breadcrumbs=array(
 	'Frenteaprovechamientos'=>array('index'),
 	$model->idFrenteAprovechamiento=>array('view','id'=>$model->idFrenteAprovechamiento),
-	'Update',
+	'Actualizar',
 );
 
 $this->menu=array(
-	array('label'=>'List Frenteaprovechamiento', 'url'=>array('index')),
-	array('label'=>'Create Frenteaprovechamiento', 'url'=>array('create')),
-	array('label'=>'View Frenteaprovechamiento', 'url'=>array('view', 'id'=>$model->idFrenteAprovechamiento)),
-	array('label'=>'Manage Frenteaprovechamiento', 'url'=>array('admin')),
+	array('label'=>'Lista de Frentes', 'url'=>array('index')),
+	array('label'=>'Crear Frente', 'url'=>array('create')),
+	array('label'=>'Ver Frente', 'url'=>array('view', 'id'=>$model->idFrenteAprovechamiento)),
+	array('label'=>'Administrar Frente', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Update Frenteaprovechamiento <?php echo $model->idFrenteAprovechamiento; ?></h1>
-
-<?php echo $this->renderPartial('_form', array('model'=>$model)); ?>
+<div class="container text-center">
+	<h1>Actualizar Frente de Aprovechamiento <?php echo $model->idFrenteAprovechamiento; ?></h1>
+	<?php echo $this->renderPartial('_form', array('model'=>$model)); ?>
+</div>

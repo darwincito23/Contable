@@ -3,12 +3,12 @@
 /* @var $dataProvider CActiveDataProvider */
 
 $this->breadcrumbs=array(
-	'Frenteaprovechamientos',
+	'Frente de aprovechamiento',
 );
 
 $this->menu=array(
-	array('label'=>'Create Frenteaprovechamiento', 'url'=>array('create')),
-	array('label'=>'Manage Frenteaprovechamiento', 'url'=>array('admin')),
+	array('label'=>'Crear Frente', 'url'=>array('create')),
+	array('label'=>'Administrar Frente', 'url'=>array('admin')),
 );
 ?>
 

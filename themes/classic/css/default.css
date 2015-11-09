@@ -11,6 +11,17 @@ a{
 	background-color: 	#3CB371;
 }
 
+.grid-view table.items th{
+	color: white;
+	background:#3CB371;
+	text-align: center;
+}
+
+.grid-view table.items tr.odd
+{
+	background:#90EE90;
+}
+
 .panel-default > .panel-heading{
 	background-color: #3CB371;
 }
