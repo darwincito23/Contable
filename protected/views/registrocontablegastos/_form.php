@@ -41,7 +41,7 @@
 							</td>
 				            
 				            <td>
-				            	<?php echo $form->labelEx($model,'nombre_Proveedor'); ?>
+				            	<?php echo $form->labelEx($model,'nombre_Tercero'); ?>
 								
 								<?php $this->widget('zii.widgets.jui.CJuiAutoComplete',
           								array(

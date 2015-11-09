@@ -4,15 +4,17 @@
 
 $this->breadcrumbs=array(
 	'Productoses'=>array('index'),
-	'Create',
+	'Crear',
 );
 
 $this->menu=array(
-	array('label'=>'List Productos', 'url'=>array('index')),
-	array('label'=>'Manage Productos', 'url'=>array('admin')),
+	array('label'=>'Lista de Productos', 'url'=>array('index')),
+	array('label'=>'Administrar Productos', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Create Productos</h1>
-
-<?php echo $this->renderPartial('_form', array('model'=>$model)); ?>
+<div class="container text-center">
+	<h1>Crear Productos</h1>
+	<?php echo $this->renderPartial('_form', array('model'=>$model)); ?>
+</div>
+<
