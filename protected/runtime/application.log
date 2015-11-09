@@ -1688,3 +1688,75 @@ Stack trace:
 REQUEST_URI=/yii/Contable/cuentaPuc/create
 HTTP_REFERER=http://localhost:8080/yii/Contable/cuentaPuc/create
 ---
+2015/11/09 01:14:58 [error] [php] Undefined variable: model (C:\xampp\htdocs\yii\Contable\protected\views\consolidadogoa\index.php:15)
+Stack trace:
+#0 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(869): ConsolidadogoaController->renderFile()
+#1 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(782): ConsolidadogoaController->renderPartial()
+#2 C:\xampp\htdocs\yii\Contable\protected\controllers\ConsolidadogoaController.php(7): ConsolidadogoaController->render()
+#3 C:\xampp\htdocs\yii\Contable\framework\web\actions\CInlineAction.php(49): ConsolidadogoaController->actionIndex()
+#4 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(286): ConsolidadogoaController->runAction()
+#6 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(265): ConsolidadogoaController->runActionWithFilters()
+#7 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(282): ConsolidadogoaController->run()
+#8 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\yii\Contable\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\yii\Contable\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/Contable/consolidadogoa/index
+in C:\xampp\htdocs\yii\Contable\protected\views\consolidadogoa\index.php (15)
+in C:\xampp\htdocs\yii\Contable\protected\controllers\ConsolidadogoaController.php (7)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/09 01:17:39 [error] [php] Undefined variable: model (C:\xampp\htdocs\yii\Contable\protected\controllers\ConsolidadogoaController.php:8)
+Stack trace:
+#0 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(286): ConsolidadogoaController->runAction()
+#1 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(265): ConsolidadogoaController->runActionWithFilters()
+#2 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(282): ConsolidadogoaController->run()
+#3 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\yii\Contable\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\yii\Contable\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/Contable/consolidadogoa/index
+in C:\xampp\htdocs\yii\Contable\protected\controllers\ConsolidadogoaController.php (8)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/09 01:17:48 [error] [php] Undefined variable: model (C:\xampp\htdocs\yii\Contable\protected\controllers\ConsolidadogoaController.php:8)
+Stack trace:
+#0 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(286): ConsolidadogoaController->runAction()
+#1 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(265): ConsolidadogoaController->runActionWithFilters()
+#2 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(282): ConsolidadogoaController->run()
+#3 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\yii\Contable\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\yii\Contable\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/Contable/consolidadogoa/index
+in C:\xampp\htdocs\yii\Contable\protected\controllers\ConsolidadogoaController.php (8)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/09 01:19:32 [error] [php] Undefined variable: model (C:\xampp\htdocs\yii\Contable\protected\controllers\ConsolidadogoaController.php:8)
+Stack trace:
+#0 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(286): ConsolidadogoaController->runAction()
+#1 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(265): ConsolidadogoaController->runActionWithFilters()
+#2 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(282): ConsolidadogoaController->run()
+#3 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\yii\Contable\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\yii\Contable\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/Contable/consolidadogoa/index
+in C:\xampp\htdocs\yii\Contable\protected\controllers\ConsolidadogoaController.php (8)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/09 01:20:37 [error] [php] Undefined variable: model (C:\xampp\htdocs\yii\Contable\protected\controllers\ConsolidadogoaController.php:8)
+Stack trace:
+#0 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(286): ConsolidadogoaController->runAction()
+#1 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(265): ConsolidadogoaController->runActionWithFilters()
+#2 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(282): ConsolidadogoaController->run()
+#3 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\yii\Contable\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\yii\Contable\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/Contable/consolidadogoa/index
+in C:\xampp\htdocs\yii\Contable\protected\controllers\ConsolidadogoaController.php (8)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/09 01:22:39 [error] [php] Undefined variable: model (C:\xampp\htdocs\yii\Contable\protected\controllers\ConsolidadogoaController.php:8)
+Stack trace:
+#0 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(286): ConsolidadogoaController->runAction()
+#1 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(265): ConsolidadogoaController->runActionWithFilters()
+#2 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(282): ConsolidadogoaController->run()
+#3 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\yii\Contable\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\yii\Contable\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/Contable/consolidadogoa/index
+in C:\xampp\htdocs\yii\Contable\protected\controllers\ConsolidadogoaController.php (8)
+in C:\xampp\htdocs\yii\Contable\index.php (13)

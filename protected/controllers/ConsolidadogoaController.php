@@ -4,7 +4,11 @@ class ConsolidadogoaController extends Controller
 {
 	public function actionIndex()
 	{
-		$this->render('index');
+		
+		$model=new ConsolidadoGoaGov;
+		$this->render('index',array(
+			'model'=>$model,
+		));
 	}
 
 	// Uncomment the following methods and override them if needed
