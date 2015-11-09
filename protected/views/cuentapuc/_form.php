@@ -52,7 +52,7 @@
 	</div>
 	
 	<div class="row">
-		<?php echo $form->labelEx($model,'TipoGasto_idTipoGasto'); ?>
+		<?php echo $form->labelEx($model,'TipoGasto'); ?>
 		<?php echo $form->dropDownList($model,'TipoGasto_idTipoGasto',$model->getTipoGasto(),array()); ?>
 		<?php echo $form->error($model,'TipoGasto_idTipoGasto'); ?>
 	</div>

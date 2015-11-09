@@ -147,9 +147,9 @@ class Registrocontablegastos extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('fecha, valorRegistroContable, Proveedor_idProveedor, CuentaPuc_idCuentaPuc', 'required'),
-			array('Usuario_idUsuario', 'numerical', 'integerOnly'=>true),
-			array('valorRegistroContable', 'numerical'),
+			array('fecha, valorRegistroContable, Proveedor_idProveedor, CuentaPuc_idCuentaPuc', 'required','message'=>'Este Campo es Requerido'),
+			array('Usuario_idUsuario', 'numerical', 'integerOnly'=>true,'message'=>'Debe Introducir un valor Entero'),
+			array('valorRegistroContable', 'numerical','message'=>'Debe ingresar un valor numérico'),
 			array('Proveedor_idProveedor, CuentaPuc_idCuentaPuc', 'length', 'max'=>50),
 			array('descripcion', 'safe'),
 			// The following rule is used by search().

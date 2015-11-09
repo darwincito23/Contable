@@ -5,11 +5,11 @@
 $this->breadcrumbs=array(
 	'Proveedors'=>array('index'),
 	$model->idProveedor=>array('view','id'=>$model->idProveedor),
-	'Update',
+	'Actualizar',
 );
 
 $this->menu=array(
-	array('label'=>'Proveedor', 'url'=>array('index')),
+	array('label'=>'Ver List de Proveedores', 'url'=>array('index')),
 	array('label'=>'Crear Proveedor', 'url'=>array('create')),
 	array('label'=>'Ver Proveedores', 'url'=>array('view', 'id'=>$model->idProveedor)),
 	array('label'=>'Aministrar Proveedores', 'url'=>array('admin')),

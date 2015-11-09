@@ -8,24 +8,24 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-
+	array('label'=>'Ver Registros', 'url'=>array('index')),
 	array('label'=>'Crear Registro', 'url'=>array('create')),
 	array('label'=>'Actualizar Registro', 'url'=>array('update', 'id'=>$model->idRegistroContableGastos)),
-	array('label'=>'Borrar Registro', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->idRegistroContableGastos),'confirm'=>'Are you sure you want to delete this item?')),
+	array('label'=>'Borrar Registro', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->idRegistroContableGastos),'confirm'=>'Esta Usted Seguro que desea borrar este Item?')),
 	array('label'=>'Administrar Registro', 'url'=>array('admin')),
 );
 ?>
 
-<h1>View Registro Número: <?php echo $model->idRegistroContableGastos; ?></h1>
+<h1>Ver Registro Número: <?php echo $model->idRegistroContableGastos; ?></h1>
 
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,
 	'attributes'=>array(
-		'idRegistroContableGastos',
+		//'idRegistroContableGastos',
 		'fecha',
 		'valorRegistroContable',
 		'descripcion',
-		'Usuario_idUsuario',
+		//'Usuario_idUsuario',
 		'Proveedor_idProveedor',
 		'CuentaPuc_idCuentaPuc',
 	),

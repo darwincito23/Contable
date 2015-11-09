@@ -7,8 +7,17 @@ $this->breadcrumbs=array(
 	'Administrar',
 );
 
-$this->menu=array(	
-	array('label'=>'Crear Registro contable de gastos', 'url'=>array('create')),
+Yii::app()->clientScript->registerScript('re-install-date-picker', "
+function reinstallDatePicker(id, data) {
+        //use the same parameters that you had set in your widget else the datepicker will be refreshed by default
+    $('#fecha_dp').datepicker(jQuery.extend({'dateFormat':'yy-mm-dd'}));
+}
+");
+?>
+
+<?php $this->menu=array(	
+	array('label'=>'Crear Registro', 'url'=>array('create')),
+	array('label'=>'Ver Registros','url'=>array('index')),
 );
 
 ?>
@@ -35,14 +44,14 @@ $this->menu=array(
 			'name'=>'ccuenta',
 			'value'=>'$data->cuentaPucIdCuentaPuc->codigoCuentaPuc',
 			'filter'=>$model->getListCuentaPuc('codigo'),
-			'header'=>'Codigo cuenta',
+			'header'=>'Codigo Cuenta',
 			),
 		
 		array(
 			'name'=>'CuentaPuc_idCuentaPuc',
 			'value'=>'$data->cuentaPucIdCuentaPuc->nombreCuentaPuc',
 			'filter'=>$model->getListCuentaPuc('nombre'),
-			'header'=>'Nombre cuenta',
+			'header'=>'Nombre Cuenta',
 			),
 		
 		array(
@@ -66,23 +75,18 @@ $this->menu=array(
 								      'htmlOptions' => array(
                     					'id' => 'fecha_dp',
                     					'size' => '10',
-                    					'style'=>'height:20px;',
-         
+                    					'style'=>'height:20px;',         
                						 	),
-
 								      // additional javascript options for the date picker plugin
 								      'options'=>array( 
 								      	'showOn' => 'focus',
-                    					'showAnim'=>'fold',
+                    					 'showAnim'=>'fold',
 								          'dateFormat'=>'yy-mm-dd',
 								      ),
 								  ),true),
 			),
 		'valorRegistroContable',
-		'descripcion',
-		
-		
-		
+		'descripcion',	
 		/*
 		'CuentaPuc_idCuentaPuc',
 		*/

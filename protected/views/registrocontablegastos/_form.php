@@ -41,7 +41,7 @@
 							</td>
 				            
 				            <td>
-				            	<?php echo $form->labelEx($model,'nombre_Tercero'); ?>
+				            	<?php echo $form->labelEx($model,'nombre/codigo_Tercero'); ?>
 								
 								<?php $this->widget('zii.widgets.jui.CJuiAutoComplete',
           								array(
@@ -123,8 +123,9 @@
 						
 			</div>	
 			
-		<?php $this->endWidget(); ?>
+		
 </div><!-- form -->
+<?php $this->endWidget(); ?>
 <?php //echo $form->dropDownList($model, 'valorRegistroContable', array('MASCULINO'=>'MASCULINO', 'FEMENINO'=>'FEMENINO', 'OTRO'=>'OTRO')); ?>
 	</div>
 	<div class="col-md-1"></div>
