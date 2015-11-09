@@ -1760,3 +1760,18 @@ Stack trace:
 REQUEST_URI=/yii/Contable/consolidadogoa/index
 in C:\xampp\htdocs\yii\Contable\protected\controllers\ConsolidadogoaController.php (8)
 in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/09 06:15:36 [warning] [application] Failed to set unsafe attribute "prefijo" of "Cuentapuc".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\CuentapucController.php (81)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/09 06:16:07 [warning] [application] Failed to set unsafe attribute "prefijo" of "Cuentapuc".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\CuentapucController.php (81)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/09 06:16:25 [warning] [application] Failed to set unsafe attribute "prefijo" of "Cuentapuc".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\CuentapucController.php (81)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/09 06:17:02 [warning] [application] Failed to set unsafe attribute "prefijo" of "Cuentapuc".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\CuentapucController.php (114)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/09 06:23:58 [warning] [application] Failed to set unsafe attribute "prefijo" of "Cuentapuc".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\CuentapucController.php (114)
+in C:\xampp\htdocs\yii\Contable\index.php (13)

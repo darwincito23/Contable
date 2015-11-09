@@ -5,7 +5,7 @@
 $this->breadcrumbs=array(
 	'Registrocontablegastoses'=>array('index'),
 	$model->idRegistroContableGastos=>array('view','id'=>$model->idRegistroContableGastos),
-	'Update',
+	'Actualizar',
 );
 
 $this->menu=array(
@@ -16,6 +16,6 @@ $this->menu=array(
 );
 ?>
 
-<h1>Update Registrocontablegastos <?php echo $model->idRegistroContableGastos; ?></h1>
+<h1>Actualizar Registro contable de gastos <?php echo $model->idRegistroContableGastos; ?></h1>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>
