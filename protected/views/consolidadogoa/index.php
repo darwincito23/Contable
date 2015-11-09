@@ -3,7 +3,8 @@
 /* @var $model ConsolidadoGoaGov */
 /* @var $form CActiveForm */
 ?>
-
+<h1 class="text-center">Consolidado GOA/GOV</h1>
+<br>
 <div class="container-fluid">
 	<div class="col-md-4"></div>
 	<div class="col-md-4">

@@ -12,7 +12,6 @@ $this->menu=array(
 	array('label'=>'Ver Registros', 'url'=>array('index')),
 );
 ?>
-
-<h1>Crear Registro Contable de Gastos</h1>
-
+<h1 class="text-center">Crear Registro Contable de Gastos</h1>
+<br>
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>

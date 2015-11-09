@@ -3,19 +3,17 @@
 /* @var $model Registrocontablegastos */
 /* @var $form CActiveForm */
 ?>
-
-<div class="form">
-		<br>
-		<br>
-		<br>
+<div class="container-fluid">
+	<div class="col-md-1"></div>
+	<div class="col-md-10">
+		<div class="form">		
 		<?php $form=$this->beginWidget('CActiveForm', array(
 			'id'=>'registrocontablegastos-form',
 			'enableAjaxValidation'=>false,
 		)); ?>	
 
 			<?php echo $form->errorSummary($model); ?>
-
-		<p class="note">Los campos con <span class="required">*</span> Son requeridos.</p>
+	
 				<table class="table table-bordered table-striped">
 				    <thead>
 				        <tr>
@@ -112,19 +110,22 @@
 				        </tr> 
 				    </tbody>		
 				</table>
-			<div class="container text-center">
-			<div class="col-md-6">
+			<div class="container-fluid text-center">
+			
 				<?php echo $form->labelEx($model,'descripcion'); ?>
 					<?php echo $form->textArea($model,'descripcion',array('rows'=>6, 'cols'=>50)); ?>
 					<?php echo $form->error($model,'descripcion'); ?>			
 					<div class="row buttons">
-						<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
+						<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save',array('class'=>'btn btn-success')); ?>
 					</div>
 			</div>
-			<div class="col-md-6"></div>
+			
 						
 			</div>	
 			
 		<?php $this->endWidget(); ?>
 </div><!-- form -->
 <?php //echo $form->dropDownList($model, 'valorRegistroContable', array('MASCULINO'=>'MASCULINO', 'FEMENINO'=>'FEMENINO', 'OTRO'=>'OTRO')); ?>
+	</div>
+	<div class="col-md-1"></div>
+</div>

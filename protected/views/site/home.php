@@ -8,6 +8,7 @@ $this->pageTitle=Yii::app()->name;
 		<div class="col-md-3"></div>
 		<div class="col-md-6 text-center">
 			<h1>Bienvenido al MOCOD</h1>
+			<br>
 		</div>
 		<div class="col-md-3"></div>
 	</div>	
