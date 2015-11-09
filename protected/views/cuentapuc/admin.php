@@ -27,10 +27,28 @@ $this->menu=array(
 	'dataProvider'=>$model->search(),
 	'filter'=>$model,
 	'columns'=>array(		
-		'nombreCuentaPuc',
-		'codigoCuentaPuc',
-		'TipoGasto_idTipoGasto',
-		'CuentaPadre',
+		array(
+			'name'=>'nombreCuentaPuc',
+			'value'=>'$data->nombreCuentaPuc',
+			'filter'=>$model->getListCuentaPuc('nombre'),
+			),
+		array(
+			'name'=>'codigoCuentaPuc',
+			'value'=>'$data->codigoCuentaPuc',
+			'filter'=>$model->getListCuentaPuc('codigo'),
+			),
+		array(
+			'name'=>'TipoGasto_idTipoGasto',
+			'value'=>'$data->tipoGastoIdTipoGasto->nombreTipoGasto',
+			'filter'=>$model->getTipoGasto(),
+			),
+		//array(
+		//	'name'=>'CuentaPadre',
+		//	'value'=>'$data->cuentaPadre!=null?$data->cuentaPadre->nombreCuentaPuc:null',
+		//	'filter'=>'CuentaPadre',
+		//	),	
+			//'TipoGasto_idTipoGasto',
+			//'CuentaPadre',	
 		array(
 			'class'=>'CButtonColumn',
 		),

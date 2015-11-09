@@ -18,11 +18,30 @@
 	<?php echo $form->errorSummary($model); ?>
 	<div class="row">
 		<?php echo $form->labelEx($model,'CuentaPadre'); ?>
-		<?php echo $form->textField($model,'CuentaPadre',array('size'=>45,'maxlength'=>30)); ?>
+		<?php $this->widget('zii.widgets.jui.CJuiAutoComplete',
+          								array(
+           								  	'model'=>$model,
+      										'attribute'=>'CuentaPadre',
+           								  	'source'=>$model->obtenerCodigoNombre(), //match case when performing a lookup?	
+ 											'options'=>array(
+        								  					'minLength'=>'1',
+         								 					'select'=>'js:function( event, ui ) {
+          								  					var valor=ui.item.value;
+          								  					var sp=valor.split("<->");
+          								  					$("#codigoc").val(sp[0]);                
+          								  					return true;  
+       								 						}',
+ 	   													),
+            								 'htmlOptions'=>array('size'=>'40'), 
+            								 ));?>
 		<?php echo $form->error($model,'CuentaPadre'); ?>
 	</div>
-
+	
+	
 	<div class="row">
+		<?php echo $form->labelEx($model,'prefijo'); ?>
+		<?php echo $form->textField($model,'prefijo',array('size'=>15,'readonly'=>true,'maxlength'=>20,'id'=>'codigoc')); ?>
+		
 		<?php echo $form->labelEx($model,'nombreCuentaPuc'); ?>
 		<?php echo $form->textField($model,'nombreCuentaPuc',array('size'=>45,'maxlength'=>255)); ?>
 		<?php echo $form->error($model,'nombreCuentaPuc'); ?>
@@ -36,7 +55,7 @@
 	
 	<div class="row">
 		<?php echo $form->labelEx($model,'TipoGasto_idTipoGasto'); ?>
-		<?php echo $form->textField($model,'TipoGasto_idTipoGasto',array('size'=>45,'maxlength'=>10)); ?>
+		<?php echo $form->dropDownList($model,'TipoGasto_idTipoGasto',$model->getTipoGasto(),array()); ?>
 		<?php echo $form->error($model,'TipoGasto_idTipoGasto'); ?>
 	</div>
 

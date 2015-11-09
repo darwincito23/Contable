@@ -20,6 +20,8 @@
  */
 class Cuentapuc extends CActiveRecord
 {
+	
+	
 	/**
 	 * Returns the static model of the specified AR class.
 	 * @param string $className active record class name.
@@ -28,6 +30,76 @@ class Cuentapuc extends CActiveRecord
 	public static function model($className=__CLASS__)
 	{
 		return parent::model($className);
+	}
+	public $prefijo;
+	public $hascuentapadre;
+
+	public  function getListCuentaPuc($type){
+	switch ($type) {
+		case 'nombre':
+			# code...
+		return cHtml::listData(Cuentapuc::model()->findall(),'idCuentaPuc','nombreCuentaPuc');
+		
+		case 'codigo':
+			# code...
+		return cHtml::listData(Cuentapuc::model()->findall(),'idCuentaPuc','codigoCuentaPuc');
+	}
+}
+	public function obtenerUnCodigoNombre($id)
+	{
+		$criteria = new CDbCriteria();
+		
+				$criteria->select='codigoCuentaPuc,nombreCuentaPuc'	;
+				$criteria->condition = 'idCuentaPuc=:id';
+				$criteria->params = array(':id'=>$id);
+				$array=Cuentapuc::model()->find($criteria);
+				$arr=array();
+				return $array->codigoCuentaPuc.'<->'.$array->nombreCuentaPuc;
+			
+	}
+	public function obtenerCodigo($id)
+	{
+		$criteria = new CDbCriteria();			
+				$criteria->select='codigoCuentaPuc'	;
+				$criteria->condition = 'idCuentaPuc=:id';
+				$criteria->params = array(':id'=>$id);
+				$array=Cuentapuc::model()->find($criteria);
+				return $array->codigoCuentaPuc;
+			
+	}
+	public function obtenerCodigoNombre()
+	{
+		$criteria = new CDbCriteria();
+		
+				$criteria->select='codigoCuentaPuc,nombreCuentaPuc'	;
+				//$criteria->condition = 'id=:id';
+				//$criteria->params = array(':id'=>$id);
+				$array=Cuentapuc::model()->findall($criteria);
+				$arr=array();
+				foreach ($array as $key => $value) {
+				$arr[]= $array[$key]->codigoCuentaPuc.'<->'.$array[$key]->nombreCuentaPuc;
+				}
+				
+				return $arr;
+
+	}
+	public function findId($value)
+	{
+		$criteria=new CDbCriteria();
+		
+			$criteria->select='idCuentaPuc';
+			$criteria->condition='codigoCuentaPuc=:codigoCuentaPuc';
+			$criteria->params=array(':codigoCuentaPuc'=>$value);
+			$modelo=Cuentapuc::model()->find($criteria);
+			return $modelo->idCuentaPuc;
+		
+	}
+
+	public  function getTipoGasto(){
+	
+		return cHtml::listData(TipoGasto::model()->findall(),'idTipoGasto','nombreTipoGasto');
+		
+		
 	}
 
 	/**
@@ -50,7 +122,7 @@ class Cuentapuc extends CActiveRecord
 			array('Usuario_idUsuario', 'numerical', 'integerOnly'=>true),
 			array('nombreCuentaPuc, codigoCuentaPuc', 'length', 'max'=>255),
 			array('TipoGasto_idTipoGasto', 'length', 'max'=>10),
-			array('CuentaPadre', 'length', 'max'=>30),
+			array('CuentaPadre', 'length', 'max'=>100),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
 			array('idCuentaPuc, nombreCuentaPuc, codigoCuentaPuc, TipoGasto_idTipoGasto, CuentaPadre, Usuario_idUsuario', 'safe', 'on'=>'search'),
@@ -98,10 +170,10 @@ class Cuentapuc extends CActiveRecord
 		// should not be searched.
 
 		$criteria=new CDbCriteria;
-
+		$criteria->with=array('tipoGastoIdTipoGasto');
 		$criteria->compare('idCuentaPuc',$this->idCuentaPuc,true);
-		$criteria->compare('nombreCuentaPuc',$this->nombreCuentaPuc,true);
-		$criteria->compare('codigoCuentaPuc',$this->codigoCuentaPuc,true);
+		$criteria->compare('idCuentaPuc',$this->nombreCuentaPuc,true);
+		$criteria->compare('idCuentaPuc',$this->codigoCuentaPuc,true);
 		$criteria->compare('TipoGasto_idTipoGasto',$this->TipoGasto_idTipoGasto,true);
 		$criteria->compare('CuentaPadre',$this->CuentaPadre,true);
 		$criteria->compare('Usuario_idUsuario',$this->Usuario_idUsuario);

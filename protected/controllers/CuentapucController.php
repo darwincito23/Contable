@@ -69,6 +69,15 @@ class CuentapucController extends Controller
 
 		if(isset($_POST['Cuentapuc']))
 		{
+			if($_POST['Cuentapuc']['CuentaPadre']=='')
+			{	
+
+				$_POST['Cuentapuc']['CuentaPadre']=null;
+			}else{
+
+				$_POST['Cuentapuc']['CuentaPadre']=$model->findId($_POST['Cuentapuc']['prefijo']);
+				$_POST['Cuentapuc']['codigoCuentaPuc']=$_POST['Cuentapuc']['prefijo'].$_POST['Cuentapuc']['codigoCuentaPuc'];
+			}
 			$model->attributes=$_POST['Cuentapuc'];
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->idCuentaPuc));
@@ -93,6 +102,15 @@ class CuentapucController extends Controller
 
 		if(isset($_POST['Cuentapuc']))
 		{
+			if($_POST['Cuentapuc']['CuentaPadre']=='')
+			{	
+
+				$_POST['Cuentapuc']['CuentaPadre']=null;
+			}else{
+
+				$_POST['Cuentapuc']['CuentaPadre']=$model->findId($_POST['Cuentapuc']['prefijo']);
+				$_POST['Cuentapuc']['codigoCuentaPuc']=$_POST['Cuentapuc']['prefijo'].$_POST['Cuentapuc']['codigoCuentaPuc'];
+			}
 			$model->attributes=$_POST['Cuentapuc'];
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->idCuentaPuc));
@@ -153,6 +171,11 @@ class CuentapucController extends Controller
 	public function loadModel($id)
 	{
 		$model=Cuentapuc::model()->findByPk($id);
+		if($model->CuentaPadre!=''){
+		$model->prefijo=$model->obtenerCodigo($model->CuentaPadre);
+		$model->CuentaPadre=$model->obtenerUnCodigoNombre($model->CuentaPadre);
+			
+		}
 		if($model===null)
 			throw new CHttpException(404,'The requested page does not exist.');
 		return $model;
