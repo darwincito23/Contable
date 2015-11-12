@@ -49,7 +49,7 @@
       										'attribute'=>'Proveedor_idProveedor',
            								  	'source'=>$model->obtenerCodigoNombre('proveedor'), //match case when performing a lookup?	
  											'options'=>array(
-        								  					'minLength'=>'2',
+        								  					'minLength'=>'1',
          								 					'select'=>'js:function( event, ui ) {
           								  					var valor=ui.item.value;
           								  					var sp=valor.split("<->");

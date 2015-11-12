@@ -15,6 +15,16 @@
  */
 class ConsolidadoGoaGov extends CActiveRecord
 {
+	public $proveedorc;
+	public $cuentac;
+	public $codigop;
+	public $codigoc;
+	public $fecha;
+	public $proveedor;
+	public $cuenta;
+	public $valor;
+	
+
 	/**
 	 * Returns the static model of the specified AR class.
 	 * @param string $className active record class name.
@@ -86,8 +96,11 @@ class ConsolidadoGoaGov extends CActiveRecord
 		// Warning: Please modify the following code to remove attributes that
 		// should not be searched.
 
-		$criteria=new CDbCriteria;
-
+		$criteria=new CDbCriteria();
+		$criteria->condition='registroContableGastosIdRegistroContableGastos.fecha > :fechai AND registroContableGastosIdRegistroContableGastos.fecha<:fechaf';
+		$criteria->params=array(':fechai'=>$this->fecha_Inicio,':fechaf'=>$this->fecha_fin);
+		$criteria->with=array('registroContableGastosIdRegistroContableGastos');
+		$criteria->compare('registroContableGastosIdRegistroContableGastos.fecha',$this->fecha,true);
 		$criteria->compare('idConsolidado_GOA_GOV',$this->idConsolidado_GOA_GOV,true);
 		$criteria->compare('fecha_Inicio',$this->fecha_Inicio,true);
 		$criteria->compare('fecha_fin',$this->fecha_fin,true);
@@ -98,4 +111,59 @@ class ConsolidadoGoaGov extends CActiveRecord
 			'criteria'=>$criteria,
 		));
 	}
+	public function searchAll($fechai,$fechaf,$proveedor,$cuenta)
+	{
+		$fechai==''?$fechai=10000101:$fechai=intval(preg_replace('/-/','',$fechai));
+		$fechaf==''?$fechaf=99991231:$fechaf=intval(preg_replace('/-/','',$fechaf));
+		$proveedor==''?$proveedor='%':$proveedor=$proveedor;
+		$cuenta==''?$cuenta='%':$cuenta=$cuenta;
+		// Warning: Please modify the following code to remove attributes that
+		// should not be searched.
+		$Registrocg=new Registrocontablegastos;
+		$criteria=new CDbCriteria;
+		$criteria->with=array('proveedorIdProveedor','cuentaPucIdCuentaPuc');
+		$criteria->condition='fecha BETWEEN :fi AND :ff AND Proveedor_idProveedor like :idproveedor 
+								AND CuentaPuc_idCuentaPuc like :idcuenta';
+		//$this->registroContableGastosIdRegistroContableGastos=Registrocontablegastos::model()->findAll($criteria);
+		//$criteria->condition='registroContableGastosIdRegistroContableGastos.fecha > :fechai AND registroContableGastosIdRegistroContableGastos.fecha<:fechaf';
+		$criteria->params=array(':idproveedor'=>$proveedor,':fi'=>$fechai,':ff'=>$fechaf,':idcuenta'=>$cuenta);
+		//$criteria->with=array('registroContableGastosIdRegistroContableGastos');
+		//$criteria->compare('registroContableGastosIdRegistroContableGastos.fecha',$this->fecha,true);
+		$criteria->compare('Proveedor_idProveedor',$this->proveedor,true);
+		return new CActiveDataProvider($Registrocg, array(
+			'criteria'=>$criteria
+		));
+	}
+	public function calcularTotal($fechai,$fechaf,$proveedor,$cuenta)
+	{
+		$fechai==''?$fechai=10000101:$fechai=intval(preg_replace('/-/','',$fechai));
+		$fechaf==''?$fechaf=99991231:$fechaf=intval(preg_replace('/-/','',$fechaf));
+		$proveedor==''?$proveedor='%':$proveedor=$proveedor;
+		$cuenta==''?$cuenta='%':$cuenta=$cuenta;
+		// Warning: Please modify the following code to remove attributes that
+		// should not be searched.
+		$Registrocg=new Registrocontablegastos;
+		$criteria=new CDbCriteria;
+		$criteria->with=array('proveedorIdProveedor','cuentaPucIdCuentaPuc');
+		$criteria->condition='fecha BETWEEN :fi AND :ff AND Proveedor_idProveedor like :idproveedor 
+								AND CuentaPuc_idCuentaPuc like :idcuenta';
+		//$this->registroContableGastosIdRegistroContableGastos=Registrocontablegastos::model()->findAll($criteria);
+		//$criteria->condition='registroContableGastosIdRegistroContableGastos.fecha > :fechai AND registroContableGastosIdRegistroContableGastos.fecha<:fechaf';
+		$criteria->params=array(':idproveedor'=>$proveedor,':fi'=>$fechai,':ff'=>$fechaf,':idcuenta'=>$cuenta);
+		//$criteria->with=array('registroContableGastosIdRegistroContableGastos');
+		//$criteria->compare('registroContableGastosIdRegistroContableGastos.fecha',$this->fecha,true);
+		$criteria->compare('Proveedor_idProveedor',$this->proveedor,true);
+		$registros=$Registrocg->findAll($criteria);
+		if($registros!==array())
+		{
+			$total=0;
+		foreach ($registros as $key => $value) {
+			$total+=$registros[$key]->valorRegistroContable;
+		}
+		return $total;
+		}else{ 
+		return 0;	
+		}
+	}
+		 
 }

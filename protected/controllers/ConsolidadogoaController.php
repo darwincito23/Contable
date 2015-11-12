@@ -4,9 +4,24 @@ class ConsolidadogoaController extends Controller
 {
 	public function actionIndex()
 	{
-		
-		$model=new ConsolidadoGoaGov;
-		$this->render('index',array(
+	
+			$model=new ConsolidadoGoaGov;
+			if(isset($_POST['ConsolidadoGoaGov']))
+			{
+				$model->fecha_Inicio=$_POST['ConsolidadoGoaGov']['fecha_Inicio'];
+				$model->fecha_fin=$_POST['ConsolidadoGoaGov']['fecha_fin'];
+				isset($_POST['ConsolidadoGoaGov']['proveedorc'])?$model->proveedorc=$_POST['ConsolidadoGoaGov']['proveedorc']:$model;
+				isset($_POST['ConsolidadoGoaGov']['cuentac'])?$model->cuentac=$_POST['ConsolidadoGoaGov']['cuentac']:$model;
+				isset($_POST['ConsolidadoGoaGov']['codigop'])?$model->codigop=$_POST['ConsolidadoGoaGov']['codigop']:$model;
+				isset($_POST['ConsolidadoGoaGov']['codigoc'])?$model->codigoc=$_POST['ConsolidadoGoaGov']['codigoc']:$model;
+				$model->Total=$model->calcularTotal($model->fecha_Inicio,
+													$model->fecha_fin,
+													$model->proveedorc!=''?Registrocontablegastos::model()->findId('proveedor',$model->codigop):'',
+													$model->cuentac!=''?Registrocontablegastos::model()->findId('cuentapuc',$model->codigoc):'');
+			}
+			//$model->fecha_Inicio=$_POST['index']['fecha_Inicio'];
+			
+				$this->render('index',array(
 			'model'=>$model,
 		));
 	}
