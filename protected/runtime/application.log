@@ -4102,3 +4102,15 @@ in C:\xampp\htdocs\yii\Contable\index.php (13)
 in C:\xampp\htdocs\yii\Contable\protected\controllers\RegistrocontablegastosController.php (82)
 in C:\xampp\htdocs\yii\Contable\index.php (13)
 >>>>>>> origin/master
+2015/11/13 23:40:34 [warning] [application] Failed to set unsafe attribute "cproveedor" of "Registrocontablegastos".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\RegistrocontablegastosController.php (82)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/13 23:40:34 [warning] [application] Failed to set unsafe attribute "nproveedor" of "Registrocontablegastos".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\RegistrocontablegastosController.php (82)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/13 23:40:34 [warning] [application] Failed to set unsafe attribute "ncuenta" of "Registrocontablegastos".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\RegistrocontablegastosController.php (82)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/13 23:40:34 [warning] [application] Failed to set unsafe attribute "ccuenta" of "Registrocontablegastos".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\RegistrocontablegastosController.php (82)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
