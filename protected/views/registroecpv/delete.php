@@ -1,9 +1,9 @@
 <?php
-/* @var $this FrenteaprovechamientoproductosController */
+/* @var $this RegistroecpvController */
 
 $this->breadcrumbs=array(
-	'Frenteaprovechamientoproductos'=>array('/frenteaprovechamientoproductos'),
-	'Admin',
+	'Registroecpv'=>array('/registroecpv'),
+	'Delete',
 );
 ?>
 <h1><?php echo $this->id . '/' . $this->action->id; ?></h1>

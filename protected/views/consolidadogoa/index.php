@@ -23,8 +23,8 @@ $('#boton').submit(function(){
 <h1 class="text-center">Consolidado GOA/GOV</h1>
 <br>
 <div class="container-fluid">
-	<div class="col-md-4"></div>
-	<div class="col-md-4">
+	<div class="col-md-2"></div>
+	<div class="col-md-8">
 		<div class="form">
 			<?php $form=$this->beginWidget('CActiveForm', array(
 				'id'=>'consolidado-goa-gov-index-form',
@@ -39,7 +39,7 @@ $('#boton').submit(function(){
 				    </thead>
 				    <tbody>		   		
 				        <tr class="tablacolor">
-							<td>	
+							<td class="text-center">	
 								<?php echo $form->labelEx($model,'fecha_Inicio'); ?>
 								<?php echo $form->error($model,'fecha_Inicio'); ?>
 								<?php echo $this->widget('zii.widgets.jui.CJuiDatePicker',array(
@@ -57,7 +57,7 @@ $('#boton').submit(function(){
 								  ),true);
 								?>
 							</td>
-							<td>
+							<td class="text-center">
 								<?php echo $form->labelEx($model,'fecha_fin'); ?>
 								<?php echo $form->error($model,'fecha_fin'); ?>	
 								<?php echo $this->widget('zii.widgets.jui.CJuiDatePicker',array(
@@ -77,10 +77,10 @@ $('#boton').submit(function(){
 							</td>																		
 				        </tr> 
 				        <tr>
-				        <td>
-				<?php echo $form->labelEx($model,'cuentac'); ?>
-								
-				<?php $this->widget('zii.widgets.jui.CJuiAutoComplete',
+				        	<td class="text-center">
+									<?php echo $form->labelEx($model,'cuentac'); ?>
+												
+									<?php $this->widget('zii.widgets.jui.CJuiAutoComplete',
           								array(
            								  	'model'=>$model,
       										'attribute'=>'cuentac',
@@ -96,35 +96,35 @@ $('#boton').submit(function(){
         								  					), //match case when performing a lookup?	
             								 'htmlOptions'=>array('size'=>'40'), 
             								 ));?>
-				<?php echo $form->error($model,'RegistroContableGastos_idRegistroContableGastos'); ?>
-				<?php echo $form->hiddenField($model,'codigoc',
-								array('id'=>'codigoc'
-								)); ?>			
-						</td>
-						<td>
-			    <?php echo $form->labelEx($model,'Proveedor'); ?>
-			    <?php $this->widget('zii.widgets.jui.CJuiAutoComplete',
-          								array(
-           								  	'model'=>$model,
-      										'attribute'=>'proveedorc',
-           								  	'source'=>Registrocontablegastos::model()->obtenerCodigoNombre('proveedor'),
-           								  	'options'=>array(
-        								  					'minLength'=>'1',
-        								  					'select'=>'js:function( event, ui ) {
-          								  					var valor=ui.item.value;
-          								  					var sp=valor.split("<->");
-          								  					$("#codigop").val(sp[0]);                
-          								  					return true;  
-       								 						}'
-        								  					), //match case when performing a lookup?	
-            								 'htmlOptions'=>array('size'=>'40'), 
-            								 ));?>
+									<?php echo $form->error($model,'RegistroContableGastos_idRegistroContableGastos'); ?>
+									<?php echo $form->hiddenField($model,'codigoc',
+													array('id'=>'codigoc'
+													)); ?>			
+							</td>
+							<td class="text-center">
+								    <?php echo $form->labelEx($model,'Proveedor'); ?>
+								    <?php $this->widget('zii.widgets.jui.CJuiAutoComplete',
+											array(
+											  	'model'=>$model,
+												'attribute'=>'proveedorc',
+											  	'source'=>Registrocontablegastos::model()->obtenerCodigoNombre('proveedor'),
+											  	'options'=>array(
+										  					'minLength'=>'1',
+										  					'select'=>'js:function( event, ui ) {
+											  					var valor=ui.item.value;
+											  					var sp=valor.split("<->");
+											  					$("#codigop").val(sp[0]);                
+											  					return true;  
+										 						}'
+										  					), //match case when performing a lookup?	
+											 'htmlOptions'=>array('size'=>'40'), 
+											 ));?>
 
-				<?php echo $form->hiddenField($model,'codigop',
-								array('id'=>'codigop'
-								)); ?>					
-		    	<?php echo $form->error($model,'RegistroContableGastos_idRegistroContableGastos'); ?>
-						</td>					
+									<?php echo $form->hiddenField($model,'codigop',
+										array('id'=>'codigop'
+									)); ?>					
+									<?php echo $form->error($model,'RegistroContableGastos_idRegistroContableGastos'); ?>
+							</td>					
 				        </tr>				        
 				    </tbody>		
 				</table>
@@ -143,39 +143,37 @@ $('#boton').submit(function(){
 		<div class="row text-center">
 			<p>
 				<?php $this->widget('zii.widgets.grid.CGridView', array(
-	'id'=>'consolidadogoagov-grid',
-	'dataProvider'=>$model->searchAll($model->fecha_Inicio,
+				'id'=>'consolidadogoagov-grid',
+				'dataProvider'=>$model->searchAll($model->fecha_Inicio,
 										$model->fecha_fin,
 										$model->proveedorc!=''?Registrocontablegastos::model()->findId('proveedor',$model->codigop):'',
 										$model->cuentac!=''?Registrocontablegastos::model()->findId('cuentapuc',$model->codigoc):''),
-	'afterAjaxUpdate'=>'reinstallDatePicker',
-	'columns'=>array(
+										'afterAjaxUpdate'=>'reinstallDatePicker',
+				'columns'=>array(
 		
-			array(
-				'name'=>'fecha',
-				'value'=>'$data->fecha',
-				'header'=>'Fecha',
-				),
-			array(
-				'name'=>'proveedor',
-				'value'=>'$data->proveedorIdProveedor->codigoProveedor.\'<->\'.$data->proveedorIdProveedor->nombreProveedor',
-				'header'=>'Proveedor',
-				),
-			array(
-				'name'=>'cuenta',
-				'value'=>'$data->cuentaPucIdCuentaPuc->codigoCuentaPuc.\'<->\'.$data->cuentaPucIdCuentaPuc->nombreCuentaPuc',
-				'header'=>'CuentaPuc',
-				),
-			array(
-				'name'=>'valor',
-				'value'=>'$data->valorRegistroContable',
-				'header'=>'Valor',
-				),
-	
-		),
-	));
-		
-	 ?>
+									array(
+										'name'=>'fecha',
+										'value'=>'$data->fecha',
+										'header'=>'Fecha',
+										),
+									array(
+										'name'=>'proveedor',
+										'value'=>'$data->proveedorIdProveedor->codigoProveedor.\'<->\'.$data->proveedorIdProveedor->nombreProveedor',
+										'header'=>'Proveedor',
+										),
+									array(
+										'name'=>'cuenta',
+										'value'=>'$data->cuentaPucIdCuentaPuc->codigoCuentaPuc.\'<->\'.$data->cuentaPucIdCuentaPuc->nombreCuentaPuc',
+										'header'=>'CuentaPuc',
+										),
+									array(
+										'name'=>'valor',
+										'value'=>'$data->valorRegistroContable',
+										'header'=>'Valor',
+										),
+							
+								),
+				));?>
 			</p>
 		</div>
 		<div class="row text-center">

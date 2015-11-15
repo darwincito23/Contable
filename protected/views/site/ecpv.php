@@ -22,8 +22,8 @@
 					          	</div>
 					          	<div class="col-md-10">							
 				          			<?php echo CHtml::submitButton('Frente Aprovechamiento', array('submit'=>array('frenteaprovechamientoproductos/index'),'class'=>'btn btn-success btn-md btn-block')); ?>
-									<?php echo CHtml::submitButton('Registro', array('submit'=>array('frenteaprovechamientoproductos/index'),'class'=>'btn btn-success btn-md btn-block')); ?>
-									<?php echo CHtml::submitButton('Consolidado', array('submit'=>array('frenteaprovechamientoproductos/index'),'class'=>'btn btn-success btn-md btn-block')); ?>
+									<?php echo CHtml::submitButton('Registro', array('submit'=>array('registroecpv/index'),'class'=>'btn btn-success btn-md btn-block')); ?>
+									<?php echo CHtml::submitButton('Consolidado', array('submit'=>array('registroecpv/index'),'class'=>'btn btn-success btn-md btn-block')); ?>
 					          	</div>
 					          	<div class="col-md-1">        		
 				          		</div>
