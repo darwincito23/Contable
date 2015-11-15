@@ -53,7 +53,11 @@ $this->breadcrumbs=array(
 				</div>
 				<div class="col-md-2"></div>
 			</div><!--end row-->
-
+			<div class="row">
+				<?php echo $form->labelEx($model,'CostoTotalUnitario'); ?>
+				<?php echo $form->textField($model,'CostoTotalUnitario'); ?>
+				<?php echo $form->error($model,'CostoTotalUnitario'); ?>
+			</div>
 			<div class="row">
 				<div class="col-md-4"></div>
 				<div class="col-md-2">
@@ -67,14 +71,7 @@ $this->breadcrumbs=array(
 					<?php echo $form->error($model,'cantidad'); ?>
 				</div>	
 				<div class="col-md-4"></div>			
-			</div>
-
-			<!--<div class="row">
-				<?php echo $form->labelEx($model,'CostoTotalUnitario'); ?>
-				<?php echo $form->textField($model,'CostoTotalUnitario'); ?>
-				<?php echo $form->error($model,'CostoTotalUnitario'); ?>
-			</div>-->			
-
+			</div>			
 			<?php $this->endWidget(); ?>
 
 		</div><!-- form -->
