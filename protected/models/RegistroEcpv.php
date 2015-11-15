@@ -9,12 +9,11 @@
  * @property double $CostoTotalUnitario
  * @property string $fecha
  * @property string $FrenteAprovechamiento_Productos_FrenteAprovechamiento_idFA
- * @property string $FrenteAprovechamiento_Productos_Productos_idProductos
+ * @property double $costo_Total_Parcial
  *
  * The followings are the available model relations:
  * @property ConsolidadoEcpv[] $consolidadoEcpvs
  * @property FrenteaprovechamientoProductos $frenteAprovechamientoProductosFrenteAprovechamientoIdFA
- * @property FrenteaprovechamientoProductos $frenteAprovechamientoProductosProductosIdProductos
  */
 class RegistroEcpv extends CActiveRecord
 {
@@ -44,13 +43,13 @@ class RegistroEcpv extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('CostoTotalUnitario', 'numerical'),
+			array('CostoTotalUnitario, costo_Total_Parcial', 'numerical'),
 			array('cantidad', 'length', 'max'=>45),
-			array('FrenteAprovechamiento_Productos_FrenteAprovechamiento_idFA, FrenteAprovechamiento_Productos_Productos_idProductos', 'length', 'max'=>30),
+			array('FrenteAprovechamiento_Productos_FrenteAprovechamiento_idFA', 'length', 'max'=>30),
 			array('fecha', 'safe'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('idRegistro_ECPV, cantidad, CostoTotalUnitario, fecha, FrenteAprovechamiento_Productos_FrenteAprovechamiento_idFA, FrenteAprovechamiento_Productos_Productos_idProductos', 'safe', 'on'=>'search'),
+			array('idRegistro_ECPV, cantidad, CostoTotalUnitario, fecha, FrenteAprovechamiento_Productos_FrenteAprovechamiento_idFA, costo_Total_Parcial', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -62,9 +61,8 @@ class RegistroEcpv extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'consolidadoEcpvs' => array(self::HAS_MANY, 'ConsolidadoEcpv', 'Registro ECPV_idRegistro SPV'),
+			'consolidadoEcpvs' => array(self::HAS_MANY, 'ConsolidadoEcpv', 'Registro_ECPV_idRegistro SPV'),
 			'frenteAprovechamientoProductosFrenteAprovechamientoIdFA' => array(self::BELONGS_TO, 'FrenteaprovechamientoProductos', 'FrenteAprovechamiento_Productos_FrenteAprovechamiento_idFA'),
-			'frenteAprovechamientoProductosProductosIdProductos' => array(self::BELONGS_TO, 'FrenteaprovechamientoProductos', 'FrenteAprovechamiento_Productos_Productos_idProductos'),
 		);
 	}
 
@@ -79,7 +77,7 @@ class RegistroEcpv extends CActiveRecord
 			'CostoTotalUnitario' => 'Costo Total Unitario',
 			'fecha' => 'Fecha',
 			'FrenteAprovechamiento_Productos_FrenteAprovechamiento_idFA' => 'Frente Aprovechamiento Productos Frente Aprovechamiento Id Fa',
-			'FrenteAprovechamiento_Productos_Productos_idProductos' => 'Frente Aprovechamiento Productos Productos Id Productos',
+			'costo_Total_Parcial' => 'Costo Total Parcial',
 		);
 	}
 
@@ -99,7 +97,7 @@ class RegistroEcpv extends CActiveRecord
 		$criteria->compare('CostoTotalUnitario',$this->CostoTotalUnitario);
 		$criteria->compare('fecha',$this->fecha,true);
 		$criteria->compare('FrenteAprovechamiento_Productos_FrenteAprovechamiento_idFA',$this->FrenteAprovechamiento_Productos_FrenteAprovechamiento_idFA,true);
-		$criteria->compare('FrenteAprovechamiento_Productos_Productos_idProductos',$this->FrenteAprovechamiento_Productos_Productos_idProductos,true);
+		$criteria->compare('costo_Total_Parcial',$this->costo_Total_Parcial);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

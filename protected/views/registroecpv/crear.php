@@ -54,9 +54,9 @@ $this->breadcrumbs=array(
 				<div class="col-md-2"></div>
 			</div><!--end row-->
 			<div class="row">
-				<?php echo $form->labelEx($model,'CostoTotalUnitario'); ?>
-				<?php echo $form->textField($model,'CostoTotalUnitario'); ?>
-				<?php echo $form->error($model,'CostoTotalUnitario'); ?>
+				<?php echo $form->labelEx($model,'costo_Total_Parcial'); ?>
+				<?php echo $form->textField($model,'costo_Total_Parcial'); ?>
+				<?php echo $form->error($model,'costo_Total_Parcial'); ?>
 			</div>
 			<div class="row">
 				<div class="col-md-4"></div>
@@ -80,3 +80,13 @@ $this->breadcrumbs=array(
 			</div>
 </div>
 
+				<?php //echo $form->labelEx($model,'CostoTotalUnitario'); ?>
+				<?php //echo $form->textField($model,'CostoTotalUnitario'); ?>
+				<?php //echo $form->error($model,'CostoTotalUnitario'); ?>
+
+
+
+
+<div class="row">
+		
+	</div>
