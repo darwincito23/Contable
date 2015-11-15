@@ -25,7 +25,7 @@ $this->breadcrumbs=array(
 					<?php echo $form->labelEx($model,''); ?>
 					<?php echo $form->dropDownList($model,'FrenteAprovechamiento_idFA',array('')); ?>
 					<?php echo $form->error($model,'FrenteAprovechamiento_idFA'); ?>
-				</div>
+				</div>				
 
 				<div class="row buttons">
 					<?php echo CHtml::submitButton('Siguiente', array('submit'=>array('frenteaprovechamientoproductos/create'),'class'=>'btn btn-success btn-md')); ?>
@@ -35,6 +35,27 @@ $this->breadcrumbs=array(
 
 		</div><!-- form -->
 	</div>
+	<div class="row">
+		<div class="col-md-4"></div>
+		<div class="panel panel-default col-md-4">
+				  
+				  <div class="panel-body">
+				   	<div class="row">
+					          	<div class="col-md-1">		          		
+					          	</div>
+					          	<div class="col-md-10">								
+									<?php echo CHtml::submitButton('Administrar Frente Aprovechamiento', array('submit'=>array('frenteaprovechamiento/admin'),'class'=>'btn btn-success btn-md btn-block')); ?>
+									<?php echo CHtml::submitButton('Administrar Productos', array('submit'=>array('productos/admin'),'class'=>'btn btn-success btn-md btn-block')); ?>		          		
+					          	</div>
+					          	<div class="col-md-1">        		
+				          		</div>
+					</div>	 
+				  </div>
+			</div>
+		<div class="col-md-4"></div>	
+	</div>
+	
+		
 
 </div>
 

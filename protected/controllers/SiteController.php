@@ -5,6 +5,18 @@ class SiteController extends Controller
 	/**
 	 * Declares class-based actions.
 	 */
+	
+	public function accessRules() {
+    return array(
+        array('allow',
+            'actions' => array('home', 'homecpv', 'login','gov','goa','ecpv'),
+            'users' => array('*'),
+        ),
+        array('deny',
+            'users' => array('*'),
+        ),
+    );
+	}
 	public function actions()
 	{
 		return array(

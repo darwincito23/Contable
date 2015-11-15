@@ -27,12 +27,9 @@ $this->breadcrumbs=array(
 				   	<div class="row">
 					          	<div class="col-md-1">		          		
 					          	</div>
-					          	<div class="col-md-10">
-
-									<?php echo CHtml::submitButton('Frente Aprovechamiento', array('submit'=>array('frenteaprovechamiento/admin'),'class'=>'btn btn-success btn-md btn-block')); ?>
-									<?php echo CHtml::submitButton('Productos', array('submit'=>array('productos/admin'),'class'=>'btn btn-success btn-md btn-block')); ?>
-									<?php echo CHtml::submitButton('Frente Aprovechamiento / Productos', array('submit'=>array('productos/admin'),'class'=>'btn btn-success btn-md btn-block')); ?>
-											          		
+					          	<div class="col-md-10">								
+									<?php echo CHtml::submitButton('Administrar Frente Aprovechamiento', array('submit'=>array('frenteaprovechamiento/admin'),'class'=>'btn btn-success btn-md btn-block')); ?>
+									<?php echo CHtml::submitButton('Administrar Productos', array('submit'=>array('productos/admin'),'class'=>'btn btn-success btn-md btn-block')); ?>		          		
 					          	</div>
 					          	<div class="col-md-1">        		
 				          		</div>

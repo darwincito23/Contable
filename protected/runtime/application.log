@@ -4304,3 +4304,79 @@ REQUEST_URI=/yii/Contable/frenteaprovechamientoproductos/create
 in C:\xampp\htdocs\yii\Contable\protected\views\frenteaprovechamientoproductos\create.php (21)
 in C:\xampp\htdocs\yii\Contable\protected\controllers\FrenteaprovechamientoproductosController.php (33)
 in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/15 03:01:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "homeecpv".' in C:\xampp\htdocs\yii\Contable\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(270): CController->missingAction('homeecpv')
+#1 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(282): CController->run('homeecpv')
+#2 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(141): CWebApplication->runController('site/homeecpv')
+#3 C:\xampp\htdocs\yii\Contable\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\yii\Contable\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/Contable/site/homeecpv
+---
+2015/11/15 03:04:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "homeecpv".' in C:\xampp\htdocs\yii\Contable\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(270): CController->missingAction('homeecpv')
+#1 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(282): CController->run('homeecpv')
+#2 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(141): CWebApplication->runController('frenteaprovecha...')
+#3 C:\xampp\htdocs\yii\Contable\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\yii\Contable\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/Contable/frenteaprovechamientoproductos/homeecpv
+HTTP_REFERER=http://localhost:8080/yii/Contable/site/ecpv
+---
+2015/11/15 03:05:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "homeecpv".' in C:\xampp\htdocs\yii\Contable\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(270): CController->missingAction('homeecpv')
+#1 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(282): CController->run('homeecpv')
+#2 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(141): CWebApplication->runController('site/homeecpv')
+#3 C:\xampp\htdocs\yii\Contable\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\yii\Contable\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/Contable/site/homeecpv
+HTTP_REFERER=http://localhost:8080/yii/Contable/site/ecpv
+---
+2015/11/15 03:05:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "homeecpv".' in C:\xampp\htdocs\yii\Contable\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(270): CController->missingAction('homeecpv')
+#1 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(282): CController->run('homeecpv')
+#2 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(141): CWebApplication->runController('site/homeecpv')
+#3 C:\xampp\htdocs\yii\Contable\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\yii\Contable\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/Contable/site/homeecpv
+HTTP_REFERER=http://localhost:8080/yii/Contable/site/ecpv
+---
+2015/11/15 03:05:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "homeecpv".' in C:\xampp\htdocs\yii\Contable\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(270): CController->missingAction('homeecpv')
+#1 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(282): CController->run('homeecpv')
+#2 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(141): CWebApplication->runController('site/homeecpv')
+#3 C:\xampp\htdocs\yii\Contable\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\yii\Contable\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/Contable/site/homeecpv
+HTTP_REFERER=http://localhost:8080/yii/Contable/site/ecpv
+---
+2015/11/15 03:06:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "homeecpv".' in C:\xampp\htdocs\yii\Contable\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(270): CController->missingAction('homeecpv')
+#1 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(282): CController->run('homeecpv')
+#2 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(141): CWebApplication->runController('site/homeecpv')
+#3 C:\xampp\htdocs\yii\Contable\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\yii\Contable\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/Contable/site/homeecpv
+HTTP_REFERER=http://localhost:8080/yii/Contable/site/ecpv
+---
+2015/11/15 03:15:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "homeecpv".' in C:\xampp\htdocs\yii\Contable\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(270): CController->missingAction('homeecpv')
+#1 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(282): CController->run('homeecpv')
+#2 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(141): CWebApplication->runController('site/homeecpv')
+#3 C:\xampp\htdocs\yii\Contable\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\yii\Contable\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/Contable/site/homeecpv
+HTTP_REFERER=http://localhost:8080/yii/Contable/site/ecpv
+---
