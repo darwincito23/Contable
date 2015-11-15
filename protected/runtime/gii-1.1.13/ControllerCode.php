@@ -2,5 +2,5 @@
 return array (
   'template' => 'default',
   'baseClass' => 'Controller',
-  'actions' => 'consolidadogoa',
+  'actions' => 'index,create,update,delete,admin,view',
 );

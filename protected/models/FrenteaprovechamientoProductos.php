@@ -43,7 +43,7 @@ class FrenteaprovechamientoProductos extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('FrenteAprovechamiento_idFA, Productos_idProductos', 'required'),
+			array('Productos_idProductos', 'required'),
 			array('CostoUnitario, CostoCantidad_CostoUnitario', 'numerical'),
 			array('FrenteAprovechamiento_idFA, Productos_idProductos, Cantidad', 'length', 'max'=>30),
 			array('fecha', 'safe'),
