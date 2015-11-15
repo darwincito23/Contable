@@ -18,7 +18,13 @@ $this->breadcrumbs=array(
 			)); ?>	
 	<div class=" form">
 		<div class="row">
-			<h1>Sitio donde va el Nombre del Frente de Aprovechamiento</h1>
+			<h1><?php $criteria =new CDbCriteria;
+			$criteria->condition='idFrenteaprovechamiento=:id';
+			$criteria->params=array(':id'=>$model->id_FrenteAprovechamiento);
+			  $nombre=Frenteaprovechamiento::model()->find($criteria);
+			  echo $nombre->nombreFrenteAprovechamiento; 
+
+			?></h1>
 			<div class="row">
 				<?php //echo $form->labelEx($model,'FrenteAprovechamiento_idFA'); ?>
 				<?php //echo $form->textField($model,'FrenteAprovechamiento_idFA'); ?>
@@ -29,7 +35,29 @@ $this->breadcrumbs=array(
 		<div class="row">
 			<div class="col-md-2"></div>
 			<div class="col-md-8">
-				<p>Aca va el Cgrid</p>	
+				
+				<?php $this->widget('zii.widgets.grid.CGridView', array(
+	'id'=>'frenteaprovechamientoproductos-grid',
+	'dataProvider'=>$model->searchId($model->id_FrenteAprovechamiento),
+	'filter'=>$model,
+	'columns'=>array(
+		
+		array(
+			'name'=>'nombre',
+			'value'=>'$data->productosIdProductos->nombreProducto',
+			'header'=>'Producto',
+			),
+		array(
+			'name'=>'costo',
+			'value'=>'$data->CostoUnitario',
+			'header'=>'Costo unitario',
+			),
+		
+		array(
+			'class'=>'CButtonColumn',
+		),
+	),
+)); ?>
 			</div>
 			<div class="col-md-2"></div>
 		</div><!--end row-->
@@ -42,10 +70,10 @@ $this->breadcrumbs=array(
 							<div class="col-md-1"></div>
 							<div class="col-md-5">							  
 							  		<div class="row">
-										<?php echo $form->labelEx($model,'idProductos'); ?>
+										<?php echo $form->labelEx($model,'Producto'); ?>
 									</div><!--end row-->
 									<div class="row">
-										<?php echo $form->textField($model,'Productos_idProductos'); ?>
+										<?php echo $form->dropDownList($model,'Productos_idProductos',$model->getListProductos()); ?>
 										<?php echo $form->error($model,'Productos_idProductos'); ?>
 									</div><!--end row-->									
 							</div>

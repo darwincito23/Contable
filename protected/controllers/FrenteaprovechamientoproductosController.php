@@ -8,7 +8,7 @@ class FrenteaprovechamientoproductosController extends Controller
 	}
 
 	
-	public function actionCreate()
+	public function actionCreate($id)
 	{
 	    $model=new FrenteaprovechamientoProductos;
 
@@ -20,22 +20,33 @@ class FrenteaprovechamientoproductosController extends Controller
 	        Yii::app()->end();
 	    }
 	    */
-
-	    if(isset($_POST['FrenteaprovechamientoProductos']))
+	    $model->id_FrenteAprovechamiento=$id;
+	    if(isset($_POST['Frenteaprovechamientoproductos']))
 	    {
-	        $model->attributes=$_POST['FrenteaprovechamientoProductos'];
+	        $model->attributes=$_POST['Frenteaprovechamientoproductos'];
+
 	        if($model->validate())
 	        {
+	            if($model->save()){
+	            	$this->redirect(array('create','id'=>$id));
+	            }
+				
+			}
 	            // form inputs are valid, do something here
 	            return;
 	        }
-	    }
+	   
 	    $this->render('create',array('model'=>$model));
 	} 
 
-	public function actionDelete()
+	public function actionDelete($id)
 	{
-		$this->render('delete');
+
+		//$this->render('delete');
+		$this->loadModel($id)->delete();
+		
+		//if(!isset($_GET['ajax']))
+		//	$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
 	}
 
 	public function actionIndex()
@@ -51,26 +62,35 @@ class FrenteaprovechamientoproductosController extends Controller
     }
     */
 
-    if(isset($_POST['FrenteaprovechamientoProductos']))
+    if(isset($_POST['Frenteaprovechamientoproductos']))
     {
-        $model->attributes=$_POST['FrenteaprovechamientoProductos'];
-        if($model->validate())
-        {
-            // form inputs are valid, do something here
-            return;
+        $model->attributes=$_POST['Frenteaprovechamientoproductos'];
+        if($model->id_FrenteAprovechamiento!=''){
+        	$this->redirect(array('create','id'=>$model->id_FrenteAprovechamiento));
         }
+
     }
     $this->render('index',array('model'=>$model));
 }
 
-	public function actionUpdate()
+	public function actionUpdate($id)
 	{
-		$this->render('update');
+		$model=$this->loadModel($id);
+		$this->render('update',$model);
 	}
 
 	public function actionView()
 	{
 		$this->render('view');
+	}
+	public function loadModel($id)
+	{
+		$model=Frenteaprovechamientoproductos::model()->findByPk($id);
+		
+		
+		if($model===null)
+			throw new CHttpException(404,'The requested page does not exist.');
+		return $model;
 	}
 
 	// Uncomment the following methods and override them if needed

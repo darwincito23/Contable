@@ -4,23 +4,34 @@
  * This is the model class for table "frenteaprovechamiento_productos".
  *
  * The followings are the available columns in table 'frenteaprovechamiento_productos':
- * @property string $FrenteAprovechamiento_idFA
+ * @property string $idFrenteAprovechamiento_Productos
  * @property string $Productos_idProductos
  * @property double $CostoUnitario
- * @property string $Cantidad
- * @property double $CostoCantidad_CostoUnitario
- * @property string $fecha
+ * @property string $id_FrenteAprovechamiento
  *
  * The followings are the available model relations:
- * @property ConsolidadoEstadoCostoProductoVendidoFaProductos[] $consolidadoEstadoCostoProductoVendidoFaProductoses
- * @property ConsolidadoEstadoCostoProductoVendidoFaProductos[] $consolidadoEstadoCostoProductoVendidoFaProductoses1
+ * @property Frenteaprovechamiento $idFrenteAprovechamiento
+ * @property Productos $productosIdProductos
+ * @property RegistroEcpv[] $registroEcpvs
  */
-class FrenteaprovechamientoProductos extends CActiveRecord
+class Frenteaprovechamientoproductos extends CActiveRecord
 {
+	public $nombre;
+	public $costo;
+	public  function getListFa(){
+	
+	return cHtml::listData(Frenteaprovechamiento::model()->findall(),'idFrenteAprovechamiento','nombreFrenteAprovechamiento');
+		
+	}
+	public  function getListProductos(){
+	
+	return cHtml::listData(Productos::model()->findall(),'idProductos','nombreProducto');
+		
+	}
 	/**
 	 * Returns the static model of the specified AR class.
 	 * @param string $className active record class name.
-	 * @return FrenteaprovechamientoProductos the static model class
+	 * @return Frenteaprovechamientoproductos the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{
@@ -44,12 +55,11 @@ class FrenteaprovechamientoProductos extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('Productos_idProductos', 'required'),
-			array('CostoUnitario, CostoCantidad_CostoUnitario', 'numerical'),
-			array('FrenteAprovechamiento_idFA, Productos_idProductos, Cantidad', 'length', 'max'=>30),
-			array('fecha', 'safe'),
+			array('CostoUnitario', 'numerical'),
+			array('idFrenteAprovechamiento_Productos, Productos_idProductos, id_FrenteAprovechamiento', 'length', 'max'=>30),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('FrenteAprovechamiento_idFA, Productos_idProductos, CostoUnitario, Cantidad, CostoCantidad_CostoUnitario, fecha', 'safe', 'on'=>'search'),
+			array('idFrenteAprovechamiento_Productos, Productos_idProductos, CostoUnitario, id_FrenteAprovechamiento', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -61,8 +71,9 @@ class FrenteaprovechamientoProductos extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'consolidadoEstadoCostoProductoVendidoFaProductoses' => array(self::HAS_MANY, 'ConsolidadoEstadoCostoProductoVendidoFaProductos', 'FA_Productos_idProductos'),
-			'consolidadoEstadoCostoProductoVendidoFaProductoses1' => array(self::HAS_MANY, 'ConsolidadoEstadoCostoProductoVendidoFaProductos', 'FA_Productos_FA_idFA'),
+			'idFrenteAprovechamiento' => array(self::BELONGS_TO, 'Frenteaprovechamiento', 'id_FrenteAprovechamiento'),
+			'productosIdProductos' => array(self::BELONGS_TO, 'Productos', 'Productos_idProductos'),
+			'registroEcpvs' => array(self::HAS_MANY, 'RegistroEcpv', 'FrenteAprovechamiento_Productos_FrenteAprovechamiento_idFA'),
 		);
 	}
 
@@ -72,12 +83,10 @@ class FrenteaprovechamientoProductos extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'FrenteAprovechamiento_idFA' => 'Frente Aprovechamiento Id Fa',
+			'idFrenteAprovechamiento_Productos' => 'Id Frente Aprovechamiento Productos',
 			'Productos_idProductos' => 'Productos Id Productos',
 			'CostoUnitario' => 'Costo Unitario',
-			'Cantidad' => 'Cantidad',
-			'CostoCantidad_CostoUnitario' => 'Costo Cantidad Costo Unitario',
-			'fecha' => 'Fecha',
+			'id_FrenteAprovechamiento' => 'Id Frente Aprovechamiento',
 		);
 	}
 
@@ -91,13 +100,28 @@ class FrenteaprovechamientoProductos extends CActiveRecord
 		// should not be searched.
 
 		$criteria=new CDbCriteria;
-
-		$criteria->compare('FrenteAprovechamiento_idFA',$this->FrenteAprovechamiento_idFA,true);
+		$criteria->compare('idFrenteAprovechamiento_Productos',$this->idFrenteAprovechamiento_Productos,true);
 		$criteria->compare('Productos_idProductos',$this->Productos_idProductos,true);
 		$criteria->compare('CostoUnitario',$this->CostoUnitario);
-		$criteria->compare('Cantidad',$this->Cantidad,true);
-		$criteria->compare('CostoCantidad_CostoUnitario',$this->CostoCantidad_CostoUnitario);
-		$criteria->compare('fecha',$this->fecha,true);
+		$criteria->compare('id_FrenteAprovechamiento',$this->id_FrenteAprovechamiento,true);
+
+		return new CActiveDataProvider($this, array(
+			'criteria'=>$criteria,
+		));
+	}
+	public function searchId($id)
+	{
+		// Warning: Please modify the following code to remove attributes that
+		// should not be searched.
+
+		$criteria=new CDbCriteria;
+		$criteria->condition='id_FrenteAprovechamiento=:id';
+		$criteria->params=array(':id'=>$id);
+		$criteria->with=array('idFrenteAprovechamiento','productosIdProductos');
+		$criteria->compare('idFrenteAprovechamiento_Productos',$this->idFrenteAprovechamiento_Productos,true);
+		$criteria->compare('Productos_idProductos',$this->Productos_idProductos,true);
+		$criteria->compare('CostoUnitario',$this->CostoUnitario);
+		$criteria->compare('id_FrenteAprovechamiento',$this->id_FrenteAprovechamiento,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
