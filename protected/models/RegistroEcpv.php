@@ -17,11 +17,56 @@
  */
 class RegistroEcpv extends CActiveRecord
 {
+	public $date;
+	public $cantidad;
+	public $nombrep;
+	public $costop;
+	public $costopp;
+	public $idProductos;
+	public $costoParcial;
+	public $frenteA;
 	/**
 	 * Returns the static model of the specified AR class.
 	 * @param string $className active record class name.
 	 * @return RegistroEcpv the static model class
 	 */
+	public  function getListFap($id){
+	$criteria=new CDbCriteria();
+	$criteria->condition='id_FrenteAprovechamiento=:id';
+	$criteria->params=array(':id'=>$id);
+	$mod=FrenteaprovechamientoProductos::model()->findall($criteria);
+	$listData=array();
+			foreach($mod as $model)
+			{
+				$value=CHtml::value($model,'idFrenteAprovechamiento_Productos');
+				$text=self::getProducto($model->Productos_idProductos);
+				$listData[$value]=$text->nombreProducto;
+			}
+	return $listData;		
+		
+	}
+	public function getProducto($id){
+		$criteria= new CDbCriteria;
+		$criteria->condition='idProductos=:id';
+		$criteria->params=array(':id'=>$id);
+		return Productos::model()->find($criteria);
+		
+	}
+	public function getFrenteP($id){
+		$criteria= new CDbCriteria;
+		$criteria->condition='idFrenteAprovechamiento_Productos=:id';
+		$criteria->params=array(':id'=>$id);
+		$modelo=FrenteaprovechamientoProductos::model()->find($criteria);
+		 return $modelo->CostoUnitario;
+		
+	}
+	public function getProductoN($id){
+		$criteria= new CDbCriteria;
+		$criteria->condition='idProductos=:id';
+		$criteria->params=array(':id'=>$id);
+		$modelo= Productos::model()->find($criteria);
+		return $modelo->nombreProducto;
+	}
 	public static function model($className=__CLASS__)
 	{
 		return parent::model($className);
@@ -43,7 +88,7 @@ class RegistroEcpv extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('CostoTotalUnitario, costo_Total_Parcial', 'numerical'),
+			array('CostoTotalUnitario', 'numerical'),
 			array('cantidad', 'length', 'max'=>45),
 			array('FrenteAprovechamiento_Productos_FrenteAprovechamiento_idFA', 'length', 'max'=>30),
 			array('fecha', 'safe'),
@@ -97,10 +142,56 @@ class RegistroEcpv extends CActiveRecord
 		$criteria->compare('CostoTotalUnitario',$this->CostoTotalUnitario);
 		$criteria->compare('fecha',$this->fecha,true);
 		$criteria->compare('FrenteAprovechamiento_Productos_FrenteAprovechamiento_idFA',$this->FrenteAprovechamiento_Productos_FrenteAprovechamiento_idFA,true);
-		$criteria->compare('costo_Total_Parcial',$this->costo_Total_Parcial);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
 		));
+	}
+	public function searchId($id)
+	{
+		// Warning: Please modify the following code to remove attributes that
+		// should not be searched.
+
+
+		
+		$this->with(array(
+						'frenteAprovechamientoProductosFrenteAprovechamientoIdFA'=>array(
+							'condition'=>'id_FrenteAprovechamiento=:id',
+							'params'=>array(
+								':id'=>$id)
+							)
+						))->findAll();
+
+		$criteria=new CDbCriteria;
+	$criteria->condition='frenteAprovechamientoProductosFrenteAprovechamientoIdFA.id_FrenteAprovechamiento=:id';
+	$criteria->params=array(':id'=>$id);
+	$criteria->with=array('frenteAprovechamientoProductosFrenteAprovechamientoIdFA');
+		//$criteria->compare('cantidad',$this->cantidad,true);
+		//$criteria->compare('CostoTotalUnitario',$this->CostoTotalUnitario);
+		//$criteria->compare('fecha',$this->fecha,true);
+		//$criteria->compare('FrenteAprovechamiento_Productos_FrenteAprovechamiento_idFA',$this->FrenteAprovechamiento_Productos_FrenteAprovechamiento_idFA,true);
+
+		return new CActiveDataProvider($this, array(
+			'criteria'=>$criteria,
+		));
+	}
+	public function calcularTotal($id)
+	{
+		$Registroecpv=new RegistroEcpv;
+		$criteria=new CDbCriteria;
+	    $criteria->condition='frenteAprovechamientoProductosFrenteAprovechamientoIdFA.id_FrenteAprovechamiento=:id';
+	    $criteria->params=array(':id'=>$id);
+	    $criteria->with=array('frenteAprovechamientoProductosFrenteAprovechamientoIdFA');
+		$registros=$Registroecpv->findAll($criteria);
+		if($registros!==array())
+		{
+			$total=0;
+		foreach ($registros as $key => $value) {
+			$total+=($registros[$key]->cantidad)*(self::getFrenteP($registros[$key]->FrenteAprovechamiento_Productos_FrenteAprovechamiento_idFA));
+		}
+		return $total;
+		}else{ 
+		return 0;	
+		}
 	}
 }

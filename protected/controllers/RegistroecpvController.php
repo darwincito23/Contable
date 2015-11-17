@@ -4,37 +4,26 @@ class RegistroecpvController extends Controller
 {
 	
 
-	public function actionDelete()
+	public function actionDelete($id)
 	{
-		$this->render('delete');
+		$this->loadModel($id)->delete();
 	}
 
 	public function actionIndex()
 	{
 	    $model=new RegistroEcpv;
-
-	    // uncomment the following code to enable ajax-based validation
-	    /*
-	    if(isset($_POST['ajax']) && $_POST['ajax']==='registro-ecpv-index-form')
-	    {
-	        echo CActiveForm::validate($model);
-	        Yii::app()->end();
-	    }
-	    */
-
 	    if(isset($_POST['RegistroEcpv']))
 	    {
 	        $model->attributes=$_POST['RegistroEcpv'];
-	        if($model->validate())
-	        {
-	            // form inputs are valid, do something here
-	            return;
-	        }
+	        $model->frenteA=$_POST['RegistroEcpv']['frenteA'];
+	        if($model->frenteA!=''){
+        	$this->redirect(array('crear','id'=>$model->frenteA));
+       		 }
 	    }
 	    $this->render('index',array('model'=>$model));
 	}
 	
-	public function actionCrear()
+	public function actionCrear($id)
 	{
 	    $model=new RegistroEcpv;
 
@@ -46,16 +35,20 @@ class RegistroecpvController extends Controller
 	        Yii::app()->end();
 	    }
 	    */
-
+		$model->frenteA=$id;
+		 $model->costoParcial=$model->calcularTotal($id);
 	    if(isset($_POST['RegistroEcpv']))
 	    {
 	        $model->attributes=$_POST['RegistroEcpv'];
 	        if($model->validate())
 	        {
 	            // form inputs are valid, do something here
-	            return;
+	        if ($model->save()) {
+	        	$this->redirect(array('crear','id'=>$id));
+	        }
 	        }
 	    }
+
 	    $this->render('crear',array('model'=>$model));
 	}
 
@@ -67,6 +60,15 @@ class RegistroecpvController extends Controller
 	public function actionView()
 	{
 		$this->render('view');
+	}
+	public function loadModel($id)
+	{
+		$model=RegistroEcpv::model()->findByPk($id);
+		
+		
+		if($model===null)
+			throw new CHttpException(404,'The requested page does not exist.');
+		return $model;
 	}
 
 	// Uncomment the following methods and override them if needed

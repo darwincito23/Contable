@@ -20,20 +20,14 @@ $this->breadcrumbs=array(
 			<?php //echo $form->errorSummary($model); ?>
 			
 			<div class="row">
-				<?php echo $form->labelEx($model,'FrenteAprovechamiento_Productos_FrenteAprovechamiento_idFA'); ?>
-				<?php echo $form->dropDownList($model,'FrenteAprovechamiento_Productos_FrenteAprovechamiento_idFA',array('')); ?>
-				<?php echo $form->error($model,'FrenteAprovechamiento_Productos_FrenteAprovechamiento_idFA'); ?>
+				<?php echo $form->dropDownList($model,'frenteA',FrenteaprovechamientoProductos::model()->getListFa()); ?>
 			</div>
-
-			
-
-		<?php $this->endWidget(); ?>
-
 		</div><!-- form -->
 	</div>
 		<div class="row buttons">
-				<?php echo CHtml::submitButton('Siguiente', array('submit'=>array('registroecpv/crear'),'class'=>'btn btn-success btn-md')); ?>
+				<?php echo CHtml::submitButton('Siguiente', array('class'=>'btn btn-success btn-md')); ?>
 		</div>
+		<?php $this->endWidget(); ?>
 	
 </div>
 <
