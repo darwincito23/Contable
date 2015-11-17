@@ -22,7 +22,7 @@ $this->breadcrumbs=array(
 				<?php echo $form->errorSummary($model); ?>
 
 				<div class="row">
-					<?php echo $form->labelEx($model,'id_FrenteAprovechamiento'); ?>
+					<?php echo $form->labelEx($model,''); ?>
 					<?php echo $form->dropDownList($model,'id_FrenteAprovechamiento',$model->getListFa()); ?>
 					<?php echo $form->error($model,'id_FrenteAprovechamiento');?>
 				</div>				

@@ -28,7 +28,7 @@ $this->menu=array(
 	'dataProvider'=>$model->search(),
 	'filter'=>$model,
 	'columns'=>array(
-		//'idProductos',
+		'idProductos',
 		'nombreProducto',
 		//'Usuario_idUsuario',
 		array(

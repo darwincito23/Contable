@@ -30,7 +30,7 @@ $this->menu=array(
 	'columns'=>array(
 		'idFrenteAprovechamiento',
 		'nombreFrenteAprovechamiento',
-		'Usuario_idUsuario',
+		//'Usuario_idUsuario',
 		array(
 			'class'=>'CButtonColumn',
 		),
