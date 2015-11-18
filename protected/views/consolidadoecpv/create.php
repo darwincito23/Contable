@@ -13,6 +13,14 @@ $this->menu=array(
 );
 ?>
 
-<h1>Create Consolidadoecpv</h1>
 
-<?php echo $this->renderPartial('_form', array('model'=>$model)); ?>
+
+<div class="container-fluid text-center">
+	<h1>Consolidado ECPV</h1>
+	<div class="col-md-2"></div>
+	<div class="col-md-8">
+		<?php echo $this->renderPartial('_form', array('model'=>$model)); ?>
+	</div>
+	<div class="col-md-2"></div>	
+</div>
+
