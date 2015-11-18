@@ -50,7 +50,7 @@ $('.search-form form').submit(function(){
 		'Usuario_idUsuario',
 		*/
 		array(
-			'class'=>'CButtonColumn',
+			'class'=>'CButtonColumn',			
 		),
 	),
 )); ?>

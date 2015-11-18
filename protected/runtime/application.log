@@ -6532,3 +6532,9 @@ Stack trace:
 REQUEST_URI=/yii/Contable/consolidadoecpv/index
 HTTP_REFERER=http://localhost:8080/yii/Contable/site/ecpv
 ---
+2015/11/18 07:00:59 [warning] [application] Failed to set unsafe attribute "nombre" of "Frenteaprovechamientoproductos".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\FrenteaprovechamientoproductosController.php (26)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/18 07:00:59 [warning] [application] Failed to set unsafe attribute "costo" of "Frenteaprovechamientoproductos".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\FrenteaprovechamientoproductosController.php (26)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
