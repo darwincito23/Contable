@@ -25,8 +25,9 @@ $this->breadcrumbs=array(
 			$criteria->params=array(':id'=>$model->frenteA);
 			  $nombre=Frenteaprovechamiento::model()->find($criteria);
 			  echo $nombre->nombreFrenteAprovechamiento; 
+			?>
 
-			?></h1>
+			</h1>
 				<?php //echo $form->labelEx($model,'frenteA'); ?>
 				<?php //echo $form->textField($model,'frenteA'); ?>
 				<?php //echo $form->error($model,'frenteA'); ?>

@@ -16,6 +16,6 @@ $this->menu=array(
 );
 ?>
 
-<h1>Actualizar Registro contable de gastos <?php echo $model->idRegistroContableGastos; ?></h1>
+<h1>Actualizar Registro Contable de Gastos <?php echo $model->idRegistroContableGastos; ?></h1>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>

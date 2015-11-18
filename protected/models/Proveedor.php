@@ -44,8 +44,8 @@ class Proveedor extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('nombreProveedor, numeroContacto, direccion, NIT_CC', 'required'),
-			array('Usuario_idUsuario,codigoProveedor', 'numerical', 'integerOnly'=>true),
+			array('nombreProveedor, codigoProveedor', 'required'),
+			array('Usuario_idUsuario', 'numerical', 'integerOnly'=>true),
 			array('nombreProveedor, codigoProveedor, direccion, NIT_CC', 'length', 'max'=>255),
 			array('numeroContacto', 'length', 'max'=>45),
 			// The following rule is used by search().
@@ -63,7 +63,7 @@ class Proveedor extends CActiveRecord
 		// class name for the relations automatically generated below.
 		return array(
 			'usuarioIdUsuario' => array(self::BELONGS_TO, 'Usuario', 'Usuario_idUsuario'),
-			'registrocontablegastoses' => array(self::MANY_MANY, 'Registrocontablegastos', 'registrocontablegastos_has_proveedor(Proveedor_idProveedor, RegistroContableGastos_idRegistroContableGastos)'),
+			'registrocontablegastoses' => array(self::HAS_MANY, 'Registrocontablegastos', 'Proveedor_idProveedor'),
 		);
 	}
 
@@ -73,9 +73,9 @@ class Proveedor extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'idProveedor' => 'Id Proveedor',
-			'nombreProveedor' => 'Nombre Proveedor',
-			'codigoProveedor' => 'Codigo Proveedor',
+			'idProveedor' => 'Id Tercero',
+			'nombreProveedor' => 'Nombre Tercero',
+			'codigoProveedor' => 'Codigo Tercero',
 			'numeroContacto' => 'Numero Contacto',
 			'direccion' => 'Direccion',
 			'NIT_CC' => 'Nit Cc',

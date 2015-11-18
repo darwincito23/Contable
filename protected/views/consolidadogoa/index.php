@@ -102,7 +102,7 @@ $('#boton').submit(function(){
 													)); ?>			
 							</td>
 							<td class="text-center">
-								    <?php echo $form->labelEx($model,'Proveedor'); ?>
+								    <?php echo $form->labelEx($model,'Tercero'); ?>
 								    <?php $this->widget('zii.widgets.jui.CJuiAutoComplete',
 											array(
 											  	'model'=>$model,
@@ -159,7 +159,7 @@ $('#boton').submit(function(){
 									array(
 										'name'=>'proveedor',
 										'value'=>'$data->proveedorIdProveedor->codigoProveedor.\'<->\'.$data->proveedorIdProveedor->nombreProveedor',
-										'header'=>'Proveedor',
+										'header'=>'Tercero',
 										),
 									array(
 										'name'=>'cuenta',

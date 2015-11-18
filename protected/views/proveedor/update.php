@@ -9,13 +9,13 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'Ver List de Proveedores', 'url'=>array('index')),
-	array('label'=>'Crear Proveedor', 'url'=>array('create')),
-	array('label'=>'Ver Proveedores', 'url'=>array('view', 'id'=>$model->idProveedor)),
-	array('label'=>'Aministrar Proveedores', 'url'=>array('admin')),
+	array('label'=>'Lista Tercero', 'url'=>array('index')),
+	array('label'=>'Crear Tercero', 'url'=>array('create')),
+	array('label'=>'Ver Tercero', 'url'=>array('view', 'id'=>$model->idProveedor)),
+	array('label'=>'Administrar Tercero', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Update Proveedor <?php echo $model->idProveedor; ?></h1>
+<h1>Actualizar Tercero <?php echo $model->idProveedor; ?></h1>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>

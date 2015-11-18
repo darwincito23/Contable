@@ -1,6 +1,6 @@
 <?php
 
-class ProveedorController extends Controller
+class ConsolidadoecpvController extends Controller
 {
 	/**
 	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
@@ -62,16 +62,16 @@ class ProveedorController extends Controller
 	 */
 	public function actionCreate()
 	{
-		$model=new Proveedor;
+		$model=new Consolidadoecpv;
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
-		
-		if(isset($_POST['Proveedor']))
+
+		if(isset($_POST['Consolidadoecpv']))
 		{
-			$model->attributes=$_POST['Proveedor'];
+			$model->attributes=$_POST['Consolidadoecpv'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->idProveedor));
+				$this->redirect(array('view','id'=>$model->idConsolidado_Estado_Costo_Producto_Vendido));
 		}
 
 		$this->render('create',array(
@@ -91,11 +91,11 @@ class ProveedorController extends Controller
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['Proveedor']))
+		if(isset($_POST['Consolidadoecpv']))
 		{
-			$model->attributes=$_POST['Proveedor'];
+			$model->attributes=$_POST['Consolidadoecpv'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->idProveedor));
+				$this->redirect(array('view','id'=>$model->idConsolidado_Estado_Costo_Producto_Vendido));
 		}
 
 		$this->render('update',array(
@@ -122,7 +122,7 @@ class ProveedorController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$dataProvider=new CActiveDataProvider('Proveedor');
+		$dataProvider=new CActiveDataProvider('Consolidadoecpv');
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
 		));
@@ -133,10 +133,10 @@ class ProveedorController extends Controller
 	 */
 	public function actionAdmin()
 	{
-		$model=new Proveedor('search');
+		$model=new Consolidadoecpv('search');
 		$model->unsetAttributes();  // clear any default values
-		if(isset($_GET['Proveedor']))
-			$model->attributes=$_GET['Proveedor'];
+		if(isset($_GET['Consolidadoecpv']))
+			$model->attributes=$_GET['Consolidadoecpv'];
 
 		$this->render('admin',array(
 			'model'=>$model,
@@ -147,12 +147,12 @@ class ProveedorController extends Controller
 	 * Returns the data model based on the primary key given in the GET variable.
 	 * If the data model is not found, an HTTP exception will be raised.
 	 * @param integer $id the ID of the model to be loaded
-	 * @return Proveedor the loaded model
+	 * @return Consolidadoecpv the loaded model
 	 * @throws CHttpException
 	 */
 	public function loadModel($id)
 	{
-		$model=Proveedor::model()->findByPk($id);
+		$model=Consolidadoecpv::model()->findByPk($id);
 		if($model===null)
 			throw new CHttpException(404,'The requested page does not exist.');
 		return $model;
@@ -160,11 +160,11 @@ class ProveedorController extends Controller
 
 	/**
 	 * Performs the AJAX validation.
-	 * @param Proveedor $model the model to be validated
+	 * @param Consolidadoecpv $model the model to be validated
 	 */
 	protected function performAjaxValidation($model)
 	{
-		if(isset($_POST['ajax']) && $_POST['ajax']==='proveedor-form')
+		if(isset($_POST['ajax']) && $_POST['ajax']==='consolidadoecpv-form')
 		{
 			echo CActiveForm::validate($model);
 			Yii::app()->end();

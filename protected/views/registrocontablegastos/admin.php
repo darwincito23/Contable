@@ -23,7 +23,7 @@ function reinstallDatePicker(id, data) {
 ?>
 
 
-<h1>Administrar Registro contable de gastos</h1>
+<h1>Administrar Registro Contable de Gastos</h1>
 
 
 <?php echo CHtml::link('','#',array('class'=>'search-button')); ?>

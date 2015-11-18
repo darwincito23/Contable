@@ -5322,3 +5322,1213 @@ Stack trace:
 REQUEST_URI=/yii/Contable/frenteaprovechamientoproductos/create/3
 HTTP_REFERER=http://localhost:8080/yii/Contable/frenteaprovechamientoproductos/create/3
 ---
+2015/11/17 09:55:47 [warning] [application] Failed to set unsafe attribute "frenteA" of "RegistroEcpv".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\RegistroecpvController.php (17)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/17 17:03:08 [warning] [application] Failed to set unsafe attribute "nombre" of "Frenteaprovechamientoproductos".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\FrenteaprovechamientoproductosController.php (26)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/17 17:03:08 [warning] [application] Failed to set unsafe attribute "costo" of "Frenteaprovechamientoproductos".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\FrenteaprovechamientoproductosController.php (26)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/17 17:03:17 [warning] [application] Failed to set unsafe attribute "nombre" of "Frenteaprovechamientoproductos".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\FrenteaprovechamientoproductosController.php (26)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/17 17:03:17 [warning] [application] Failed to set unsafe attribute "costo" of "Frenteaprovechamientoproductos".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\FrenteaprovechamientoproductosController.php (26)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/17 17:03:25 [warning] [application] Failed to set unsafe attribute "nombre" of "Frenteaprovechamientoproductos".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\FrenteaprovechamientoproductosController.php (26)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/17 17:03:25 [warning] [application] Failed to set unsafe attribute "costo" of "Frenteaprovechamientoproductos".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\FrenteaprovechamientoproductosController.php (26)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/17 17:03:34 [warning] [application] Failed to set unsafe attribute "nombre" of "Frenteaprovechamientoproductos".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\FrenteaprovechamientoproductosController.php (26)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/17 17:03:34 [warning] [application] Failed to set unsafe attribute "costo" of "Frenteaprovechamientoproductos".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\FrenteaprovechamientoproductosController.php (26)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/17 17:03:54 [warning] [application] Failed to set unsafe attribute "frenteA" of "RegistroEcpv".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\RegistroecpvController.php (17)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/17 17:04:07 [warning] [application] Failed to set unsafe attribute "date" of "RegistroEcpv".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\RegistroecpvController.php (42)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/17 17:04:07 [warning] [application] Failed to set unsafe attribute "nombrep" of "RegistroEcpv".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\RegistroecpvController.php (42)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/17 17:04:07 [warning] [application] Failed to set unsafe attribute "costop" of "RegistroEcpv".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\RegistroecpvController.php (42)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/17 17:04:07 [warning] [application] Failed to set unsafe attribute "costopp" of "RegistroEcpv".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\RegistroecpvController.php (42)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/17 17:04:07 [warning] [application] Failed to set unsafe attribute "costoParcial" of "RegistroEcpv".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\RegistroecpvController.php (42)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/17 17:04:41 [warning] [application] Failed to set unsafe attribute "date" of "RegistroEcpv".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\RegistroecpvController.php (42)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/17 17:04:41 [warning] [application] Failed to set unsafe attribute "nombrep" of "RegistroEcpv".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\RegistroecpvController.php (42)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/17 17:04:41 [warning] [application] Failed to set unsafe attribute "costop" of "RegistroEcpv".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\RegistroecpvController.php (42)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/17 17:04:41 [warning] [application] Failed to set unsafe attribute "costopp" of "RegistroEcpv".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\RegistroecpvController.php (42)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/17 17:04:41 [warning] [application] Failed to set unsafe attribute "costoParcial" of "RegistroEcpv".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\RegistroecpvController.php (42)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/17 17:11:37 [warning] [application] Failed to set unsafe attribute "frenteA" of "RegistroEcpv".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\RegistroecpvController.php (17)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/17 18:10:28 [warning] [application] Failed to set unsafe attribute "nombre" of "Frenteaprovechamientoproductos".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\FrenteaprovechamientoproductosController.php (26)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/17 18:10:28 [warning] [application] Failed to set unsafe attribute "costo" of "Frenteaprovechamientoproductos".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\FrenteaprovechamientoproductosController.php (26)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/17 18:12:23 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`distriguadua`.`proveedor`, CONSTRAINT `fk_Proveedor_Usuario1` FOREIGN KEY (`Usuario_idUsuario`) REFERENCES `usuario` (`idUsuario`) ON DELETE NO ACTION ON UPDATE NO ACTION). The SQL statement executed was: INSERT INTO `proveedor` (`Usuario_idUsuario`, `nombreProveedor`, `codigoProveedor`, `numeroContacto`, `direccion`, `NIT_CC`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5).
+in C:\xampp\htdocs\yii\Contable\protected\controllers\ProveedorController.php (75)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/17 18:12:23 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`distriguadua`.`proveedor`, CONSTRAINT `fk_Proveedor_Usuario1` FOREIGN KEY (`Usuario_idUsuario`) REFERENCES `usuario` (`idUsuario`) ON DELETE NO ACTION ON UPDATE NO ACTION). The SQL statement executed was: INSERT INTO `proveedor` (`Usuario_idUsuario`, `nombreProveedor`, `codigoProveedor`, `numeroContacto`, `direccion`, `NIT_CC`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5)' in C:\xampp\htdocs\yii\Contable\framework\db\CDbCommand.php:357
+Stack trace:
+#0 C:\xampp\htdocs\yii\Contable\framework\db\ar\CActiveRecord.php(1023): CDbCommand->execute()
+#1 C:\xampp\htdocs\yii\Contable\framework\db\ar\CActiveRecord.php(795): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\yii\Contable\protected\controllers\ProveedorController.php(75): CActiveRecord->save()
+#3 C:\xampp\htdocs\yii\Contable\framework\web\actions\CInlineAction.php(49): ProveedorController->actionCreate()
+#4 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\Contable\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\Contable\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\Contable\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\Contable\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(141): CWebApplication->runController('proveedor/creat...')
+#14 C:\xampp\htdocs\yii\Contable\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\yii\Contable\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/yii/Contable/proveedor/create
+HTTP_REFERER=http://localhost:8080/yii/Contable/proveedor/create
+---
+2015/11/17 18:13:10 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`distriguadua`.`proveedor`, CONSTRAINT `fk_Proveedor_Usuario1` FOREIGN KEY (`Usuario_idUsuario`) REFERENCES `usuario` (`idUsuario`) ON DELETE NO ACTION ON UPDATE NO ACTION). The SQL statement executed was: INSERT INTO `proveedor` (`Usuario_idUsuario`, `nombreProveedor`, `codigoProveedor`, `numeroContacto`, `direccion`, `NIT_CC`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5).
+in C:\xampp\htdocs\yii\Contable\protected\controllers\ProveedorController.php (75)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/17 18:13:10 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`distriguadua`.`proveedor`, CONSTRAINT `fk_Proveedor_Usuario1` FOREIGN KEY (`Usuario_idUsuario`) REFERENCES `usuario` (`idUsuario`) ON DELETE NO ACTION ON UPDATE NO ACTION). The SQL statement executed was: INSERT INTO `proveedor` (`Usuario_idUsuario`, `nombreProveedor`, `codigoProveedor`, `numeroContacto`, `direccion`, `NIT_CC`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5)' in C:\xampp\htdocs\yii\Contable\framework\db\CDbCommand.php:357
+Stack trace:
+#0 C:\xampp\htdocs\yii\Contable\framework\db\ar\CActiveRecord.php(1023): CDbCommand->execute()
+#1 C:\xampp\htdocs\yii\Contable\framework\db\ar\CActiveRecord.php(795): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\yii\Contable\protected\controllers\ProveedorController.php(75): CActiveRecord->save()
+#3 C:\xampp\htdocs\yii\Contable\framework\web\actions\CInlineAction.php(49): ProveedorController->actionCreate()
+#4 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\Contable\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\Contable\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\Contable\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\Contable\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(141): CWebApplication->runController('proveedor/creat...')
+#14 C:\xampp\htdocs\yii\Contable\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\yii\Contable\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/yii/Contable/proveedor/create
+HTTP_REFERER=http://localhost:8080/yii/Contable/proveedor/create
+---
+2015/11/17 18:15:40 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`distriguadua`.`proveedor`, CONSTRAINT `fk_Proveedor_Usuario1` FOREIGN KEY (`Usuario_idUsuario`) REFERENCES `usuario` (`idUsuario`) ON DELETE NO ACTION ON UPDATE NO ACTION). The SQL statement executed was: INSERT INTO `proveedor` (`Usuario_idUsuario`, `nombreProveedor`, `codigoProveedor`, `numeroContacto`, `direccion`, `NIT_CC`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5).
+in C:\xampp\htdocs\yii\Contable\protected\controllers\ProveedorController.php (75)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/17 18:15:40 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`distriguadua`.`proveedor`, CONSTRAINT `fk_Proveedor_Usuario1` FOREIGN KEY (`Usuario_idUsuario`) REFERENCES `usuario` (`idUsuario`) ON DELETE NO ACTION ON UPDATE NO ACTION). The SQL statement executed was: INSERT INTO `proveedor` (`Usuario_idUsuario`, `nombreProveedor`, `codigoProveedor`, `numeroContacto`, `direccion`, `NIT_CC`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5)' in C:\xampp\htdocs\yii\Contable\framework\db\CDbCommand.php:357
+Stack trace:
+#0 C:\xampp\htdocs\yii\Contable\framework\db\ar\CActiveRecord.php(1023): CDbCommand->execute()
+#1 C:\xampp\htdocs\yii\Contable\framework\db\ar\CActiveRecord.php(795): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\yii\Contable\protected\controllers\ProveedorController.php(75): CActiveRecord->save()
+#3 C:\xampp\htdocs\yii\Contable\framework\web\actions\CInlineAction.php(49): ProveedorController->actionCreate()
+#4 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\Contable\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\Contable\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\Contable\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\Contable\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(141): CWebApplication->runController('proveedor/creat...')
+#14 C:\xampp\htdocs\yii\Contable\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\yii\Contable\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/yii/Contable/proveedor/create
+HTTP_REFERER=http://localhost:8080/yii/Contable/proveedor/create
+---
+2015/11/17 18:18:56 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`distriguadua`.`proveedor`, CONSTRAINT `fk_Proveedor_Usuario1` FOREIGN KEY (`Usuario_idUsuario`) REFERENCES `usuario` (`idUsuario`) ON DELETE NO ACTION ON UPDATE NO ACTION). The SQL statement executed was: INSERT INTO `proveedor` (`Usuario_idUsuario`, `nombreProveedor`, `codigoProveedor`, `numeroContacto`, `direccion`, `NIT_CC`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5).
+in C:\xampp\htdocs\yii\Contable\protected\controllers\ProveedorController.php (75)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/17 18:18:56 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`distriguadua`.`proveedor`, CONSTRAINT `fk_Proveedor_Usuario1` FOREIGN KEY (`Usuario_idUsuario`) REFERENCES `usuario` (`idUsuario`) ON DELETE NO ACTION ON UPDATE NO ACTION). The SQL statement executed was: INSERT INTO `proveedor` (`Usuario_idUsuario`, `nombreProveedor`, `codigoProveedor`, `numeroContacto`, `direccion`, `NIT_CC`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5)' in C:\xampp\htdocs\yii\Contable\framework\db\CDbCommand.php:357
+Stack trace:
+#0 C:\xampp\htdocs\yii\Contable\framework\db\ar\CActiveRecord.php(1023): CDbCommand->execute()
+#1 C:\xampp\htdocs\yii\Contable\framework\db\ar\CActiveRecord.php(795): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\yii\Contable\protected\controllers\ProveedorController.php(75): CActiveRecord->save()
+#3 C:\xampp\htdocs\yii\Contable\framework\web\actions\CInlineAction.php(49): ProveedorController->actionCreate()
+#4 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\Contable\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\Contable\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\Contable\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\Contable\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(141): CWebApplication->runController('proveedor/creat...')
+#14 C:\xampp\htdocs\yii\Contable\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\yii\Contable\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/yii/Contable/proveedor/create
+HTTP_REFERER=http://localhost:8080/yii/Contable/proveedor/create
+---
+2015/11/17 18:24:37 [warning] [application] Failed to set unsafe attribute "numeroContacto" of "Proveedor".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\ProveedorController.php (171)
+in C:\xampp\htdocs\yii\Contable\protected\controllers\ProveedorController.php (68)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/17 18:24:38 [warning] [application] Failed to set unsafe attribute "numeroContacto" of "Proveedor".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\ProveedorController.php (171)
+in C:\xampp\htdocs\yii\Contable\protected\controllers\ProveedorController.php (68)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/17 18:24:39 [warning] [application] Failed to set unsafe attribute "numeroContacto" of "Proveedor".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\ProveedorController.php (171)
+in C:\xampp\htdocs\yii\Contable\protected\controllers\ProveedorController.php (68)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/17 18:24:43 [warning] [application] Failed to set unsafe attribute "numeroContacto" of "Proveedor".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\ProveedorController.php (171)
+in C:\xampp\htdocs\yii\Contable\protected\controllers\ProveedorController.php (68)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/17 18:24:49 [warning] [application] Failed to set unsafe attribute "numeroContacto" of "Proveedor".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\ProveedorController.php (171)
+in C:\xampp\htdocs\yii\Contable\protected\controllers\ProveedorController.php (68)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/17 18:24:51 [warning] [application] Failed to set unsafe attribute "numeroContacto" of "Proveedor".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\ProveedorController.php (171)
+in C:\xampp\htdocs\yii\Contable\protected\controllers\ProveedorController.php (68)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/17 18:24:53 [warning] [application] Failed to set unsafe attribute "numeroContacto" of "Proveedor".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\ProveedorController.php (171)
+in C:\xampp\htdocs\yii\Contable\protected\controllers\ProveedorController.php (68)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/17 18:24:53 [warning] [application] Failed to set unsafe attribute "numeroContacto" of "Proveedor".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\ProveedorController.php (171)
+in C:\xampp\htdocs\yii\Contable\protected\controllers\ProveedorController.php (68)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/17 18:24:55 [warning] [application] Failed to set unsafe attribute "numeroContacto" of "Proveedor".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\ProveedorController.php (171)
+in C:\xampp\htdocs\yii\Contable\protected\controllers\ProveedorController.php (68)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/17 18:24:58 [warning] [application] Failed to set unsafe attribute "numeroContacto" of "Proveedor".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\ProveedorController.php (72)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/17 18:24:59 [warning] [application] Failed to set unsafe attribute "numeroContacto" of "Proveedor".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\ProveedorController.php (171)
+in C:\xampp\htdocs\yii\Contable\protected\controllers\ProveedorController.php (68)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/17 18:25:10 [warning] [application] Failed to set unsafe attribute "numeroContacto" of "Proveedor".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\ProveedorController.php (171)
+in C:\xampp\htdocs\yii\Contable\protected\controllers\ProveedorController.php (68)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/17 18:25:12 [warning] [application] Failed to set unsafe attribute "numeroContacto" of "Proveedor".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\ProveedorController.php (171)
+in C:\xampp\htdocs\yii\Contable\protected\controllers\ProveedorController.php (68)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/17 18:25:13 [warning] [application] Failed to set unsafe attribute "numeroContacto" of "Proveedor".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\ProveedorController.php (171)
+in C:\xampp\htdocs\yii\Contable\protected\controllers\ProveedorController.php (68)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/17 18:25:14 [warning] [application] Failed to set unsafe attribute "numeroContacto" of "Proveedor".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\ProveedorController.php (171)
+in C:\xampp\htdocs\yii\Contable\protected\controllers\ProveedorController.php (68)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/17 18:25:21 [warning] [application] Failed to set unsafe attribute "numeroContacto" of "Proveedor".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\ProveedorController.php (171)
+in C:\xampp\htdocs\yii\Contable\protected\controllers\ProveedorController.php (68)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/17 18:25:29 [warning] [application] Failed to set unsafe attribute "numeroContacto" of "Proveedor".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\ProveedorController.php (171)
+in C:\xampp\htdocs\yii\Contable\protected\controllers\ProveedorController.php (68)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/17 18:25:32 [warning] [application] Failed to set unsafe attribute "numeroContacto" of "Proveedor".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\ProveedorController.php (171)
+in C:\xampp\htdocs\yii\Contable\protected\controllers\ProveedorController.php (68)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/17 18:25:36 [warning] [application] Failed to set unsafe attribute "numeroContacto" of "Proveedor".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\ProveedorController.php (171)
+in C:\xampp\htdocs\yii\Contable\protected\controllers\ProveedorController.php (68)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/17 18:25:40 [warning] [application] Failed to set unsafe attribute "numeroContacto" of "Proveedor".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\ProveedorController.php (72)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/17 18:25:41 [warning] [application] Failed to set unsafe attribute "numeroContacto" of "Proveedor".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\ProveedorController.php (171)
+in C:\xampp\htdocs\yii\Contable\protected\controllers\ProveedorController.php (68)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/17 18:29:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "uptdate".' in C:\xampp\htdocs\yii\Contable\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(270): CController->missingAction('uptdate')
+#1 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(282): CController->run('uptdate')
+#2 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(141): CWebApplication->runController('proveedor/uptda...')
+#3 C:\xampp\htdocs\yii\Contable\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\yii\Contable\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/Contable/proveedor/uptdate/8
+HTTP_REFERER=http://localhost:8080/yii/Contable/proveedor/8
+---
+2015/11/17 18:30:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "uptdate".' in C:\xampp\htdocs\yii\Contable\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(270): CController->missingAction('uptdate')
+#1 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(282): CController->run('uptdate')
+#2 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(141): CWebApplication->runController('proveedor/uptda...')
+#3 C:\xampp\htdocs\yii\Contable\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\yii\Contable\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/Contable/proveedor/uptdate/1
+HTTP_REFERER=http://localhost:8080/yii/Contable/proveedor/1
+---
+2015/11/17 20:11:54 [warning] [application] Failed to set unsafe attribute "prefijo" of "Cuentapuc".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\CuentapucController.php (81)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/17 20:12:26 [warning] [application] Failed to set unsafe attribute "prefijo" of "Cuentapuc".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\CuentapucController.php (81)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/17 20:14:28 [warning] [application] Failed to set unsafe attribute "prefijo" of "Cuentapuc".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\CuentapucController.php (81)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/17 20:17:43 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`distriguadua`.`cuentapuc`, CONSTRAINT `fk_CuentaPuc_CuentaPuc1` FOREIGN KEY (`CuentaPadre`) REFERENCES `cuentapuc` (`idCuentaPuc`) ON DELETE NO ACTION ON UPDATE NO ACTION). The SQL statement executed was: DELETE FROM `cuentapuc` WHERE `cuentapuc`.`idCuentaPuc`='1'.
+in C:\xampp\htdocs\yii\Contable\protected\controllers\CuentapucController.php (131)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/17 20:17:43 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`distriguadua`.`cuentapuc`, CONSTRAINT `fk_CuentaPuc_CuentaPuc1` FOREIGN KEY (`CuentaPadre`) REFERENCES `cuentapuc` (`idCuentaPuc`) ON DELETE NO ACTION ON UPDATE NO ACTION). The SQL statement executed was: DELETE FROM `cuentapuc` WHERE `cuentapuc`.`idCuentaPuc`='1'' in C:\xampp\htdocs\yii\Contable\framework\db\CDbCommand.php:357
+Stack trace:
+#0 C:\xampp\htdocs\yii\Contable\framework\db\ar\CActiveRecord.php(1745): CDbCommand->execute()
+#1 C:\xampp\htdocs\yii\Contable\framework\db\ar\CActiveRecord.php(1168): CActiveRecord->deleteByPk('1')
+#2 C:\xampp\htdocs\yii\Contable\protected\controllers\CuentapucController.php(131): CActiveRecord->delete()
+#3 [internal function]: CuentapucController->actionDelete('1')
+#4 C:\xampp\htdocs\yii\Contable\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(CuentapucController), Array)
+#5 C:\xampp\htdocs\yii\Contable\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(CuentapucController), Object(ReflectionMethod), Array)
+#6 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\yii\Contable\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(1116): CFilterChain->run()
+#9 C:\xampp\htdocs\yii\Contable\framework\web\filters\CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii\Contable\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\yii\Contable\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yii\Contable\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 C:\xampp\htdocs\yii\Contable\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(282): CController->run('delete')
+#18 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(141): CWebApplication->runController('cuentaPuc/delet...')
+#19 C:\xampp\htdocs\yii\Contable\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\yii\Contable\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/yii/Contable/cuentaPuc/delete/1?ajax=cuentapuc-grid
+HTTP_REFERER=http://localhost:8080/yii/Contable/cuentaPuc/admin
+---
+2015/11/17 20:19:28 [warning] [application] Failed to set unsafe attribute "prefijo" of "Cuentapuc".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\CuentapucController.php (81)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/17 20:20:42 [warning] [application] Failed to set unsafe attribute "prefijo" of "Cuentapuc".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\CuentapucController.php (81)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/17 20:21:50 [warning] [application] Failed to set unsafe attribute "prefijo" of "Cuentapuc".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\CuentapucController.php (114)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/17 20:25:21 [warning] [application] Failed to set unsafe attribute "cproveedor" of "Registrocontablegastos".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\RegistrocontablegastosController.php (82)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/17 20:25:21 [warning] [application] Failed to set unsafe attribute "nproveedor" of "Registrocontablegastos".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\RegistrocontablegastosController.php (82)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/17 20:25:21 [warning] [application] Failed to set unsafe attribute "ncuenta" of "Registrocontablegastos".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\RegistrocontablegastosController.php (82)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/17 20:25:21 [warning] [application] Failed to set unsafe attribute "ccuenta" of "Registrocontablegastos".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\RegistrocontablegastosController.php (82)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/17 20:30:05 [warning] [application] Failed to set unsafe attribute "cproveedor" of "Registrocontablegastos".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\RegistrocontablegastosController.php (82)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/17 20:30:05 [warning] [application] Failed to set unsafe attribute "nproveedor" of "Registrocontablegastos".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\RegistrocontablegastosController.php (82)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/17 20:30:05 [warning] [application] Failed to set unsafe attribute "ncuenta" of "Registrocontablegastos".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\RegistrocontablegastosController.php (82)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/17 20:30:05 [warning] [application] Failed to set unsafe attribute "ccuenta" of "Registrocontablegastos".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\RegistrocontablegastosController.php (82)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/17 20:31:13 [warning] [application] Failed to set unsafe attribute "cproveedor" of "Registrocontablegastos".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\RegistrocontablegastosController.php (116)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/17 20:31:13 [warning] [application] Failed to set unsafe attribute "nproveedor" of "Registrocontablegastos".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\RegistrocontablegastosController.php (116)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/17 20:31:13 [warning] [application] Failed to set unsafe attribute "ncuenta" of "Registrocontablegastos".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\RegistrocontablegastosController.php (116)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/17 20:31:13 [warning] [application] Failed to set unsafe attribute "ccuenta" of "Registrocontablegastos".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\RegistrocontablegastosController.php (116)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/17 20:37:12 [warning] [application] Failed to set unsafe attribute "nombre" of "Frenteaprovechamientoproductos".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\FrenteaprovechamientoproductosController.php (26)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/17 20:37:12 [warning] [application] Failed to set unsafe attribute "costo" of "Frenteaprovechamientoproductos".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\FrenteaprovechamientoproductosController.php (26)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/17 20:42:10 [warning] [application] Failed to set unsafe attribute "nombre" of "Frenteaprovechamientoproductos".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\FrenteaprovechamientoproductosController.php (26)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/17 20:42:10 [warning] [application] Failed to set unsafe attribute "costo" of "Frenteaprovechamientoproductos".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\FrenteaprovechamientoproductosController.php (26)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/17 20:42:46 [warning] [application] Failed to set unsafe attribute "nombre" of "Frenteaprovechamientoproductos".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\FrenteaprovechamientoproductosController.php (26)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/17 20:42:46 [warning] [application] Failed to set unsafe attribute "costo" of "Frenteaprovechamientoproductos".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\FrenteaprovechamientoproductosController.php (26)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/17 20:43:34 [warning] [application] Failed to set unsafe attribute "frenteA" of "RegistroEcpv".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\RegistroecpvController.php (17)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/17 20:46:40 [warning] [application] Failed to set unsafe attribute "date" of "RegistroEcpv".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\RegistroecpvController.php (42)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/17 20:46:40 [warning] [application] Failed to set unsafe attribute "nombrep" of "RegistroEcpv".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\RegistroecpvController.php (42)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/17 20:46:40 [warning] [application] Failed to set unsafe attribute "costop" of "RegistroEcpv".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\RegistroecpvController.php (42)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/17 20:46:40 [warning] [application] Failed to set unsafe attribute "costopp" of "RegistroEcpv".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\RegistroecpvController.php (42)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/17 20:46:40 [warning] [application] Failed to set unsafe attribute "costoParcial" of "RegistroEcpv".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\RegistroecpvController.php (42)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/17 20:47:50 [warning] [application] Failed to set unsafe attribute "nombre" of "Frenteaprovechamientoproductos".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\FrenteaprovechamientoproductosController.php (26)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/17 20:47:50 [warning] [application] Failed to set unsafe attribute "costo" of "Frenteaprovechamientoproductos".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\FrenteaprovechamientoproductosController.php (26)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/17 20:48:07 [warning] [application] Failed to set unsafe attribute "nombre" of "Frenteaprovechamientoproductos".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\FrenteaprovechamientoproductosController.php (26)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/17 20:48:07 [warning] [application] Failed to set unsafe attribute "costo" of "Frenteaprovechamientoproductos".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\FrenteaprovechamientoproductosController.php (26)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/17 20:48:28 [warning] [application] Failed to set unsafe attribute "frenteA" of "RegistroEcpv".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\RegistroecpvController.php (17)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/17 20:48:54 [warning] [application] Failed to set unsafe attribute "date" of "RegistroEcpv".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\RegistroecpvController.php (42)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/17 20:48:54 [warning] [application] Failed to set unsafe attribute "nombrep" of "RegistroEcpv".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\RegistroecpvController.php (42)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/17 20:48:54 [warning] [application] Failed to set unsafe attribute "costop" of "RegistroEcpv".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\RegistroecpvController.php (42)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/17 20:48:54 [warning] [application] Failed to set unsafe attribute "costopp" of "RegistroEcpv".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\RegistroecpvController.php (42)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/17 20:48:54 [warning] [application] Failed to set unsafe attribute "costoParcial" of "RegistroEcpv".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\RegistroecpvController.php (42)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/17 20:49:15 [warning] [application] Failed to set unsafe attribute "date" of "RegistroEcpv".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\RegistroecpvController.php (42)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/17 20:49:15 [warning] [application] Failed to set unsafe attribute "nombrep" of "RegistroEcpv".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\RegistroecpvController.php (42)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/17 20:49:15 [warning] [application] Failed to set unsafe attribute "costop" of "RegistroEcpv".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\RegistroecpvController.php (42)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/17 20:49:15 [warning] [application] Failed to set unsafe attribute "costopp" of "RegistroEcpv".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\RegistroecpvController.php (42)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/17 20:49:15 [warning] [application] Failed to set unsafe attribute "costoParcial" of "RegistroEcpv".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\RegistroecpvController.php (42)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/17 20:50:03 [warning] [application] Failed to set unsafe attribute "date" of "RegistroEcpv".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\RegistroecpvController.php (42)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/17 20:50:03 [warning] [application] Failed to set unsafe attribute "nombrep" of "RegistroEcpv".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\RegistroecpvController.php (42)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/17 20:50:03 [warning] [application] Failed to set unsafe attribute "costop" of "RegistroEcpv".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\RegistroecpvController.php (42)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/17 20:50:03 [warning] [application] Failed to set unsafe attribute "costopp" of "RegistroEcpv".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\RegistroecpvController.php (42)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/17 20:50:03 [warning] [application] Failed to set unsafe attribute "costoParcial" of "RegistroEcpv".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\RegistroecpvController.php (42)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/17 23:51:11 [error] [php] Undefined variable: model (C:\xampp\htdocs\yii\Contable\protected\views\consolidadoecpv\index.php:16)
+Stack trace:
+#0 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(869): ConsolidadoecpvController->renderFile()
+#1 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(782): ConsolidadoecpvController->renderPartial()
+#2 C:\xampp\htdocs\yii\Contable\protected\controllers\ConsolidadoecpvController.php(17): ConsolidadoecpvController->render()
+#3 C:\xampp\htdocs\yii\Contable\framework\web\actions\CInlineAction.php(49): ConsolidadoecpvController->actionIndex()
+#4 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(286): ConsolidadoecpvController->runAction()
+#6 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(265): ConsolidadoecpvController->runActionWithFilters()
+#7 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(282): ConsolidadoecpvController->run()
+#8 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\yii\Contable\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\yii\Contable\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/Contable/consolidadoecpv/index
+in C:\xampp\htdocs\yii\Contable\protected\views\consolidadoecpv\index.php (16)
+in C:\xampp\htdocs\yii\Contable\protected\controllers\ConsolidadoecpvController.php (17)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/17 23:57:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "consolidadoecpv/index".' in C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(141): CWebApplication->runController('consolidadoecpv...')
+#1 C:\xampp\htdocs\yii\Contable\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\yii\Contable\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/Contable/consolidadoecpv/index
+HTTP_REFERER=http://localhost:8080/yii/Contable/site/ecpv
+---
+2015/11/17 23:57:56 [warning] [application] Failed to set unsafe attribute "frenteA" of "RegistroEcpv".
+in C:\xampp\htdocs\yii\Contable\protected\controllers\RegistroecpvController.php (17)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/18 04:36:51 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`distriguadua`.`proveedor`, CONSTRAINT `fk_Proveedor_Usuario1` FOREIGN KEY (`Usuario_idUsuario`) REFERENCES `usuario` (`idUsuario`) ON DELETE NO ACTION ON UPDATE NO ACTION). The SQL statement executed was: INSERT INTO `proveedor` (`Usuario_idUsuario`, `nombreProveedor`, `codigoProveedor`, `numeroContacto`, `direccion`, `NIT_CC`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5).
+in C:\xampp\htdocs\yii\Contable\protected\controllers\ProveedorController.php (75)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/18 04:36:51 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`distriguadua`.`proveedor`, CONSTRAINT `fk_Proveedor_Usuario1` FOREIGN KEY (`Usuario_idUsuario`) REFERENCES `usuario` (`idUsuario`) ON DELETE NO ACTION ON UPDATE NO ACTION). The SQL statement executed was: INSERT INTO `proveedor` (`Usuario_idUsuario`, `nombreProveedor`, `codigoProveedor`, `numeroContacto`, `direccion`, `NIT_CC`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5)' in C:\xampp\htdocs\yii\Contable\framework\db\CDbCommand.php:357
+Stack trace:
+#0 C:\xampp\htdocs\yii\Contable\framework\db\ar\CActiveRecord.php(1023): CDbCommand->execute()
+#1 C:\xampp\htdocs\yii\Contable\framework\db\ar\CActiveRecord.php(795): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\yii\Contable\protected\controllers\ProveedorController.php(75): CActiveRecord->save()
+#3 C:\xampp\htdocs\yii\Contable\framework\web\actions\CInlineAction.php(49): ProveedorController->actionCreate()
+#4 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\Contable\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\Contable\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\Contable\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\Contable\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(141): CWebApplication->runController('proveedor/creat...')
+#14 C:\xampp\htdocs\yii\Contable\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\yii\Contable\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/yii/Contable/proveedor/create
+HTTP_REFERER=http://localhost:8080/yii/Contable/proveedor/create
+---
+2015/11/18 04:37:59 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`distriguadua`.`proveedor`, CONSTRAINT `fk_Proveedor_Usuario1` FOREIGN KEY (`Usuario_idUsuario`) REFERENCES `usuario` (`idUsuario`) ON DELETE NO ACTION ON UPDATE NO ACTION). The SQL statement executed was: INSERT INTO `proveedor` (`Usuario_idUsuario`, `nombreProveedor`, `codigoProveedor`, `numeroContacto`, `direccion`, `NIT_CC`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5).
+in C:\xampp\htdocs\yii\Contable\protected\controllers\ProveedorController.php (75)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/18 04:37:59 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`distriguadua`.`proveedor`, CONSTRAINT `fk_Proveedor_Usuario1` FOREIGN KEY (`Usuario_idUsuario`) REFERENCES `usuario` (`idUsuario`) ON DELETE NO ACTION ON UPDATE NO ACTION). The SQL statement executed was: INSERT INTO `proveedor` (`Usuario_idUsuario`, `nombreProveedor`, `codigoProveedor`, `numeroContacto`, `direccion`, `NIT_CC`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5)' in C:\xampp\htdocs\yii\Contable\framework\db\CDbCommand.php:357
+Stack trace:
+#0 C:\xampp\htdocs\yii\Contable\framework\db\ar\CActiveRecord.php(1023): CDbCommand->execute()
+#1 C:\xampp\htdocs\yii\Contable\framework\db\ar\CActiveRecord.php(795): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\yii\Contable\protected\controllers\ProveedorController.php(75): CActiveRecord->save()
+#3 C:\xampp\htdocs\yii\Contable\framework\web\actions\CInlineAction.php(49): ProveedorController->actionCreate()
+#4 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\Contable\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\Contable\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\Contable\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\Contable\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(141): CWebApplication->runController('proveedor/creat...')
+#14 C:\xampp\htdocs\yii\Contable\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\yii\Contable\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/yii/Contable/proveedor/create
+HTTP_REFERER=http://localhost:8080/yii/Contable/proveedor/create
+---
+2015/11/18 04:40:48 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`distriguadua`.`proveedor`, CONSTRAINT `fk_Proveedor_Usuario1` FOREIGN KEY (`Usuario_idUsuario`) REFERENCES `usuario` (`idUsuario`) ON DELETE NO ACTION ON UPDATE NO ACTION). The SQL statement executed was: INSERT INTO `proveedor` (`Usuario_idUsuario`, `nombreProveedor`, `codigoProveedor`, `numeroContacto`, `direccion`, `NIT_CC`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5).
+in C:\xampp\htdocs\yii\Contable\protected\controllers\ProveedorController.php (75)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/18 04:40:48 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`distriguadua`.`proveedor`, CONSTRAINT `fk_Proveedor_Usuario1` FOREIGN KEY (`Usuario_idUsuario`) REFERENCES `usuario` (`idUsuario`) ON DELETE NO ACTION ON UPDATE NO ACTION). The SQL statement executed was: INSERT INTO `proveedor` (`Usuario_idUsuario`, `nombreProveedor`, `codigoProveedor`, `numeroContacto`, `direccion`, `NIT_CC`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5)' in C:\xampp\htdocs\yii\Contable\framework\db\CDbCommand.php:357
+Stack trace:
+#0 C:\xampp\htdocs\yii\Contable\framework\db\ar\CActiveRecord.php(1023): CDbCommand->execute()
+#1 C:\xampp\htdocs\yii\Contable\framework\db\ar\CActiveRecord.php(795): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\yii\Contable\protected\controllers\ProveedorController.php(75): CActiveRecord->save()
+#3 C:\xampp\htdocs\yii\Contable\framework\web\actions\CInlineAction.php(49): ProveedorController->actionCreate()
+#4 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\Contable\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\Contable\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\Contable\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\Contable\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(141): CWebApplication->runController('proveedor/creat...')
+#14 C:\xampp\htdocs\yii\Contable\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\yii\Contable\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/yii/Contable/proveedor/create
+HTTP_REFERER=http://localhost:8080/yii/Contable/proveedor/create
+---
+2015/11/18 04:42:53 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`distriguadua`.`proveedor`, CONSTRAINT `fk_Proveedor_Usuario1` FOREIGN KEY (`Usuario_idUsuario`) REFERENCES `usuario` (`idUsuario`) ON DELETE NO ACTION ON UPDATE NO ACTION). The SQL statement executed was: INSERT INTO `proveedor` (`Usuario_idUsuario`, `nombreProveedor`, `codigoProveedor`, `numeroContacto`, `direccion`, `NIT_CC`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5).
+in C:\xampp\htdocs\yii\Contable\protected\controllers\ProveedorController.php (75)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/18 04:42:53 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`distriguadua`.`proveedor`, CONSTRAINT `fk_Proveedor_Usuario1` FOREIGN KEY (`Usuario_idUsuario`) REFERENCES `usuario` (`idUsuario`) ON DELETE NO ACTION ON UPDATE NO ACTION). The SQL statement executed was: INSERT INTO `proveedor` (`Usuario_idUsuario`, `nombreProveedor`, `codigoProveedor`, `numeroContacto`, `direccion`, `NIT_CC`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5)' in C:\xampp\htdocs\yii\Contable\framework\db\CDbCommand.php:357
+Stack trace:
+#0 C:\xampp\htdocs\yii\Contable\framework\db\ar\CActiveRecord.php(1023): CDbCommand->execute()
+#1 C:\xampp\htdocs\yii\Contable\framework\db\ar\CActiveRecord.php(795): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\yii\Contable\protected\controllers\ProveedorController.php(75): CActiveRecord->save()
+#3 C:\xampp\htdocs\yii\Contable\framework\web\actions\CInlineAction.php(49): ProveedorController->actionCreate()
+#4 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\Contable\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\Contable\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\Contable\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\Contable\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(141): CWebApplication->runController('proveedor/creat...')
+#14 C:\xampp\htdocs\yii\Contable\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\yii\Contable\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/yii/Contable/proveedor/create
+HTTP_REFERER=http://localhost:8080/yii/Contable/proveedor/create
+---
+2015/11/18 04:47:30 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`distriguadua`.`proveedor`, CONSTRAINT `fk_Proveedor_Usuario1` FOREIGN KEY (`Usuario_idUsuario`) REFERENCES `usuario` (`idUsuario`) ON DELETE NO ACTION ON UPDATE NO ACTION). The SQL statement executed was: INSERT INTO `proveedor` (`Usuario_idUsuario`, `nombreProveedor`, `codigoProveedor`, `numeroContacto`, `direccion`, `NIT_CC`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5).
+in C:\xampp\htdocs\yii\Contable\protected\controllers\ProveedorController.php (75)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/18 04:47:30 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`distriguadua`.`proveedor`, CONSTRAINT `fk_Proveedor_Usuario1` FOREIGN KEY (`Usuario_idUsuario`) REFERENCES `usuario` (`idUsuario`) ON DELETE NO ACTION ON UPDATE NO ACTION). The SQL statement executed was: INSERT INTO `proveedor` (`Usuario_idUsuario`, `nombreProveedor`, `codigoProveedor`, `numeroContacto`, `direccion`, `NIT_CC`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5)' in C:\xampp\htdocs\yii\Contable\framework\db\CDbCommand.php:357
+Stack trace:
+#0 C:\xampp\htdocs\yii\Contable\framework\db\ar\CActiveRecord.php(1023): CDbCommand->execute()
+#1 C:\xampp\htdocs\yii\Contable\framework\db\ar\CActiveRecord.php(795): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\yii\Contable\protected\controllers\ProveedorController.php(75): CActiveRecord->save()
+#3 C:\xampp\htdocs\yii\Contable\framework\web\actions\CInlineAction.php(49): ProveedorController->actionCreate()
+#4 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\Contable\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\Contable\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\Contable\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\Contable\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(141): CWebApplication->runController('proveedor/creat...')
+#14 C:\xampp\htdocs\yii\Contable\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\yii\Contable\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/yii/Contable/proveedor/create
+HTTP_REFERER=http://localhost:8080/yii/Contable/proveedor/create
+---
+2015/11/18 04:54:14 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`distriguadua`.`proveedor`, CONSTRAINT `fk_Proveedor_Usuario1` FOREIGN KEY (`Usuario_idUsuario`) REFERENCES `usuario` (`idUsuario`) ON DELETE NO ACTION ON UPDATE NO ACTION). The SQL statement executed was: INSERT INTO `proveedor` (`Usuario_idUsuario`, `nombreProveedor`, `codigoProveedor`, `numeroContacto`, `direccion`, `NIT_CC`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5).
+in C:\xampp\htdocs\yii\Contable\protected\controllers\ProveedorController.php (73)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/18 04:54:14 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`distriguadua`.`proveedor`, CONSTRAINT `fk_Proveedor_Usuario1` FOREIGN KEY (`Usuario_idUsuario`) REFERENCES `usuario` (`idUsuario`) ON DELETE NO ACTION ON UPDATE NO ACTION). The SQL statement executed was: INSERT INTO `proveedor` (`Usuario_idUsuario`, `nombreProveedor`, `codigoProveedor`, `numeroContacto`, `direccion`, `NIT_CC`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5)' in C:\xampp\htdocs\yii\Contable\framework\db\CDbCommand.php:357
+Stack trace:
+#0 C:\xampp\htdocs\yii\Contable\framework\db\ar\CActiveRecord.php(1023): CDbCommand->execute()
+#1 C:\xampp\htdocs\yii\Contable\framework\db\ar\CActiveRecord.php(795): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\yii\Contable\protected\controllers\ProveedorController.php(73): CActiveRecord->save()
+#3 C:\xampp\htdocs\yii\Contable\framework\web\actions\CInlineAction.php(49): ProveedorController->actionCreate()
+#4 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\Contable\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\Contable\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\Contable\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\Contable\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(141): CWebApplication->runController('proveedor/creat...')
+#14 C:\xampp\htdocs\yii\Contable\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\yii\Contable\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/yii/Contable/proveedor/create
+HTTP_REFERER=http://localhost:8080/yii/Contable/proveedor/create
+---
+2015/11/18 04:54:26 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`distriguadua`.`proveedor`, CONSTRAINT `fk_Proveedor_Usuario1` FOREIGN KEY (`Usuario_idUsuario`) REFERENCES `usuario` (`idUsuario`) ON DELETE NO ACTION ON UPDATE NO ACTION). The SQL statement executed was: INSERT INTO `proveedor` (`nombreProveedor`, `codigoProveedor`, `numeroContacto`, `direccion`, `NIT_CC`, `Usuario_idUsuario`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5).
+in C:\xampp\htdocs\yii\Contable\protected\controllers\ProveedorController.php (73)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/18 04:54:26 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`distriguadua`.`proveedor`, CONSTRAINT `fk_Proveedor_Usuario1` FOREIGN KEY (`Usuario_idUsuario`) REFERENCES `usuario` (`idUsuario`) ON DELETE NO ACTION ON UPDATE NO ACTION). The SQL statement executed was: INSERT INTO `proveedor` (`nombreProveedor`, `codigoProveedor`, `numeroContacto`, `direccion`, `NIT_CC`, `Usuario_idUsuario`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5)' in C:\xampp\htdocs\yii\Contable\framework\db\CDbCommand.php:357
+Stack trace:
+#0 C:\xampp\htdocs\yii\Contable\framework\db\ar\CActiveRecord.php(1023): CDbCommand->execute()
+#1 C:\xampp\htdocs\yii\Contable\framework\db\ar\CActiveRecord.php(795): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\yii\Contable\protected\controllers\ProveedorController.php(73): CActiveRecord->save()
+#3 C:\xampp\htdocs\yii\Contable\framework\web\actions\CInlineAction.php(49): ProveedorController->actionCreate()
+#4 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\Contable\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\Contable\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\Contable\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\Contable\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(141): CWebApplication->runController('proveedor/creat...')
+#14 C:\xampp\htdocs\yii\Contable\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\yii\Contable\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/yii/Contable/proveedor/create
+HTTP_REFERER=http://localhost:8080/yii/Contable/proveedor/create
+---
+2015/11/18 05:04:34 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'distriguadua.frenteaprovechamiento_productos' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `frenteaprovechamiento_productos`.
+in C:\xampp\htdocs\yii\Contable\protected\controllers\FrenteaprovechamientoproductosController.php (54)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/18 05:04:34 [error] [exception.CDbException] exception 'CDbException' with message 'The table "frenteaprovechamiento_productos" for active record class "Frenteaprovechamientoproductos" cannot be found in the database.' in C:\xampp\htdocs\yii\Contable\framework\db\ar\CActiveRecord.php:2310
+Stack trace:
+#0 C:\xampp\htdocs\yii\Contable\framework\db\ar\CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(Frenteaprovechamientoproductos))
+#1 C:\xampp\htdocs\yii\Contable\framework\db\ar\CActiveRecord.php(402): CActiveRecord::model('Frenteaprovecha...')
+#2 C:\xampp\htdocs\yii\Contable\framework\db\ar\CActiveRecord.php(77): CActiveRecord->getMetaData()
+#3 C:\xampp\htdocs\yii\Contable\protected\controllers\FrenteaprovechamientoproductosController.php(54): CActiveRecord->__construct()
+#4 C:\xampp\htdocs\yii\Contable\framework\web\actions\CInlineAction.php(49): FrenteaprovechamientoproductosController->actionIndex()
+#5 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(282): CController->run('index')
+#9 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(141): CWebApplication->runController('frenteaprovecha...')
+#10 C:\xampp\htdocs\yii\Contable\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\yii\Contable\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/yii/Contable/frenteaprovechamientoproductos/index
+HTTP_REFERER=http://localhost:8080/yii/Contable/site/ecpv
+---
+2015/11/18 05:04:40 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'distriguadua.registro_ecpv' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `registro_ecpv`.
+in C:\xampp\htdocs\yii\Contable\protected\controllers\RegistroecpvController.php (14)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/18 05:04:40 [error] [exception.CDbException] exception 'CDbException' with message 'The table "registro_ecpv" for active record class "RegistroEcpv" cannot be found in the database.' in C:\xampp\htdocs\yii\Contable\framework\db\ar\CActiveRecord.php:2310
+Stack trace:
+#0 C:\xampp\htdocs\yii\Contable\framework\db\ar\CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(RegistroEcpv))
+#1 C:\xampp\htdocs\yii\Contable\framework\db\ar\CActiveRecord.php(402): CActiveRecord::model('RegistroEcpv')
+#2 C:\xampp\htdocs\yii\Contable\framework\db\ar\CActiveRecord.php(77): CActiveRecord->getMetaData()
+#3 C:\xampp\htdocs\yii\Contable\protected\controllers\RegistroecpvController.php(14): CActiveRecord->__construct()
+#4 C:\xampp\htdocs\yii\Contable\framework\web\actions\CInlineAction.php(49): RegistroecpvController->actionIndex()
+#5 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(282): CController->run('index')
+#9 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(141): CWebApplication->runController('registroecpv/in...')
+#10 C:\xampp\htdocs\yii\Contable\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\yii\Contable\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/yii/Contable/registroecpv/index
+HTTP_REFERER=http://localhost:8080/yii/Contable/site/ecpv
+---
+2015/11/18 05:05:23 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'distriguadua.frenteaprovechamiento_productos' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `frenteaprovechamiento_productos`.
+in C:\xampp\htdocs\yii\Contable\protected\controllers\FrenteaprovechamientoproductosController.php (54)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/18 05:05:23 [error] [exception.CDbException] exception 'CDbException' with message 'The table "frenteaprovechamiento_productos" for active record class "Frenteaprovechamientoproductos" cannot be found in the database.' in C:\xampp\htdocs\yii\Contable\framework\db\ar\CActiveRecord.php:2310
+Stack trace:
+#0 C:\xampp\htdocs\yii\Contable\framework\db\ar\CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(Frenteaprovechamientoproductos))
+#1 C:\xampp\htdocs\yii\Contable\framework\db\ar\CActiveRecord.php(402): CActiveRecord::model('Frenteaprovecha...')
+#2 C:\xampp\htdocs\yii\Contable\framework\db\ar\CActiveRecord.php(77): CActiveRecord->getMetaData()
+#3 C:\xampp\htdocs\yii\Contable\protected\controllers\FrenteaprovechamientoproductosController.php(54): CActiveRecord->__construct()
+#4 C:\xampp\htdocs\yii\Contable\framework\web\actions\CInlineAction.php(49): FrenteaprovechamientoproductosController->actionIndex()
+#5 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(282): CController->run('index')
+#9 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(141): CWebApplication->runController('frenteaprovecha...')
+#10 C:\xampp\htdocs\yii\Contable\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\yii\Contable\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/yii/Contable/frenteaprovechamientoproductos/index
+HTTP_REFERER=http://localhost:8080/yii/Contable/site/ecpv
+---
+2015/11/18 05:06:23 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'distriguadua.frenteaprovechamiento_productos' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `frenteaprovechamiento_productos`.
+in C:\xampp\htdocs\yii\Contable\protected\controllers\FrenteaprovechamientoproductosController.php (54)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/18 05:06:23 [error] [exception.CDbException] exception 'CDbException' with message 'The table "frenteaprovechamiento_productos" for active record class "Frenteaprovechamientoproductos" cannot be found in the database.' in C:\xampp\htdocs\yii\Contable\framework\db\ar\CActiveRecord.php:2310
+Stack trace:
+#0 C:\xampp\htdocs\yii\Contable\framework\db\ar\CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(Frenteaprovechamientoproductos))
+#1 C:\xampp\htdocs\yii\Contable\framework\db\ar\CActiveRecord.php(402): CActiveRecord::model('Frenteaprovecha...')
+#2 C:\xampp\htdocs\yii\Contable\framework\db\ar\CActiveRecord.php(77): CActiveRecord->getMetaData()
+#3 C:\xampp\htdocs\yii\Contable\protected\controllers\FrenteaprovechamientoproductosController.php(54): CActiveRecord->__construct()
+#4 C:\xampp\htdocs\yii\Contable\framework\web\actions\CInlineAction.php(49): FrenteaprovechamientoproductosController->actionIndex()
+#5 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(282): CController->run('index')
+#9 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(141): CWebApplication->runController('frenteaprovecha...')
+#10 C:\xampp\htdocs\yii\Contable\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\yii\Contable\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/yii/Contable/frenteaprovechamientoproductos/index
+HTTP_REFERER=http://localhost:8080/yii/Contable/site/ecpv
+---
+2015/11/18 05:06:52 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'distriguadua.frenteaprovechamiento_productos' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `frenteaprovechamiento_productos`.
+in C:\xampp\htdocs\yii\Contable\protected\controllers\FrenteaprovechamientoproductosController.php (54)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/18 05:06:52 [error] [exception.CDbException] exception 'CDbException' with message 'The table "frenteaprovechamiento_productos" for active record class "Frenteaprovechamientoproductos" cannot be found in the database.' in C:\xampp\htdocs\yii\Contable\framework\db\ar\CActiveRecord.php:2310
+Stack trace:
+#0 C:\xampp\htdocs\yii\Contable\framework\db\ar\CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(Frenteaprovechamientoproductos))
+#1 C:\xampp\htdocs\yii\Contable\framework\db\ar\CActiveRecord.php(402): CActiveRecord::model('Frenteaprovecha...')
+#2 C:\xampp\htdocs\yii\Contable\framework\db\ar\CActiveRecord.php(77): CActiveRecord->getMetaData()
+#3 C:\xampp\htdocs\yii\Contable\protected\controllers\FrenteaprovechamientoproductosController.php(54): CActiveRecord->__construct()
+#4 C:\xampp\htdocs\yii\Contable\framework\web\actions\CInlineAction.php(49): FrenteaprovechamientoproductosController->actionIndex()
+#5 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(282): CController->run('index')
+#9 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(141): CWebApplication->runController('frenteaprovecha...')
+#10 C:\xampp\htdocs\yii\Contable\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\yii\Contable\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/yii/Contable/frenteaprovechamientoproductos/index
+HTTP_REFERER=http://localhost:8080/yii/Contable/site/ecpv
+---
+2015/11/18 05:06:58 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'distriguadua.registro_ecpv' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `registro_ecpv`.
+in C:\xampp\htdocs\yii\Contable\protected\controllers\RegistroecpvController.php (14)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/18 05:06:58 [error] [exception.CDbException] exception 'CDbException' with message 'The table "registro_ecpv" for active record class "RegistroEcpv" cannot be found in the database.' in C:\xampp\htdocs\yii\Contable\framework\db\ar\CActiveRecord.php:2310
+Stack trace:
+#0 C:\xampp\htdocs\yii\Contable\framework\db\ar\CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(RegistroEcpv))
+#1 C:\xampp\htdocs\yii\Contable\framework\db\ar\CActiveRecord.php(402): CActiveRecord::model('RegistroEcpv')
+#2 C:\xampp\htdocs\yii\Contable\framework\db\ar\CActiveRecord.php(77): CActiveRecord->getMetaData()
+#3 C:\xampp\htdocs\yii\Contable\protected\controllers\RegistroecpvController.php(14): CActiveRecord->__construct()
+#4 C:\xampp\htdocs\yii\Contable\framework\web\actions\CInlineAction.php(49): RegistroecpvController->actionIndex()
+#5 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(282): CController->run('index')
+#9 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(141): CWebApplication->runController('registroecpv/in...')
+#10 C:\xampp\htdocs\yii\Contable\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\yii\Contable\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/yii/Contable/registroecpv/index
+HTTP_REFERER=http://localhost:8080/yii/Contable/site/ecpv
+---
+2015/11/18 05:28:24 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'distriguadua.registro_ecpv' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `registro_ecpv`.
+in C:\xampp\htdocs\yii\Contable\protected\controllers\RegistroecpvController.php (14)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/18 05:28:24 [error] [exception.CDbException] exception 'CDbException' with message 'The table "registro_ecpv" for active record class "RegistroEcpv" cannot be found in the database.' in C:\xampp\htdocs\yii\Contable\framework\db\ar\CActiveRecord.php:2310
+Stack trace:
+#0 C:\xampp\htdocs\yii\Contable\framework\db\ar\CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(RegistroEcpv))
+#1 C:\xampp\htdocs\yii\Contable\framework\db\ar\CActiveRecord.php(402): CActiveRecord::model('RegistroEcpv')
+#2 C:\xampp\htdocs\yii\Contable\framework\db\ar\CActiveRecord.php(77): CActiveRecord->getMetaData()
+#3 C:\xampp\htdocs\yii\Contable\protected\controllers\RegistroecpvController.php(14): CActiveRecord->__construct()
+#4 C:\xampp\htdocs\yii\Contable\framework\web\actions\CInlineAction.php(49): RegistroecpvController->actionIndex()
+#5 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(282): CController->run('index')
+#9 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(141): CWebApplication->runController('registroecpv/in...')
+#10 C:\xampp\htdocs\yii\Contable\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\yii\Contable\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/yii/Contable/registroecpv/index
+HTTP_REFERER=http://localhost:8080/yii/Contable/site/ecpv
+---
+2015/11/18 05:28:27 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'distriguadua.frenteaprovechamiento_productos' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `frenteaprovechamiento_productos`.
+in C:\xampp\htdocs\yii\Contable\protected\controllers\FrenteaprovechamientoproductosController.php (54)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/18 05:28:27 [error] [exception.CDbException] exception 'CDbException' with message 'The table "frenteaprovechamiento_productos" for active record class "Frenteaprovechamientoproductos" cannot be found in the database.' in C:\xampp\htdocs\yii\Contable\framework\db\ar\CActiveRecord.php:2310
+Stack trace:
+#0 C:\xampp\htdocs\yii\Contable\framework\db\ar\CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(Frenteaprovechamientoproductos))
+#1 C:\xampp\htdocs\yii\Contable\framework\db\ar\CActiveRecord.php(402): CActiveRecord::model('Frenteaprovecha...')
+#2 C:\xampp\htdocs\yii\Contable\framework\db\ar\CActiveRecord.php(77): CActiveRecord->getMetaData()
+#3 C:\xampp\htdocs\yii\Contable\protected\controllers\FrenteaprovechamientoproductosController.php(54): CActiveRecord->__construct()
+#4 C:\xampp\htdocs\yii\Contable\framework\web\actions\CInlineAction.php(49): FrenteaprovechamientoproductosController->actionIndex()
+#5 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(282): CController->run('index')
+#9 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(141): CWebApplication->runController('frenteaprovecha...')
+#10 C:\xampp\htdocs\yii\Contable\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\yii\Contable\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/yii/Contable/frenteaprovechamientoproductos/index
+HTTP_REFERER=http://localhost:8080/yii/Contable/site/ecpv
+---
+2015/11/18 05:28:33 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'distriguadua.frenteaprovechamiento_productos' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `frenteaprovechamiento_productos`.
+in C:\xampp\htdocs\yii\Contable\protected\controllers\FrenteaprovechamientoproductosController.php (54)
+in C:\xampp\htdocs\yii\Contable\index.php (13)
+2015/11/18 05:28:33 [error] [exception.CDbException] exception 'CDbException' with message 'The table "frenteaprovechamiento_productos" for active record class "Frenteaprovechamientoproductos" cannot be found in the database.' in C:\xampp\htdocs\yii\Contable\framework\db\ar\CActiveRecord.php:2310
+Stack trace:
+#0 C:\xampp\htdocs\yii\Contable\framework\db\ar\CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(Frenteaprovechamientoproductos))
+#1 C:\xampp\htdocs\yii\Contable\framework\db\ar\CActiveRecord.php(402): CActiveRecord::model('Frenteaprovecha...')
+#2 C:\xampp\htdocs\yii\Contable\framework\db\ar\CActiveRecord.php(77): CActiveRecord->getMetaData()
+#3 C:\xampp\htdocs\yii\Contable\protected\controllers\FrenteaprovechamientoproductosController.php(54): CActiveRecord->__construct()
+#4 C:\xampp\htdocs\yii\Contable\framework\web\actions\CInlineAction.php(49): FrenteaprovechamientoproductosController->actionIndex()
+#5 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(282): CController->run('index')
+#9 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(141): CWebApplication->runController('frenteaprovecha...')
+#10 C:\xampp\htdocs\yii\Contable\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\yii\Contable\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/yii/Contable/frenteaprovechamientoproductos/index
+HTTP_REFERER=http://localhost:8080/yii/Contable/site/ecpv
+---
+2015/11/18 05:41:18 [error] [exception.CException] exception 'CException' with message 'Property "Consolidadoecpv.frente" is not defined.' in C:\xampp\htdocs\yii\Contable\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii\Contable\framework\db\ar\CActiveRecord.php(143): CComponent->__get('frente')
+#1 C:\xampp\htdocs\yii\Contable\framework\web\helpers\CHtml.php(2255): CActiveRecord->__get('frente')
+#2 C:\xampp\htdocs\yii\Contable\framework\web\helpers\CHtml.php(1980): CHtml::resolveValue(Object(Consolidadoecpv), 'frente')
+#3 C:\xampp\htdocs\yii\Contable\framework\web\helpers\CHtml.php(1257): CHtml::activeInputField('text', Object(Consolidadoecpv), 'frente', Array)
+#4 C:\xampp\htdocs\yii\Contable\framework\web\widgets\CActiveForm.php(657): CHtml::activeTextField(Object(Consolidadoecpv), 'frente', Array)
+#5 C:\xampp\htdocs\yii\Contable\protected\views\consolidadoecpv\index.php(49): CActiveForm->textField(Object(Consolidadoecpv), 'frente')
+#6 C:\xampp\htdocs\yii\Contable\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\yii\Contable\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#9 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#10 C:\xampp\htdocs\yii\Contable\protected\controllers\ConsolidadoecpvController.php(37): CController->render('index', Array)
+#11 C:\xampp\htdocs\yii\Contable\framework\web\actions\CInlineAction.php(49): ConsolidadoecpvController->actionIndex()
+#12 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#14 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(282): CController->run('index')
+#16 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(141): CWebApplication->runController('consolidadoecpv...')
+#17 C:\xampp\htdocs\yii\Contable\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\yii\Contable\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/yii/Contable/consolidadoecpv/index
+HTTP_REFERER=http://localhost:8080/yii/Contable/site/ecpv
+---
+2015/11/18 05:46:42 [error] [exception.CException] exception 'CException' with message 'Property "Consolidadoecpv.frente" is not defined.' in C:\xampp\htdocs\yii\Contable\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii\Contable\framework\db\ar\CActiveRecord.php(143): CComponent->__get('frente')
+#1 C:\xampp\htdocs\yii\Contable\framework\web\helpers\CHtml.php(2255): CActiveRecord->__get('frente')
+#2 C:\xampp\htdocs\yii\Contable\framework\web\helpers\CHtml.php(1980): CHtml::resolveValue(Object(Consolidadoecpv), 'frente')
+#3 C:\xampp\htdocs\yii\Contable\framework\web\helpers\CHtml.php(1257): CHtml::activeInputField('text', Object(Consolidadoecpv), 'frente', Array)
+#4 C:\xampp\htdocs\yii\Contable\framework\web\widgets\CActiveForm.php(657): CHtml::activeTextField(Object(Consolidadoecpv), 'frente', Array)
+#5 C:\xampp\htdocs\yii\Contable\protected\views\consolidadoecpv\index.php(49): CActiveForm->textField(Object(Consolidadoecpv), 'frente')
+#6 C:\xampp\htdocs\yii\Contable\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\yii\Contable\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#9 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#10 C:\xampp\htdocs\yii\Contable\protected\controllers\ConsolidadoecpvController.php(37): CController->render('index', Array)
+#11 C:\xampp\htdocs\yii\Contable\framework\web\actions\CInlineAction.php(49): ConsolidadoecpvController->actionIndex()
+#12 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#14 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(282): CController->run('index')
+#16 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(141): CWebApplication->runController('consolidadoecpv...')
+#17 C:\xampp\htdocs\yii\Contable\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\yii\Contable\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/yii/Contable/consolidadoecpv/index
+HTTP_REFERER=http://localhost:8080/yii/Contable/site/ecpv
+---
+2015/11/18 05:47:13 [error] [exception.CException] exception 'CException' with message 'Property "Consolidadoecpv.frente" is not defined.' in C:\xampp\htdocs\yii\Contable\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii\Contable\framework\db\ar\CActiveRecord.php(143): CComponent->__get('frente')
+#1 C:\xampp\htdocs\yii\Contable\framework\web\helpers\CHtml.php(2255): CActiveRecord->__get('frente')
+#2 C:\xampp\htdocs\yii\Contable\framework\web\helpers\CHtml.php(1980): CHtml::resolveValue(Object(Consolidadoecpv), 'frente')
+#3 C:\xampp\htdocs\yii\Contable\framework\web\helpers\CHtml.php(1257): CHtml::activeInputField('text', Object(Consolidadoecpv), 'frente', Array)
+#4 C:\xampp\htdocs\yii\Contable\framework\web\widgets\CActiveForm.php(657): CHtml::activeTextField(Object(Consolidadoecpv), 'frente', Array)
+#5 C:\xampp\htdocs\yii\Contable\protected\views\consolidadoecpv\index.php(49): CActiveForm->textField(Object(Consolidadoecpv), 'frente')
+#6 C:\xampp\htdocs\yii\Contable\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\yii\Contable\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#9 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#10 C:\xampp\htdocs\yii\Contable\protected\controllers\ConsolidadoecpvController.php(37): CController->render('index', Array)
+#11 C:\xampp\htdocs\yii\Contable\framework\web\actions\CInlineAction.php(49): ConsolidadoecpvController->actionIndex()
+#12 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#14 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(282): CController->run('index')
+#16 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(141): CWebApplication->runController('consolidadoecpv...')
+#17 C:\xampp\htdocs\yii\Contable\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\yii\Contable\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/yii/Contable/consolidadoecpv/index
+HTTP_REFERER=http://localhost:8080/yii/Contable/site/ecpv
+---
+2015/11/18 05:50:05 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'distriguadua.frenteaprovechamiento_productos' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `frenteaprovechamiento_productos`.
+in C:\xampp\htdocs\yii\Contable\protected\models\Consolidadoecpv.php (75)
+in C:\xampp\htdocs\yii\Contable\protected\views\consolidadoecpv\index.php (21)
+in C:\xampp\htdocs\yii\Contable\protected\controllers\ConsolidadoecpvController.php (37)
+2015/11/18 05:50:05 [error] [exception.CDbException] exception 'CDbException' with message 'The table "frenteaprovechamiento_productos" for active record class "Frenteaprovechamientoproductos" cannot be found in the database.' in C:\xampp\htdocs\yii\Contable\framework\db\ar\CActiveRecord.php:2310
+Stack trace:
+#0 C:\xampp\htdocs\yii\Contable\framework\db\ar\CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(Frenteaprovechamientoproductos))
+#1 C:\xampp\htdocs\yii\Contable\framework\db\ar\CActiveRecord.php(402): CActiveRecord::model('Frenteaprovecha...')
+#2 C:\xampp\htdocs\yii\Contable\framework\db\ar\CActiveRecord.php(77): CActiveRecord->getMetaData()
+#3 C:\xampp\htdocs\yii\Contable\protected\models\Consolidadoecpv.php(75): CActiveRecord->__construct()
+#4 C:\xampp\htdocs\yii\Contable\framework\db\ar\CActiveRecord.php(589): Consolidadoecpv->attributeLabels()
+#5 C:\xampp\htdocs\yii\Contable\framework\web\helpers\CHtml.php(1213): CActiveRecord->getAttributeLabel('fecha_inicio')
+#6 C:\xampp\htdocs\yii\Contable\framework\web\helpers\CHtml.php(1238): CHtml::activeLabel(Object(Consolidadoecpv), 'fecha_inicio', Array)
+#7 C:\xampp\htdocs\yii\Contable\framework\web\widgets\CActiveForm.php(562): CHtml::activeLabelEx(Object(Consolidadoecpv), 'fecha_inicio', Array)
+#8 C:\xampp\htdocs\yii\Contable\protected\views\consolidadoecpv\index.php(21): CActiveForm->labelEx(Object(Consolidadoecpv), 'fecha_inicio')
+#9 C:\xampp\htdocs\yii\Contable\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\yii\Contable\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#11 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#12 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#13 C:\xampp\htdocs\yii\Contable\protected\controllers\ConsolidadoecpvController.php(37): CController->render('index', Array)
+#14 C:\xampp\htdocs\yii\Contable\framework\web\actions\CInlineAction.php(49): ConsolidadoecpvController->actionIndex()
+#15 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#17 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(282): CController->run('index')
+#19 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(141): CWebApplication->runController('consolidadoecpv...')
+#20 C:\xampp\htdocs\yii\Contable\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\yii\Contable\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/yii/Contable/consolidadoecpv/index
+HTTP_REFERER=http://localhost:8080/yii/Contable/site/ecpv
+---
+2015/11/18 05:50:12 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'distriguadua.frenteaprovechamiento_productos' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `frenteaprovechamiento_productos`.
+in C:\xampp\htdocs\yii\Contable\protected\models\Consolidadoecpv.php (75)
+in C:\xampp\htdocs\yii\Contable\protected\views\consolidadoecpv\index.php (21)
+in C:\xampp\htdocs\yii\Contable\protected\controllers\ConsolidadoecpvController.php (37)
+2015/11/18 05:50:12 [error] [exception.CDbException] exception 'CDbException' with message 'The table "frenteaprovechamiento_productos" for active record class "Frenteaprovechamientoproductos" cannot be found in the database.' in C:\xampp\htdocs\yii\Contable\framework\db\ar\CActiveRecord.php:2310
+Stack trace:
+#0 C:\xampp\htdocs\yii\Contable\framework\db\ar\CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(Frenteaprovechamientoproductos))
+#1 C:\xampp\htdocs\yii\Contable\framework\db\ar\CActiveRecord.php(402): CActiveRecord::model('Frenteaprovecha...')
+#2 C:\xampp\htdocs\yii\Contable\framework\db\ar\CActiveRecord.php(77): CActiveRecord->getMetaData()
+#3 C:\xampp\htdocs\yii\Contable\protected\models\Consolidadoecpv.php(75): CActiveRecord->__construct()
+#4 C:\xampp\htdocs\yii\Contable\framework\db\ar\CActiveRecord.php(589): Consolidadoecpv->attributeLabels()
+#5 C:\xampp\htdocs\yii\Contable\framework\web\helpers\CHtml.php(1213): CActiveRecord->getAttributeLabel('fecha_inicio')
+#6 C:\xampp\htdocs\yii\Contable\framework\web\helpers\CHtml.php(1238): CHtml::activeLabel(Object(Consolidadoecpv), 'fecha_inicio', Array)
+#7 C:\xampp\htdocs\yii\Contable\framework\web\widgets\CActiveForm.php(562): CHtml::activeLabelEx(Object(Consolidadoecpv), 'fecha_inicio', Array)
+#8 C:\xampp\htdocs\yii\Contable\protected\views\consolidadoecpv\index.php(21): CActiveForm->labelEx(Object(Consolidadoecpv), 'fecha_inicio')
+#9 C:\xampp\htdocs\yii\Contable\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\yii\Contable\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#11 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#12 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#13 C:\xampp\htdocs\yii\Contable\protected\controllers\ConsolidadoecpvController.php(37): CController->render('index', Array)
+#14 C:\xampp\htdocs\yii\Contable\framework\web\actions\CInlineAction.php(49): ConsolidadoecpvController->actionIndex()
+#15 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#17 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(282): CController->run('index')
+#19 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(141): CWebApplication->runController('consolidadoecpv...')
+#20 C:\xampp\htdocs\yii\Contable\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\yii\Contable\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/yii/Contable/consolidadoecpv/index
+HTTP_REFERER=http://localhost:8080/yii/Contable/site/ecpv
+---
+2015/11/18 05:52:38 [error] [exception.CException] exception 'CException' with message 'Property "Consolidadoecpv.RegistroECPV_idRegistro_ECPV" is not defined.' in C:\xampp\htdocs\yii\Contable\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii\Contable\framework\db\ar\CActiveRecord.php(143): CComponent->__get('RegistroECPV_id...')
+#1 C:\xampp\htdocs\yii\Contable\framework\web\helpers\CHtml.php(2255): CActiveRecord->__get('RegistroECPV_id...')
+#2 C:\xampp\htdocs\yii\Contable\framework\web\helpers\CHtml.php(1980): CHtml::resolveValue(Object(Consolidadoecpv), 'RegistroECPV_id...')
+#3 C:\xampp\htdocs\yii\Contable\framework\web\helpers\CHtml.php(1257): CHtml::activeInputField('text', Object(Consolidadoecpv), 'RegistroECPV_id...', Array)
+#4 C:\xampp\htdocs\yii\Contable\framework\web\widgets\CActiveForm.php(657): CHtml::activeTextField(Object(Consolidadoecpv), 'RegistroECPV_id...', Array)
+#5 C:\xampp\htdocs\yii\Contable\protected\views\consolidadoecpv\index.php(43): CActiveForm->textField(Object(Consolidadoecpv), 'RegistroECPV_id...')
+#6 C:\xampp\htdocs\yii\Contable\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\yii\Contable\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#9 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#10 C:\xampp\htdocs\yii\Contable\protected\controllers\ConsolidadoecpvController.php(37): CController->render('index', Array)
+#11 C:\xampp\htdocs\yii\Contable\framework\web\actions\CInlineAction.php(49): ConsolidadoecpvController->actionIndex()
+#12 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#14 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(282): CController->run('index')
+#16 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(141): CWebApplication->runController('consolidadoecpv...')
+#17 C:\xampp\htdocs\yii\Contable\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\yii\Contable\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/yii/Contable/consolidadoecpv/index
+HTTP_REFERER=http://localhost:8080/yii/Contable/site/ecpv
+---
+2015/11/18 05:53:21 [error] [exception.CException] exception 'CException' with message 'Property "Consolidadoecpv.RegistroECPV_idRegistro_ECPV" is not defined.' in C:\xampp\htdocs\yii\Contable\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii\Contable\framework\db\ar\CActiveRecord.php(143): CComponent->__get('RegistroECPV_id...')
+#1 C:\xampp\htdocs\yii\Contable\framework\web\helpers\CHtml.php(2255): CActiveRecord->__get('RegistroECPV_id...')
+#2 C:\xampp\htdocs\yii\Contable\framework\web\helpers\CHtml.php(1980): CHtml::resolveValue(Object(Consolidadoecpv), 'RegistroECPV_id...')
+#3 C:\xampp\htdocs\yii\Contable\framework\web\helpers\CHtml.php(1257): CHtml::activeInputField('text', Object(Consolidadoecpv), 'RegistroECPV_id...', Array)
+#4 C:\xampp\htdocs\yii\Contable\framework\web\widgets\CActiveForm.php(657): CHtml::activeTextField(Object(Consolidadoecpv), 'RegistroECPV_id...', Array)
+#5 C:\xampp\htdocs\yii\Contable\protected\views\consolidadoecpv\index.php(43): CActiveForm->textField(Object(Consolidadoecpv), 'RegistroECPV_id...')
+#6 C:\xampp\htdocs\yii\Contable\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\yii\Contable\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#9 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#10 C:\xampp\htdocs\yii\Contable\protected\controllers\ConsolidadoecpvController.php(37): CController->render('index', Array)
+#11 C:\xampp\htdocs\yii\Contable\framework\web\actions\CInlineAction.php(49): ConsolidadoecpvController->actionIndex()
+#12 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#14 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(282): CController->run('index')
+#16 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(141): CWebApplication->runController('consolidadoecpv...')
+#17 C:\xampp\htdocs\yii\Contable\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\yii\Contable\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/yii/Contable/consolidadoecpv/index
+HTTP_REFERER=http://localhost:8080/yii/Contable/site/ecpv
+---
+2015/11/18 05:56:41 [error] [exception.CException] exception 'CException' with message 'Property "Consolidadoecpv.RegistroECPV_idRegistro_ECPV" is not defined.' in C:\xampp\htdocs\yii\Contable\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii\Contable\framework\db\ar\CActiveRecord.php(143): CComponent->__get('RegistroECPV_id...')
+#1 C:\xampp\htdocs\yii\Contable\framework\web\helpers\CHtml.php(2255): CActiveRecord->__get('RegistroECPV_id...')
+#2 C:\xampp\htdocs\yii\Contable\framework\web\helpers\CHtml.php(1980): CHtml::resolveValue(Object(Consolidadoecpv), 'RegistroECPV_id...')
+#3 C:\xampp\htdocs\yii\Contable\framework\web\helpers\CHtml.php(1257): CHtml::activeInputField('text', Object(Consolidadoecpv), 'RegistroECPV_id...', Array)
+#4 C:\xampp\htdocs\yii\Contable\framework\web\widgets\CActiveForm.php(657): CHtml::activeTextField(Object(Consolidadoecpv), 'RegistroECPV_id...', Array)
+#5 C:\xampp\htdocs\yii\Contable\protected\views\consolidadoecpv\index.php(43): CActiveForm->textField(Object(Consolidadoecpv), 'RegistroECPV_id...')
+#6 C:\xampp\htdocs\yii\Contable\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\yii\Contable\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#9 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#10 C:\xampp\htdocs\yii\Contable\protected\controllers\ConsolidadoecpvController.php(37): CController->render('index', Array)
+#11 C:\xampp\htdocs\yii\Contable\framework\web\actions\CInlineAction.php(49): ConsolidadoecpvController->actionIndex()
+#12 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#14 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(282): CController->run('index')
+#16 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(141): CWebApplication->runController('consolidadoecpv...')
+#17 C:\xampp\htdocs\yii\Contable\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\yii\Contable\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/yii/Contable/consolidadoecpv/index
+HTTP_REFERER=http://localhost:8080/yii/Contable/site/ecpv
+---
+2015/11/18 05:57:54 [error] [exception.CException] exception 'CException' with message 'Property "Consolidadoecpv.RegistroECPV_idRegistro_ECPV" is not defined.' in C:\xampp\htdocs\yii\Contable\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii\Contable\framework\db\ar\CActiveRecord.php(143): CComponent->__get('RegistroECPV_id...')
+#1 C:\xampp\htdocs\yii\Contable\framework\web\helpers\CHtml.php(2255): CActiveRecord->__get('RegistroECPV_id...')
+#2 C:\xampp\htdocs\yii\Contable\framework\web\helpers\CHtml.php(1980): CHtml::resolveValue(Object(Consolidadoecpv), 'RegistroECPV_id...')
+#3 C:\xampp\htdocs\yii\Contable\framework\web\helpers\CHtml.php(1257): CHtml::activeInputField('text', Object(Consolidadoecpv), 'RegistroECPV_id...', Array)
+#4 C:\xampp\htdocs\yii\Contable\framework\web\widgets\CActiveForm.php(657): CHtml::activeTextField(Object(Consolidadoecpv), 'RegistroECPV_id...', Array)
+#5 C:\xampp\htdocs\yii\Contable\protected\views\consolidadoecpv\index.php(43): CActiveForm->textField(Object(Consolidadoecpv), 'RegistroECPV_id...')
+#6 C:\xampp\htdocs\yii\Contable\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\yii\Contable\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#9 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#10 C:\xampp\htdocs\yii\Contable\protected\controllers\ConsolidadoecpvController.php(37): CController->render('index', Array)
+#11 C:\xampp\htdocs\yii\Contable\framework\web\actions\CInlineAction.php(49): ConsolidadoecpvController->actionIndex()
+#12 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#14 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(282): CController->run('index')
+#16 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(141): CWebApplication->runController('consolidadoecpv...')
+#17 C:\xampp\htdocs\yii\Contable\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\yii\Contable\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/yii/Contable/consolidadoecpv/index
+HTTP_REFERER=http://localhost:8080/yii/Contable/site/ecpv
+---
+2015/11/18 06:00:40 [error] [exception.CException] exception 'CException' with message 'Property "Consolidadoecpv.RegistroECPV_idRegistro_ECPV" is not defined.' in C:\xampp\htdocs\yii\Contable\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii\Contable\framework\db\ar\CActiveRecord.php(143): CComponent->__get('RegistroECPV_id...')
+#1 C:\xampp\htdocs\yii\Contable\framework\web\helpers\CHtml.php(2255): CActiveRecord->__get('RegistroECPV_id...')
+#2 C:\xampp\htdocs\yii\Contable\framework\web\helpers\CHtml.php(1980): CHtml::resolveValue(Object(Consolidadoecpv), 'RegistroECPV_id...')
+#3 C:\xampp\htdocs\yii\Contable\framework\web\helpers\CHtml.php(1257): CHtml::activeInputField('text', Object(Consolidadoecpv), 'RegistroECPV_id...', Array)
+#4 C:\xampp\htdocs\yii\Contable\framework\web\widgets\CActiveForm.php(657): CHtml::activeTextField(Object(Consolidadoecpv), 'RegistroECPV_id...', Array)
+#5 C:\xampp\htdocs\yii\Contable\protected\views\consolidadoecpv\index.php(43): CActiveForm->textField(Object(Consolidadoecpv), 'RegistroECPV_id...')
+#6 C:\xampp\htdocs\yii\Contable\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\yii\Contable\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#9 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#10 C:\xampp\htdocs\yii\Contable\protected\controllers\ConsolidadoecpvController.php(37): CController->render('index', Array)
+#11 C:\xampp\htdocs\yii\Contable\framework\web\actions\CInlineAction.php(49): ConsolidadoecpvController->actionIndex()
+#12 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#14 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(282): CController->run('index')
+#16 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(141): CWebApplication->runController('consolidadoecpv...')
+#17 C:\xampp\htdocs\yii\Contable\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\yii\Contable\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/yii/Contable/consolidadoecpv/index
+HTTP_REFERER=http://localhost:8080/yii/Contable/site/ecpv
+---
+2015/11/18 06:06:58 [error] [exception.CException] exception 'CException' with message 'Property "Consolidadoecpv.RegistroECPV_idRegistro_ECPV" is not defined.' in C:\xampp\htdocs\yii\Contable\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii\Contable\framework\db\ar\CActiveRecord.php(143): CComponent->__get('RegistroECPV_id...')
+#1 C:\xampp\htdocs\yii\Contable\framework\web\helpers\CHtml.php(2255): CActiveRecord->__get('RegistroECPV_id...')
+#2 C:\xampp\htdocs\yii\Contable\framework\web\helpers\CHtml.php(1980): CHtml::resolveValue(Object(Consolidadoecpv), 'RegistroECPV_id...')
+#3 C:\xampp\htdocs\yii\Contable\framework\web\helpers\CHtml.php(1257): CHtml::activeInputField('text', Object(Consolidadoecpv), 'RegistroECPV_id...', Array)
+#4 C:\xampp\htdocs\yii\Contable\framework\web\widgets\CActiveForm.php(657): CHtml::activeTextField(Object(Consolidadoecpv), 'RegistroECPV_id...', Array)
+#5 C:\xampp\htdocs\yii\Contable\protected\views\consolidadoecpv\index.php(20): CActiveForm->textField(Object(Consolidadoecpv), 'RegistroECPV_id...')
+#6 C:\xampp\htdocs\yii\Contable\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\yii\Contable\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#9 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#10 C:\xampp\htdocs\yii\Contable\protected\controllers\ConsolidadoecpvController.php(37): CController->render('index', Array)
+#11 C:\xampp\htdocs\yii\Contable\framework\web\actions\CInlineAction.php(49): ConsolidadoecpvController->actionIndex()
+#12 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#14 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(282): CController->run('index')
+#16 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(141): CWebApplication->runController('consolidadoecpv...')
+#17 C:\xampp\htdocs\yii\Contable\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\yii\Contable\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/yii/Contable/consolidadoecpv/index
+HTTP_REFERER=http://localhost:8080/yii/Contable/site/ecpv
+---
+2015/11/18 06:07:49 [error] [exception.CException] exception 'CException' with message 'Property "Consolidadoecpv.RegistroECPV_idRegistro_ECPV" is not defined.' in C:\xampp\htdocs\yii\Contable\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii\Contable\framework\db\ar\CActiveRecord.php(143): CComponent->__get('RegistroECPV_id...')
+#1 C:\xampp\htdocs\yii\Contable\framework\web\helpers\CHtml.php(2255): CActiveRecord->__get('RegistroECPV_id...')
+#2 C:\xampp\htdocs\yii\Contable\framework\web\helpers\CHtml.php(1980): CHtml::resolveValue(Object(Consolidadoecpv), 'RegistroECPV_id...')
+#3 C:\xampp\htdocs\yii\Contable\framework\web\helpers\CHtml.php(1257): CHtml::activeInputField('text', Object(Consolidadoecpv), 'RegistroECPV_id...', Array)
+#4 C:\xampp\htdocs\yii\Contable\framework\web\widgets\CActiveForm.php(657): CHtml::activeTextField(Object(Consolidadoecpv), 'RegistroECPV_id...', Array)
+#5 C:\xampp\htdocs\yii\Contable\protected\views\consolidadoecpv\index.php(20): CActiveForm->textField(Object(Consolidadoecpv), 'RegistroECPV_id...')
+#6 C:\xampp\htdocs\yii\Contable\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\yii\Contable\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#9 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#10 C:\xampp\htdocs\yii\Contable\protected\controllers\ConsolidadoecpvController.php(37): CController->render('index', Array)
+#11 C:\xampp\htdocs\yii\Contable\framework\web\actions\CInlineAction.php(49): ConsolidadoecpvController->actionIndex()
+#12 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#14 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(282): CController->run('index')
+#16 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(141): CWebApplication->runController('consolidadoecpv...')
+#17 C:\xampp\htdocs\yii\Contable\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\yii\Contable\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/yii/Contable/consolidadoecpv/index
+HTTP_REFERER=http://localhost:8080/yii/Contable/site/ecpv
+---
+2015/11/18 06:13:50 [error] [exception.CException] exception 'CException' with message 'Property "Consolidadoecpv.RegistroECPV_idRegistro_ECPV" is not defined.' in C:\xampp\htdocs\yii\Contable\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii\Contable\framework\db\ar\CActiveRecord.php(143): CComponent->__get('RegistroECPV_id...')
+#1 C:\xampp\htdocs\yii\Contable\framework\web\helpers\CHtml.php(2255): CActiveRecord->__get('RegistroECPV_id...')
+#2 C:\xampp\htdocs\yii\Contable\framework\web\helpers\CHtml.php(1980): CHtml::resolveValue(Object(Consolidadoecpv), 'RegistroECPV_id...')
+#3 C:\xampp\htdocs\yii\Contable\framework\web\helpers\CHtml.php(1257): CHtml::activeInputField('text', Object(Consolidadoecpv), 'RegistroECPV_id...', Array)
+#4 C:\xampp\htdocs\yii\Contable\framework\web\widgets\CActiveForm.php(657): CHtml::activeTextField(Object(Consolidadoecpv), 'RegistroECPV_id...', Array)
+#5 C:\xampp\htdocs\yii\Contable\protected\views\consolidadoecpv\index.php(20): CActiveForm->textField(Object(Consolidadoecpv), 'RegistroECPV_id...')
+#6 C:\xampp\htdocs\yii\Contable\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\yii\Contable\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#9 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#10 C:\xampp\htdocs\yii\Contable\protected\controllers\ConsolidadoecpvController.php(37): CController->render('index', Array)
+#11 C:\xampp\htdocs\yii\Contable\framework\web\actions\CInlineAction.php(49): ConsolidadoecpvController->actionIndex()
+#12 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#14 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(282): CController->run('index')
+#16 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(141): CWebApplication->runController('consolidadoecpv...')
+#17 C:\xampp\htdocs\yii\Contable\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\yii\Contable\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/yii/Contable/consolidadoecpv/index
+HTTP_REFERER=http://localhost:8080/yii/Contable/site/ecpv
+---
+2015/11/18 06:18:46 [error] [exception.CException] exception 'CException' with message 'Property "Consolidadoecpv.RegistroECPV_idRegistro_ECPV" is not defined.' in C:\xampp\htdocs\yii\Contable\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii\Contable\framework\db\ar\CActiveRecord.php(143): CComponent->__get('RegistroECPV_id...')
+#1 C:\xampp\htdocs\yii\Contable\framework\web\helpers\CHtml.php(2255): CActiveRecord->__get('RegistroECPV_id...')
+#2 C:\xampp\htdocs\yii\Contable\framework\web\helpers\CHtml.php(1980): CHtml::resolveValue(Object(Consolidadoecpv), 'RegistroECPV_id...')
+#3 C:\xampp\htdocs\yii\Contable\framework\web\helpers\CHtml.php(1257): CHtml::activeInputField('text', Object(Consolidadoecpv), 'RegistroECPV_id...', Array)
+#4 C:\xampp\htdocs\yii\Contable\framework\web\widgets\CActiveForm.php(657): CHtml::activeTextField(Object(Consolidadoecpv), 'RegistroECPV_id...', Array)
+#5 C:\xampp\htdocs\yii\Contable\protected\views\consolidadoecpv\index.php(20): CActiveForm->textField(Object(Consolidadoecpv), 'RegistroECPV_id...')
+#6 C:\xampp\htdocs\yii\Contable\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\yii\Contable\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#9 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#10 C:\xampp\htdocs\yii\Contable\protected\controllers\ConsolidadoecpvController.php(37): CController->render('index', Array)
+#11 C:\xampp\htdocs\yii\Contable\framework\web\actions\CInlineAction.php(49): ConsolidadoecpvController->actionIndex()
+#12 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#14 C:\xampp\htdocs\yii\Contable\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(282): CController->run('index')
+#16 C:\xampp\htdocs\yii\Contable\framework\web\CWebApplication.php(141): CWebApplication->runController('consolidadoecpv...')
+#17 C:\xampp\htdocs\yii\Contable\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\yii\Contable\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/yii/Contable/consolidadoecpv/index
+HTTP_REFERER=http://localhost:8080/yii/Contable/site/ecpv
+---
