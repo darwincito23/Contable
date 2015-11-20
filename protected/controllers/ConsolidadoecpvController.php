@@ -69,14 +69,21 @@ class ConsolidadoecpvController extends Controller
 
 		if(isset($_POST['Consolidadoecpv']))
 		{
-			$model->attributes=$_POST['Consolidadoecpv'];
-			if($model->save())
-				$this->redirect(array('view','id'=>$model->idConsolidado_Estado_Costo_Producto_Vendido));
-		}
+			$model->fecha_inicio=$_POST['Consolidadoecpv']['fecha_inicio'];
+				$model->fecha_fin=$_POST['Consolidadoecpv']['fecha_fin'];
+				isset($_POST['Consolidadoecpv']['frenteaprovechamiento'])?$model->frenteaprovechamiento=$_POST['Consolidadoecpv']['frenteaprovechamiento']:$model;
+				isset($_POST['Consolidadoecpv']['producto'])?$model->producto=$_POST['Consolidadoecpv']['producto']:$model;
+				$Total=$model->calcularTotal($model->fecha_inicio,
+													$model->fecha_fin,
+													$model->frenteaprovechamiento,
+													$model->producto);
+				$model->Total_Cantidad_Producto=$Total['cantidad'];
+				$model->Total_Costo_Producto=$Total['total'];
+			}
+	
 
 		$this->render('create',array(
-			'model'=>$model,
-		));
+			'model'=>$model,));
 	}
 
 	/**

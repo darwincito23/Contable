@@ -116,7 +116,7 @@
 					<?php echo $form->textArea($model,'descripcion',array('rows'=>6, 'cols'=>50)); ?>
 					<?php echo $form->error($model,'descripcion'); ?>			
 					<div class="row buttons">
-						<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save',array('class'=>'btn btn-success')); ?>
+						<?php echo CHtml::submitButton($model->isNewRecord ? 'Crear' : 'Save',array('class'=>'btn btn-success')); ?>
 					</div>
 			</div>
 			

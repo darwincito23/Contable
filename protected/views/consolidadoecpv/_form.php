@@ -10,6 +10,15 @@
 	'id'=>'consolidadoecpv-form',
 	'enableAjaxValidation'=>false,
 )); ?>
+<?php Yii::app()->clientScript->registerScript('search', "
+$('#boton').submit(function(){
+	$('#consolidadoecpv-grid').yiiGridView('update', {
+		data: $(this).serialize()
+	});
+	return false;
+});
+");
+?>
 
 	<?php echo $form->errorSummary($model); ?>
 
@@ -47,7 +56,7 @@
 								      ),
 								      'htmlOptions'=>array(
 								          'style'=>'height:20px;',
-								          'id'=>'fecha_i'
+								          'id'=>'fecha_f'
 								      ),
 								  ),true);
 								?>
@@ -67,17 +76,47 @@
 
 					<div class="col-md-3"></div>
 					<div class="col-md-3">
-						<p>Espacio para Producto</p>
+						<p><?php echo $form->dropDownList($model,'producto',$model->getListProductos()) ?></p>
 					</div>
 					<div class="col-md-3">
-						<p>Espacio para FA</p>
+						<p><?php echo $form->dropDownList($model,'frenteaprovechamiento',$model->getListFrenteA()) ?></p>
 					</div>
 					<div class="col-md-3"></div>
 
 				</div>
 
 				<div class="row">
-					<p>Espacio para CGRID</p>
+					<p><?php $this->widget('zii.widgets.grid.CGridView', array(
+				'id'=>'consolidadoecpv-grid',
+				'dataProvider'=>$model->searchAll($model->fecha_inicio,
+										$model->fecha_fin,
+										$model->frenteaprovechamiento,
+										$model->producto),
+				'columns'=>array(
+		
+									array(
+										'name'=>'fAprovechamiento',
+										'value'=>'$data->getFrenteN($data->frenteAprovechamientoProductosFrenteAprovechamientoIdFA->id_FrenteAprovechamiento)',
+										'header'=>'Frente aprovechamiento',
+										),
+									array(
+										'name'=>'nombreProducto',
+										'value'=>'$data->getProductoN($data->frenteAprovechamientoProductosFrenteAprovechamientoIdFA->Productos_idProductos)',
+										'header'=>'Nombre producto',
+										),
+									array(
+										'name'=>'costoProducto',
+										'value'=>'($data->cantidad)*($data->frenteAprovechamientoProductosFrenteAprovechamientoIdFA->CostoUnitario)',
+										'header'=>'Costo',
+										),
+									array(
+										'name'=>'cantidadProducto',
+										'value'=>'$data->cantidad',
+										'header'=>'cantidad',
+										),
+							
+								),
+				));?></p>
 				</div><!-- end cgrid-->
 				<div class="row">
 
@@ -105,7 +144,29 @@
 
 		<div class="panel-body">
 			<div class="row">
-					<p>Espacio para CGRID</p>
+					<p><?php $this->widget('zii.widgets.grid.CGridView', array(
+				'id'=>'consolidadoecpv2-grid',
+				'dataProvider'=>$model->searchAll($model->fecha_inicio,
+										$model->fecha_fin,
+										$model->frenteaprovechamiento,
+										$model->producto),
+				'columns'=>array(
+		
+									array(
+										'name'=>'fsAprovechamiento',
+										'value'=>'$data->getFrenteN($data->frenteAprovechamientoProductosFrenteAprovechamientoIdFA->id_FrenteAprovechamiento)',
+										'header'=>'Frente aprovechamiento',
+										),
+									array(
+										'name'=>'costoParcial',
+										'value'=>'($data->cantidad)*($data->frenteAprovechamientoProductosFrenteAprovechamientoIdFA->CostoUnitario)',
+										'header'=>'Costo parcial',
+										),
+								
+									
+							
+								),
+				));?></p>
 			</div><!-- end cgrid-->
 			<div class="row">
 				<?php echo $form->labelEx($model,'TotalCostoFA'); ?>
@@ -128,7 +189,7 @@
 	</div>
 
 	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Guardar' : 'Save',array('class'=>'btn btn-success btn-md')); ?>
+		<?php echo CHtml::submitButton('Buscar',array('class'=>'btn btn-success btn-md','id'=>'boton')); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

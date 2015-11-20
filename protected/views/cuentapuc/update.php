@@ -1,4 +1,4 @@
-<?php
+UC<?php
 /* @var $this CuentapucController */
 /* @var $model Cuentapuc */
 
@@ -9,10 +9,10 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'Lista de Cuentas Puc', 'url'=>array('index')),
-	array('label'=>'Crear Cuenta Puc', 'url'=>array('create')),
-	array('label'=>'Ver Cuenta Puc', 'url'=>array('view', 'id'=>$model->idCuentaPuc)),
-	array('label'=>'Adminsitrar Cuenta Puc', 'url'=>array('admin')),
+	array('label'=>'Lista de Cuentas PUC', 'url'=>array('index')),
+	array('label'=>'Crear Cuenta PUC', 'url'=>array('create')),
+	array('label'=>'Ver Cuenta PUC', 'url'=>array('view', 'id'=>$model->idCuentaPuc)),
+	array('label'=>'Adminsitrar Cuenta PUC', 'url'=>array('admin')),
 );
 ?>
 
@@ -21,7 +21,7 @@ $this->menu=array(
 <div class="container">
 	<div class="col-md-3"></div>
 	<div class="col-md-5">
-		<h1>Actualizar Cuenta Puc <?php echo $model->idCuentaPuc; ?></h1>
+		<h1>Actualizar Cuenta PUC <?php echo $model->idCuentaPuc; ?></h1>
 			<div class="panel panel-default">
 				  <div class="panel-heading">
 					<h4 class="text-center">Cuenta Puc</h4>				  

@@ -18,6 +18,14 @@
  */
 class Consolidadoecpv extends CActiveRecord
 {
+	public $fAprovechamiento;
+	public $nombreProducto;
+	public $cantidadProducto;
+	public $costoProducto;
+	public $fsAprovechamiento;
+	public $costoParcial;
+	public $producto;
+	public $frenteaprovechamiento;
 	/**
 	 * Returns the static model of the specified AR class.
 	 * @param string $className active record class name.
@@ -26,6 +34,61 @@ class Consolidadoecpv extends CActiveRecord
 	public static function model($className=__CLASS__)
 	{
 		return parent::model($className);
+	}
+	public  function getListProductos(){
+	
+		return cHtml::listData(Productos::model()->findall(),'idProductos','nombreProducto');
+		
+	}
+	public  function getListFrenteA(){
+	
+		return cHtml::listData(Frenteaprovechamiento::model()->findall(),'idFrenteAprovechamiento','nombreFrenteAprovechamiento');
+		
+	}
+	public  function getListFap($id){
+	$criteria=new CDbCriteria();
+	$criteria->condition='id_FrenteAprovechamiento=:id';
+	$criteria->params=array(':id'=>$id);
+	$mod=FrenteaprovechamientoProductos::model()->findall($criteria);
+	$listData=array();
+			foreach($mod as $model)
+			{
+				$value=CHtml::value($model,'idFrenteAprovechamiento_Productos');
+				$text=self::getProducto($model->Productos_idProductos);
+				$listData[$value]=$text->nombreProducto;
+			}
+	return $listData;		
+		
+	}
+	public function getProducto($id){
+		$criteria= new CDbCriteria;
+		$criteria->condition='idProductos=:id';
+		$criteria->params=array(':id'=>$id);
+		return Productos::model()->find($criteria);
+		
+	}
+	public function getFrenteP($id){
+		$criteria= new CDbCriteria;
+		$criteria->condition='idFrenteAprovechamiento_Productos=:id';
+		$criteria->params=array(':id'=>$id);
+		$modelo=FrenteaprovechamientoProductos::model()->find($criteria);
+		 return $modelo->CostoUnitario;
+		
+	}
+	public function getFrenteN($id){
+		$criteria= new CDbCriteria;
+		$criteria->condition='idFrenteAprovechamiento=:id';
+		$criteria->params=array(':id'=>$id);
+		$modelo=Frenteaprovechamiento::model()->find($criteria);
+		 return $modelo->nombreFrenteAprovechamiento;
+		
+	}
+	public function getProductoN($id){
+		$criteria= new CDbCriteria;
+		$criteria->condition='idProductos=:id';
+		$criteria->params=array(':id'=>$id);
+		$modelo= Productos::model()->find($criteria);
+		return $modelo->nombreProducto;
 	}
 
 	/**
@@ -106,5 +169,54 @@ class Consolidadoecpv extends CActiveRecord
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
 		));
+	}
+	public function searchAll($fechai,$fechaf,$frente,$producto)
+	{
+		$fechai==''?$fechai=10000101:$fechai=intval(preg_replace('/-/','',$fechai));
+		$fechaf==''?$fechaf=99991231:$fechaf=intval(preg_replace('/-/','',$fechaf));
+		$frente==''?$frente='%':$frente=$frente;
+		$producto==''?$producto='%':$producto=$producto;
+		// Warning: Please modify the following code to remove attributes that
+		// should not be searched.
+		$registroEcpv=new RegistroEcpv;
+		$criteria=new CDbCriteria;
+		$criteria->with=array('frenteAprovechamientoProductosFrenteAprovechamientoIdFA');
+		$criteria->condition='fecha BETWEEN :fi AND :ff AND frenteAprovechamientoProductosFrenteAprovechamientoIdFA.id_FrenteAprovechamiento like :idfrente 
+								AND frenteAprovechamientoProductosFrenteAprovechamientoIdFA.Productos_idProductos like :idproducto';
+		//$this->registroContableGastosIdRegistroContableGastos=Registrocontablegastos::model()->findAll($criteria);
+		//$criteria->condition='registroContableGastosIdRegistroContableGastos.fecha > :fechai AND registroContableGastosIdRegistroContableGastos.fecha<:fechaf';
+		$criteria->params=array(':idfrente'=>$frente,':fi'=>$fechai,':ff'=>$fechaf,':idproducto'=>$producto);
+		//$criteria->with=array('registroContableGastosIdRegistroContableGastos');
+		//$criteria->compare('registroContableGastosIdRegistroContableGastos.fecha',$this->fecha,true);
+		//$criteria->compare('Proveedor_idProveedor',$this->proveedor,true);
+		return new CActiveDataProvider($registroEcpv, array(
+			'criteria'=>$criteria
+		));
+	}
+	
+	public function calcularTotal($fechai,$fechaf,$frente,$producto)
+	{
+		$fechai==''?$fechai=10000101:$fechai=intval(preg_replace('/-/','',$fechai));
+		$fechaf==''?$fechaf=99991231:$fechaf=intval(preg_replace('/-/','',$fechaf));
+		$frente==''?$frente='%':$frente=$frente;
+		$producto==''?$producto='%':$producto=$producto;
+		$registroEcpv=new RegistroEcpv;
+		$criteria=new CDbCriteria;
+		$criteria->with=array('frenteAprovechamientoProductosFrenteAprovechamientoIdFA');
+		$criteria->condition='fecha BETWEEN :fi AND :ff AND frenteAprovechamientoProductosFrenteAprovechamientoIdFA.id_FrenteAprovechamiento like :idfrente 
+								AND frenteAprovechamientoProductosFrenteAprovechamientoIdFA.Productos_idProductos like :idproducto';
+		$criteria->params=array(':idfrente'=>$frente,':fi'=>$fechai,':ff'=>$fechaf,':idproducto'=>$producto);
+		$registros=$registroEcpv->findAll($criteria);
+		if($registros!==array())
+		{
+			$total=array('cantidad'=>0,'total'=>0);
+		foreach ($registros as $key => $value) {
+			$total['total']+=($registros[$key]->cantidad)*(self::getFrenteP($registros[$key]->FrenteAprovechamiento_Productos_FrenteAprovechamiento_idFA));
+			$total['cantidad']+=$registros[$key]->cantidad;
+		}
+		return $total;
+		}else{ 
+		return 0;	
+		}
 	}
 }

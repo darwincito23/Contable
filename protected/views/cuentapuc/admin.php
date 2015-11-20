@@ -8,12 +8,12 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'Lista Cuenta Puc', 'url'=>array('index')),
-	array('label'=>'Crear Cuenta Puc', 'url'=>array('create')),
+	array('label'=>'Lista Cuenta PUC', 'url'=>array('index')),
+	array('label'=>'Crear Cuenta PUC', 'url'=>array('create')),
 );
 ?>
 
-<h1>Administrar Cuenta Puc</h1>
+<h1>Administrar Cuenta PUC</h1>
 
 <?php echo CHtml::link('','#',array('class'=>'search-button')); ?>
 <div class="search-form" style="display:none">
