@@ -45,6 +45,14 @@ class RegistroEcpv extends CActiveRecord
 	return $listData;		
 		
 	}
+	public function getFrenteN($id){
+		$criteria= new CDbCriteria;
+		$criteria->condition='idFrenteAprovechamiento=:id';
+		$criteria->params=array(':id'=>$id);
+		$modelo=Frenteaprovechamiento::model()->find($criteria);
+		 return $modelo->nombreFrenteAprovechamiento;
+		
+	}
 	public function getProducto($id){
 		$criteria= new CDbCriteria;
 		$criteria->condition='idProductos=:id';

@@ -5,6 +5,7 @@
 ?>
 
 <div class="form text-center">
+<<<<<<< HEAD
 	<!--
 		 * CActiveForm provee un grupo de métodos que pueden ayudar a 
 		 * simplificar la creación de complejas e interactivas formas Html que son 
@@ -55,6 +56,36 @@
 		        <!--describe el error mediante validación ajax-->
 				<?php echo $form->error($model,'CuentaPadre'); ?>		
 			</div> <!--End Campo Cuenta Padre-->
+=======
+
+<?php $form=$this->beginWidget('CActiveForm', array(
+	'id'=>'cuentapuc-form',
+	'enableAjaxValidation'=>false,
+)); ?>
+
+	<?php //echo $form->errorSummary($model); ?>
+	<div class="row">
+		<?php echo $form->labelEx($model,'CuentaPadre'); ?>
+		<?php $this->widget('zii.widgets.jui.CJuiAutoComplete',
+          								array(
+           								  	'model'=>$model,
+      										'attribute'=>'CuentaPadre',
+           								  	'source'=>$model->obtenerCodigoNombre(), //match case when performing a lookup?	
+ 											'options'=>array(
+        								  					'minLength'=>'1',
+         								 					'select'=>'js:function( event, ui ) {
+          								  					var valor=ui.item.value;
+          								  					var sp=valor.split("<->");
+          								  					$("#codigoc").val(sp[0]);                
+          								  					return true;  
+       								 						}',
+ 	   													),
+            								 'htmlOptions'=>array('size'=>'40'), 
+            								 ));?>
+		<?php echo $form->error($model,'CuentaPadre'); ?>
+	</div>
+	
+>>>>>>> origin/master
 	
 			<!--Prefijo Cuenta Padre-->
 			<div class="row">
