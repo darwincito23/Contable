@@ -62,25 +62,42 @@ class CuentapucController extends Controller
 	 */
 	public function actionCreate()
 	{
+		//var_dump($_POST);
+		//yii::app()->end();
+		
+		//Instanciamos el modelo Cuentapuc
 		$model=new Cuentapuc;
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
-
+		//Validamos si existe un formulario de Cuentapuc
 		if(isset($_POST['Cuentapuc']))
 		{
+			//validamos si el campo de la cuenta padre esta vacio, 
+			//si es así se hace null ese campo y se insertan los demas campos
 			if($_POST['Cuentapuc']['CuentaPadre']=='')
 			{	
 
 				$_POST['Cuentapuc']['CuentaPadre']=null;
-			}else{
-
-				$_POST['Cuentapuc']['CuentaPadre']=$model->findId($_POST['Cuentapuc']['prefijo']);
-				$_POST['Cuentapuc']['codigoCuentaPuc']=$_POST['Cuentapuc']['prefijo'].$_POST['Cuentapuc']['codigoCuentaPuc'];
-			}
-			$model->attributes=$_POST['Cuentapuc'];
-			if($model->save())
+				//setea todos los valores del modelo Cuentapuc
+				$model->attributes=$_POST['Cuentapuc'];
+				//validamos si se guardan los campos, si es así se renderiza la vista View
+				if($model->save())
 				$this->redirect(array('view','id'=>$model->idCuentaPuc));
+			}
+			else
+			{
+				//CuentaPadre=idCuentaPuc Buscar por Id en el modelo Cuentapuc el Prefijo que es el codigo de la cuenta padre (Codigo PUC)
+				$_POST['Cuentapuc']['CuentaPadre']=$model->findId($_POST['Cuentapuc']['prefijo']);
+				//codigoCuentaPuc=Prefijo+codigoCuentaPuc
+				$_POST['Cuentapuc']['codigoCuentaPuc']=$_POST['Cuentapuc']['prefijo'].$_POST['Cuentapuc']['codigoCuentaPuc'];
+				//setea todos los valores del modelo Cuentapuc
+				$model->attributes=$_POST['Cuentapuc'];
+				//validamos si se guardan los campos, si es así se renderiza la vista View
+				if($model->save())
+				$this->redirect(array('view','id'=>$model->idCuentaPuc));
+			}
+
 		}
 
 		$this->render('create',array(

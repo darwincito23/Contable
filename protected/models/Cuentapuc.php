@@ -20,7 +20,9 @@
  */
 class Cuentapuc extends CActiveRecord
 {
-	
+	//Prefijo variable de instancia que contiene el código de la cuenta Padre.
+	public $prefijo;
+	//public $hascuentapadre;
 	
 	/**
 	 * Returns the static model of the specified AR class.
@@ -30,69 +32,77 @@ class Cuentapuc extends CActiveRecord
 	public static function model($className=__CLASS__)
 	{
 		return parent::model($className);
-	}
-	public $prefijo;
-	public $hascuentapadre;
+	}	
 
 	public  function getListCuentaPuc($type){
-	switch ($type) {
-		case 'nombre':
-			# code...
-		return cHtml::listData(Cuentapuc::model()->findall(),'idCuentaPuc','nombreCuentaPuc');
-		
-		case 'codigo':
-			# code...
-		return cHtml::listData(Cuentapuc::model()->findall(),'idCuentaPuc','codigoCuentaPuc');
+		switch ($type) 
+		{
+			case 'nombre':
+				# code...
+			return cHtml::listData(Cuentapuc::model()->findall(),'idCuentaPuc','nombreCuentaPuc');
+			
+			case 'codigo':
+				# code...
+			return cHtml::listData(Cuentapuc::model()->findall(),'idCuentaPuc','codigoCuentaPuc');
+		}
 	}
-}
+
+	/**
+	 * [obtenerUnCodigoNombre description] Función que recibe un parámetro $id de la cuenta padre
+	 * y busca por ese id el código y el nombre de la cuentaPUC asociada a ese id.
+	 * @param  [type] $id [description] Id de clave foranea de la cuenta Padre
+	 * @return [type]  array   [description] array de datos con la estructura codigoCuentaPuc<->nombreCuentaPuc
+	 */
 	public function obtenerUnCodigoNombre($id)
 	{
 		$criteria = new CDbCriteria();
-		
-				$criteria->select='codigoCuentaPuc,nombreCuentaPuc'	;
-				$criteria->condition = 'idCuentaPuc=:id';
-				$criteria->params = array(':id'=>$id);
-				$array=Cuentapuc::model()->find($criteria);
-				$arr=array();
-				return $array->codigoCuentaPuc.'<->'.$array->nombreCuentaPuc;
-			
+		$criteria->select='codigoCuentaPuc,nombreCuentaPuc'	;
+		$criteria->condition = 'idCuentaPuc=:id';
+		$criteria->params = array(':id'=>$id);
+		$array=Cuentapuc::model()->find($criteria);
+		//$arr=array();
+		return $array->codigoCuentaPuc.' / '.$array->nombreCuentaPuc;		
 	}
+
 	public function obtenerCodigo($id)
 	{
 		$criteria = new CDbCriteria();			
-				$criteria->select='codigoCuentaPuc'	;
-				$criteria->condition = 'idCuentaPuc=:id';
-				$criteria->params = array(':id'=>$id);
-				$array=Cuentapuc::model()->find($criteria);
-				return $array->codigoCuentaPuc;
-			
+		$criteria->select='codigoCuentaPuc'	;
+		$criteria->condition = 'idCuentaPuc=:id';
+		$criteria->params = array(':id'=>$id);
+		$array=Cuentapuc::model()->find($criteria);
+		return $array->codigoCuentaPuc;			
 	}
+
 	public function obtenerCodigoNombre()
 	{
-		$criteria = new CDbCriteria();
-		
-				$criteria->select='codigoCuentaPuc,nombreCuentaPuc'	;
-				//$criteria->condition = 'id=:id';
-				//$criteria->params = array(':id'=>$id);
-				$array=Cuentapuc::model()->findall($criteria);
-				$arr=array();
-				foreach ($array as $key => $value) {
-				$arr[]= $array[$key]->codigoCuentaPuc.'<->'.$array[$key]->nombreCuentaPuc;
-				}
-				
-				return $arr;
-
+		//Instancia criteria de la clase CDbCriteria()
+		$criteria = new CDbCriteria();	
+		//select codigoCuentaPuc,nombreCuentaPuc from cuentapuc		
+		$criteria->select='codigoCuentaPuc,nombreCuentaPuc'	;
+		//$criteria->condition = 'id=:id';
+		//$criteria->params = array(':id'=>$id);
+		//Busca los registros codigoCuentaPuc, nombreCuentaPuc en el modelo Cuentapuc y los guarda en $array
+		$array=Cuentapuc::model()->findall($criteria);
+		//$arr=array();
+		//recorre el $array a través del FOREACH y agrega los registros a un arreglo arr[] 
+		foreach ($array as $key => $value) 
+		{
+			//arreglo que guarda el codigo y el nombre y agrega el simbolo <-> entre ellos
+			$arr[]= $array[$key]->codigoCuentaPuc.' / '.$array[$key]->nombreCuentaPuc;
+		}			
+		return $arr;
 	}
+
 	public function findId($value)
 	{
 		$criteria=new CDbCriteria();
-		
-			$criteria->select='idCuentaPuc';
-			$criteria->condition='codigoCuentaPuc=:codigoCuentaPuc';
-			$criteria->params=array(':codigoCuentaPuc'=>$value);
-			$modelo=Cuentapuc::model()->find($criteria);
-			return $modelo->idCuentaPuc;
-		
+		//select idCuentaPuc from cuentapuc where codigoCuentaPuc=value	
+		$criteria->select='idCuentaPuc';
+		$criteria->condition='codigoCuentaPuc=:codigoCuentaPuc';
+		$criteria->params=array(':codigoCuentaPuc'=>$value);
+		$modelo=Cuentapuc::model()->find($criteria);
+		return $modelo->idCuentaPuc;		
 	}
 
 	public  function getTipoGasto(){

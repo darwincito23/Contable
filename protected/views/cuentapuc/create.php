@@ -13,14 +13,12 @@ $this->menu=array(
 );
 ?>
 
-
-
 <div class="container">
 	<div class="col-md-3"></div>
 	<div class="col-md-5">
-	<h1>Crear Cuenta PUC</h1>
+	<h1 class='text-center'>Crear Cuenta PUC</h1>
 		
-			<div class="panel panel-default">
+			<div class="panel panel-default">				
 				  <div class="panel-heading">
 					<h4 class="text-center">Cuenta PUC</h4>				  
 				  </div>
