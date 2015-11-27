@@ -1,16 +1,16 @@
 <?php
-/* @var $this CuentapucController */
-/* @var $model Cuentapuc */
+	/* @var $this CuentapucController */
+	/* @var $model Cuentapuc */
 
-$this->breadcrumbs=array(
-	'Cuentapucs'=>array('index'),
-	'Crear',
-);
+	$this->breadcrumbs=array(
+		'Cuentapucs'=>array('index'),
+		'Crear',
+	);
 
-$this->menu=array(
-	array('label'=>'Lista de Cuentas Puc', 'url'=>array('index')),
-	array('label'=>'Administrar Cuenta Puc', 'url'=>array('admin')),
-);
+	$this->menu=array(
+		array('label'=>'Lista de Cuentas Puc', 'url'=>array('index')),
+		array('label'=>'Administrar Cuenta Puc', 'url'=>array('admin')),
+	);
 ?>
 
 
