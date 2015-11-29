@@ -2,11 +2,6 @@
 /* @var $this SiteController */
 /* @var $model LoginForm */
 /* @var $form CActiveForm  */
-
-$this->pageTitle=Yii::app()->name . ' - Login';
-$this->breadcrumbs=array(
-	'Login',
-);
 ?>
 
 <h1>Login</h1>
@@ -25,13 +20,13 @@ $this->breadcrumbs=array(
 	<p class="note">Los Campos con <span class="required">*</span> Son requeridos.</p>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'Usuario'); ?>
+		<?php echo $form->labelEx($model,'Usuario*'); ?>
 		<?php echo $form->textField($model,'username'); ?>
 		<?php echo $form->error($model,'username'); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'Password'); ?>
+		<?php echo $form->labelEx($model,'Password*'); ?>
 		<?php echo $form->passwordField($model,'password'); ?>
 		<?php echo $form->error($model,'password'); ?>
 		

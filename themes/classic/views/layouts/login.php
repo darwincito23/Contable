@@ -45,10 +45,8 @@
 
 	<div id="footer" class="bodycolor">
 		<br />
-		Copyright &copy; <?php echo date('Y'); ?> Distriguadua S.A.S.<br/>
-		All Rights Reserved.<br/>
-		<?php echo Yii::powered(); ?>
-		<br />
+		Copyright &copy; <?php echo date('Y'); ?> Darwin Pachón Ortiz<br/>
+		Todos los derechos Reservados.<br/>	
 	</div><!-- footer -->
 
 </div><!-- page -->

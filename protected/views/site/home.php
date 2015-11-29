@@ -1,24 +1,11 @@
-<?php
-/* @var $this SiteController */
-
-$this->pageTitle=Yii::app()->name;
-?>
-<div class="container">
-	<div class="row">
-		<div class="col-md-3"></div>
-		<div class="col-md-6 text-center">
-			<h1>Bienvenido al Módulo Contable Distirguaduas</h1>
-			<br>
-		</div>
-		<div class="col-md-3"></div>
-	</div>	
+<div class="container">		
 	<div class="col-md-4"></div>
 	<div class="col-md-4">
 		<contenido>
 
 			<div class="panel panel-default">
 				  <div class="panel-heading">
-					<h2 class="text-center">Módulos</h2>				  
+					<h4 class="text-center">Bienvenido al Módulo Contable Distriguadua</h4>				  
 				  </div>
 				  <div class="panel-body">
 				   	<div class="row">

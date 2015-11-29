@@ -1,21 +1,25 @@
+<?php
+/* @var $this SiteController */
+/* @var $model ContactForm */
+/* @var $form CActiveForm */
+
+$this->pageTitle=Yii::app()->name . ' - ECPV';
+$this->breadcrumbs=array(
+	'ECPV',
+);
+?>
 
 
 
-
-<div class="container">
-	<div class="row">
-		<div class="col-md-3"></div>
-		<div class="col-md-6 text-center">
-			<h1>Estado de Costos de Productos Vendidos</h1>
-		</div>
-		<div class="col-md-3"></div>
-	</div>	
+<div class="container">		
 	<div class="col-md-4"></div>
 	<div class="col-md-4">
 		<contenido>
 
 			<div class="panel panel-default">
-				  
+				  <div class="panel-heading">
+					<h4 class="text-center">Estado de Costos de Productos Vendidos</h4>				  
+				  </div>
 				  <div class="panel-body">
 				   	<div class="row">
 					          	<div class="col-md-1">		          		

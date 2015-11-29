@@ -3,26 +3,21 @@
 /* @var $model ContactForm */
 /* @var $form CActiveForm */
 
-$this->pageTitle=Yii::app()->name . ' - GOA';
+$this->pageTitle=Yii::app()->name . ' - GOV';
 $this->breadcrumbs=array(
-	'GOA',
+	'GOV',
 );
 ?>
 
-<div class="container">
-	<div class="row">
-		<div class="col-md-3"></div>
-		<div class="col-md-6 text-center">
-			<h1>Gastos Operativos de Venta</h1>
-		</div>
-		<div class="col-md-3"></div>
-	</div>	
+<div class="container">		
 	<div class="col-md-4"></div>
 	<div class="col-md-4">
 		<contenido>
 
 			<div class="panel panel-default">
-				  
+				  <div class="panel-heading">
+					<h4 class="text-center">Gastos Operativos de Venta</h4>				  
+				  </div>
 				  <div class="panel-body">
 				   	<div class="row">
 					          	<div class="col-md-1">		          		

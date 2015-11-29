@@ -25,7 +25,7 @@ class Cuentapuc extends CActiveRecord
 	//public $hascuentapadre;
 	
 	/**
-	 * Returns the static model of the specified AR class.
+	 * Devuelve el modelo estático de la clase AR especificada. 
 	 * @param string $className active record class name.
 	 * @return Cuentapuc the static model class
 	 */
@@ -34,15 +34,24 @@ class Cuentapuc extends CActiveRecord
 		return parent::model($className);
 	}	
 
-	public  function getListCuentaPuc($type){
+	/**
+	 * [getListCuentaPuc description] Esta función recibe un parametro $type (nombre,codigo) el cual se valida para determinar las acciones
+	 * del switch y retorna una lista de nombres o de codigos segun sea el caso.
+	 * uso: Vista admin de cuentapuc
+	 * @param  [type] $type [description] nombre, codigo
+	 * @return [type]       [description] lista de nombres, lista de códigos
+	 */
+	public  function getListCuentaPuc($type)
+	{
 		switch ($type) 
 		{
 			case 'nombre':
-				# code...
+			//listData: Genera los datos adecuados para elementos HTML basados en listas.
+			//listData(array $models, mixed $valueField, mixed $textField, mixed $groupField='')
+			//lisData(lista de objetos del modelo, valor del campo, texto del campo)
 			return cHtml::listData(Cuentapuc::model()->findall(),'idCuentaPuc','nombreCuentaPuc');
 			
-			case 'codigo':
-				# code...
+			case 'codigo':				
 			return cHtml::listData(Cuentapuc::model()->findall(),'idCuentaPuc','codigoCuentaPuc');
 		}
 	}
@@ -55,25 +64,46 @@ class Cuentapuc extends CActiveRecord
 	 */
 	public function obtenerUnCodigoNombre($id)
 	{
+		//Instancia criteria de la clase CDbCriteria()
 		$criteria = new CDbCriteria();
+		//select codigoCuentaPuc,nombreCuentaPuc from cuentapuc where idCuentaPuc=$id
 		$criteria->select='codigoCuentaPuc,nombreCuentaPuc'	;
 		$criteria->condition = 'idCuentaPuc=:id';
 		$criteria->params = array(':id'=>$id);
+		//busca los registros codigoCuentaPuc,nombreCuentaPuc de cuentapuc
 		$array=Cuentapuc::model()->find($criteria);
 		//$arr=array();
+		//retorna $array que contiene codigoCuentaPuc,nombreCuentaPuc concatenados con el simbolo / entre ellos
 		return $array->codigoCuentaPuc.' / '.$array->nombreCuentaPuc;		
 	}
 
+	/**
+	 * [obtenerCodigo description]
+	 * @param  [type] $id [description]
+	 * @return [type]     [description]
+	 */
 	public function obtenerCodigo($id)
 	{
-		$criteria = new CDbCriteria();			
-		$criteria->select='codigoCuentaPuc'	;
-		$criteria->condition = 'idCuentaPuc=:id';
+		//Instancia criteria de la clase CDbCriteria()
+		$criteria = new CDbCriteria();	
+		//select codigoCuentaPuc from cuentapuc where idCuentaPuc=$id'	
+		$criteria->select='codigoCuentaPuc';
+		$criteria->condition ='idCuentaPuc=:id';
 		$criteria->params = array(':id'=>$id);
+		//busca los registros codigoCuentaPuc de cuentapuc
 		$array=Cuentapuc::model()->find($criteria);
+		//retorna el array que contiene codigoCuentaPuc
 		return $array->codigoCuentaPuc;			
 	}
 
+	/**
+	 * [obtenerCodigoNombre description] Función que busca codigoCuentaPuc, nombreCuentaPuc 
+	 * y lo guarda en una variable $array que despues es recorrida a través de una FOREACH
+	 * y guardada en un arreglo arr[] concatenando el codigo de cuenta puc y el nombre de la cuenta puc
+	 * con un / entre ellos, despues se retorna el arreglo arr.
+	 * Uso: En la vista Create->_form de cuentapuc
+	 * @return [type] arr [description] arreglo que guarda codigoCuentaPuc / nombreCuentaPuc
+	 */
 	public function obtenerCodigoNombre()
 	{
 		//Instancia criteria de la clase CDbCriteria()
@@ -93,23 +123,33 @@ class Cuentapuc extends CActiveRecord
 		}			
 		return $arr;
 	}
-
+	/**
+	 * [findId description] Esta función busca la idCuentaPuc y la guarda en al variable $modelo
+	 * y retorna $modelo que contiene la idCuentaPuc
+	 * Uso: en el Controlador CuentapucController
+	 * @param  [type] $value [description] prefijo (codigoCuentaPuc)
+	 * @return [type] $modelo [description] idCuentaPuc
+	 */
 	public function findId($value)
 	{
+		//Instancia criteria de la clase CDbCriteria()
 		$criteria=new CDbCriteria();
-		//select idCuentaPuc from cuentapuc where codigoCuentaPuc=value	
+		//select idCuentaPuc from cuentapuc where codigoCuentaPuc=value
 		$criteria->select='idCuentaPuc';
 		$criteria->condition='codigoCuentaPuc=:codigoCuentaPuc';
 		$criteria->params=array(':codigoCuentaPuc'=>$value);
+		//Busca los registros idCuentaPuc en el modelo Cuentapuc y los guarda en $modelo
 		$modelo=Cuentapuc::model()->find($criteria);
 		return $modelo->idCuentaPuc;		
 	}
 
-	public  function getTipoGasto(){
-	
-		return cHtml::listData(TipoGasto::model()->findall(),'idTipoGasto','nombreTipoGasto');
-		
-		
+	/**
+	 * [getTipoGasto description]Esta función retorna una lista de nombre de tipos de gastos desde el modelo TipoGasto.
+	 * @return [type] [description]
+	 */
+	public  function getTipoGasto()
+	{	
+		return cHtml::listData(TipoGasto::model()->findall(),'idTipoGasto','nombreTipoGasto');			
 	}
 
 	/**
@@ -156,7 +196,7 @@ class Cuentapuc extends CActiveRecord
 	}
 
 	/**
-	 * @return array customized attribute labels (name=>label)
+	 * @return array personalizado de etiquetas de atributos (name=>label)
 	 */
 	public function attributeLabels()
 	{
@@ -171,14 +211,12 @@ class Cuentapuc extends CActiveRecord
 	}
 
 	/**
-	 * Retrieves a list of models based on the current search/filter conditions.
-	 * @return CActiveDataProvider the data provider that can return the models based on the search/filter conditions.
+	 * Recupera una lista de los modelos basados en las actuales condiciones de búsqueda / filtro.
+	 * @return CActiveDataProvider el proveedor de datos que puede retornar los modelos basados
+	 * en las condiciones de busqueda y filtros.
 	 */
 	public function search()
 	{
-		// Warning: Please modify the following code to remove attributes that
-		// should not be searched.
-
 		$criteria=new CDbCriteria;
 		$criteria->with=array('tipoGastoIdTipoGasto');
 		$criteria->compare('idCuentaPuc',$this->idCuentaPuc,true);

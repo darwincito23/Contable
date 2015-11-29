@@ -57,42 +57,54 @@ $this->breadcrumbs=array(
 				<div class="col-md-2"></div>
 				<div class="col-md-8">
 					<?php $this->widget('zii.widgets.grid.CGridView', array(
-	'id'=>'frenteaprovechamientoproductos-grid',
-	'dataProvider'=>$model->searchId($model->frenteA),
-	'filter'=>$model,
-	'columns'=>array(
-		array(
-			'name'=>'date',
-			'value'=>'$data->fecha',
-			'header'=>'Producto',
-			),
-		array(
-			'name'=>'nombrep',
-			'value'=>'$data->getProductoN($data->frenteAprovechamientoProductosFrenteAprovechamientoIdFA->Productos_idProductos)',
-			'header'=>'Producto',
-			),
-		array(
-			'name'=>'costop',
-			'value'=>'$data->frenteAprovechamientoProductosFrenteAprovechamientoIdFA->CostoUnitario',
-			'header'=>'Costo unitario',
-			),
-		array(
-			'name'=>'cantidad',
-			'value'=>'$data->cantidad',
-			'header'=>'Cantidad',
-			),
-		array(
-			'name'=>'costopp',
-			'value'=>'($data->cantidad)*($data->frenteAprovechamientoProductosFrenteAprovechamientoIdFA->CostoUnitario)',
-			'header'=>'Costo total unitario',
-			),
-		
-		array(
-			'class'=>'CButtonColumn',
-			'template'=>'{delete}{update}',
-		)
-	),
-)); ?>
+						'id'=>'frenteaprovechamientoproductos-grid',
+						//proveedor de datos: el método searchId() del modelo Registro ECPV
+						'dataProvider'=>$model->searchId($model->frenteA),
+						//instancia del modelo que filtra los datos entrados por el usuario
+						//'filter'=>$model,
+						//Columnas del grid: Cada elemento de array representa la configuración para una columna en particular del grid
+						//que puede ser una cadena o un array.
+						'columns'=>array(
+							array(
+								//campo: Nombre del atributo del modelo de datos. Se utiliza para la comluna de ordenamiento
+								//filtrado y para poner el correspondiente valor del atributo en cada celda de datos.
+								//si el valor es especificado se usará este en la celda de datos en lugar del valor del atributo.  
+								//'name'=>'date',
+								//Una Expresión PHP que será evaluada por cada celda de datos usando una expresion de evaluacion y cuyo
+								//resultado sea presentado como el contenido de la celda de datos.
+								//$data: los datos del modelo para la fila.
+								'value'=>'$data->fecha',
+								//encabezado
+								'header'=>'Fecha',
+								),
+							array(
+								//'name'=>'nombrep',
+								//
+								'value'=>'$data->getProductoN($data->frenteAprovechamientoProductosFrenteAprovechamientoIdFA->Productos_idProductos)',
+								'header'=>'Producto',
+								),
+							array(
+								//'name'=>'costop',
+								'value'=>'$data->frenteAprovechamientoProductosFrenteAprovechamientoIdFA->CostoUnitario',
+								'header'=>'Costo unitario',
+								),
+							array(
+								//'name'=>'cantidad',
+								'value'=>'$data->cantidad',
+								'header'=>'Cantidad',
+								),
+							array(
+								//'name'=>'costopp',
+								'value'=>'($data->cantidad)*($data->frenteAprovechamientoProductosFrenteAprovechamientoIdFA->CostoUnitario)',
+								'header'=>'Costo total unitario',
+								),
+							
+							array(
+								'class'=>'CButtonColumn',
+								'template'=>'{delete}{update}',
+							)
+						),
+					)); ?>
 				</div>
 				<div class="col-md-2"></div>
 			</div><!--end row-->

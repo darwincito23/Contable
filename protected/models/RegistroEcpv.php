@@ -96,6 +96,7 @@ class RegistroEcpv extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
+			array('cantidad','required'),
 			array('CostoTotalUnitario', 'numerical'),
 			array('cantidad', 'length', 'max'=>45),
 			array('FrenteAprovechamiento_Productos_FrenteAprovechamiento_idFA', 'length', 'max'=>30),

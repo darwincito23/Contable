@@ -12,7 +12,7 @@
 			'enableAjaxValidation'=>false,
 		)); ?>	
 
-			<?php echo $form->errorSummary($model); ?>
+			<?php echo $form->errorSummary($model,'Por Favor Solucione los Siguientes Errores: '); ?>
 	
 				<table class="table table-bordered table-striped">
 				    <thead>

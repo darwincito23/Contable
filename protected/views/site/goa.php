@@ -10,19 +10,14 @@ $this->breadcrumbs=array(
 ?>
 
 <div class="container">
-	<div class="row">
-		<div class="col-md-3"></div>
-		<div class="col-md-6 text-center">
-			<h1>Gastos Operativos Administrativos</h1>
-		</div>
-		<div class="col-md-3"></div>
-	</div>	
 	<div class="col-md-4"></div>
 	<div class="col-md-4">
 		<contenido>
 
 			<div class="panel panel-default">
-				  
+				  <div class="panel-heading">
+					<h4 class="text-center">Gastos Operativos Administrativos</h4>				  
+				  </div>
 				  <div class="panel-body">
 				   	<div class="row">
 					          	<div class="col-md-1">		          		

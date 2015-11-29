@@ -49,6 +49,8 @@
 					<?php if(isset($this->breadcrumbs)):?>
 					<?php $this->widget('zii.widgets.CBreadcrumbs', array(
 					'links'=>$this->breadcrumbs,
+					//redirige el link del breakhome a la pagina inicio
+					'homeLink'=>CHtml::link('Inicio', array('site/home'))			
 					)); ?><!-- breadcrumbs -->
 					<?php endif?>
 				</div>
@@ -61,8 +63,9 @@
 	<div class="clear"></div>
 
 	<div id="footer">
-		Copyright &copy; <?php echo date('Y'); ?> Distriguaduas S.A.S.<br/>
-		Todos los derechos reservados.<br/>
+		Copyright &copy; <?php echo date('Y'); ?> Darwin Pachón Ortiz<br/>
+		Todos los derechos reservados.<br/>	
+		<br/>
 		
 	</div><!-- footer -->
 
