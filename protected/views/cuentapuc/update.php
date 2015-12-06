@@ -3,9 +3,9 @@ UC<?php
 /* @var $model Cuentapuc */
 
 $this->breadcrumbs=array(
-	'Cuentapucs'=>array('index'),
-	$model->idCuentaPuc=>array('view','id'=>$model->idCuentaPuc),
-	'Actualizar',
+	'Administrar Cuentas PUC'=>array('admin'),
+	'Actualizar: '.$model->nombreCuentaPuc=>array('view','id'=>$model->idCuentaPuc),
+	
 );
 
 $this->menu=array(
@@ -15,16 +15,14 @@ $this->menu=array(
 	array('label'=>'Adminsitrar Cuenta PUC', 'url'=>array('admin')),
 );
 ?>
-
-
-
+<br>
+<br>
 <div class="container">
 	<div class="col-md-3"></div>
-	<div class="col-md-5">
-		<h1>Actualizar Cuenta PUC <?php echo $model->idCuentaPuc; ?></h1>
+	<div class="col-md-5">		
 			<div class="panel panel-default">
 				  <div class="panel-heading">
-					<h4 class="text-center">Cuenta Puc</h4>				  
+					<h4 class="text-center">Actualizar Cuenta Puc: <?php echo $model->nombreCuentaPuc; ?></h4>				  
 				  </div>
 				  <div class="panel-body">
 					   	<div class="row">

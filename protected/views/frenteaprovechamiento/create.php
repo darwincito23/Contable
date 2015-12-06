@@ -3,8 +3,10 @@
 /* @var $model Frenteaprovechamiento */
 
 $this->breadcrumbs=array(
-	'Frenteaprovechamientos'=>array('index'),
-	'Crear',
+	'ECPV'=>array('site/ecpv'),
+	'Administrar FA y Productos'=>array('frenteaprovechamientoproductos/index'),
+	'Administrar FA'=>array('admin'),
+	'Crear Frente de Aprovechamiento',
 );
 
 $this->menu=array(
@@ -12,8 +14,21 @@ $this->menu=array(
 	array('label'=>'Administrar Frente', 'url'=>array('admin')),
 );
 ?>
-<div class="container-fluid text-center">
-	<h1>Crear Frenteaprovechamiento</h1>
-	<?php echo $this->renderPartial('_form', array('model'=>$model)); ?>
+<br>
+<br>
+<div class="container-fluid">
+	<div class="col-md-3"></div>
+	<div class="col-md-6">
+		<div class="panel panel-default">				
+			<div class="panel-heading">
+			<h2 class="text-center">Crear Frente de Aprovechamiento</h2>				  
+			</div>
+			<div class="panel-body text-center">	
+				<?php echo $this->renderPartial('_form', array('model'=>$model)); ?>
+			</div>
+		</div>
+
+	</div>
+	<div class="col-md-3"></div>
 </div>
 

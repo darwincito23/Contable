@@ -3,7 +3,7 @@ UC<?php
 /* @var $model Cuentapuc */
 
 $this->breadcrumbs=array(
-	'Cuentapucs'=>array('index'),
+	'Administrar Cuentas PUC'=>array('Admin'),
 	'Crear',
 );
 

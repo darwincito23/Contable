@@ -5,9 +5,9 @@
 
 <div class="view">
 
-	<!--<b><?php echo CHtml::encode($data->getAttributeLabel('idCuentaPuc')); ?>:</b>
+	<b><?php echo CHtml::encode($data->getAttributeLabel('idCuentaPuc')); ?>:</b>
 	<?php echo CHtml::link(CHtml::encode($data->idCuentaPuc), array('view', 'id'=>$data->idCuentaPuc)); ?>
-	<br />-->
+	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('nombreCuentaPuc')); ?>:</b>
 	<?php echo CHtml::encode($data->nombreCuentaPuc); ?>
@@ -17,8 +17,8 @@
 	<?php echo CHtml::encode($data->codigoCuentaPuc); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('TipoGasto_idTipoGasto')); ?>:</b>
-	<?php echo CHtml::encode($data->TipoGasto_idTipoGasto); ?>
+	<b><?php echo CHtml::encode($data->getAttributeLabel('Tipo de Gasto')); ?>:</b>
+	<?php echo CHtml::encode($data->tipoGastoIdTipoGasto->nombreTipoGasto); ?>
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('CuentaPadre')); ?>:</b>

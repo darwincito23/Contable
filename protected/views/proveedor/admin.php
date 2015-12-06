@@ -2,8 +2,7 @@
 /* @var $this ProveedorController */
 /* @var $model Proveedor */
 
-$this->breadcrumbs=array(
-	'Proveedors'=>array('index'),
+$this->breadcrumbs=array(	
 	'Administrar',
 );
 
@@ -25,8 +24,8 @@ $('.search-form form').submit(function(){
 });
 ");
 ?>
-
-<h1>Administrar Terceros</h1>
+<br>
+<br>
 
 <?php echo CHtml::link('','#',array('class'=>'search-button')); ?>
 <div class="search-form" style="display:none">
@@ -35,22 +34,59 @@ $('.search-form form').submit(function(){
 )); ?>
 </div><!-- search-form -->
 
-<?php $this->widget('zii.widgets.grid.CGridView', array(
-	'id'=>'proveedor-grid',
-	'dataProvider'=>$model->search(),
-	'filter'=>$model,
-	'columns'=>array(
-		//'idProveedor',
-		'nombreProveedor',
-		'codigoProveedor',
-		'numeroContacto',
-		'direccion',
-		'NIT_CC',
-		/*
-		'Usuario_idUsuario',
-		*/
-		array(
-			'class'=>'CButtonColumn',			
-		),
-	),
-)); ?>
+<div class="container-fluid">
+	<div class="col-md-2"></div>
+	<div class="col-md-8">
+		<div class="panel panel-default">				
+			<div class="panel-heading">
+					<h4 class="text-center">Administrar Terceros</h4>				  
+			</div>
+			<div class="panel-body">
+				<?php $this->widget('zii.widgets.grid.CGridView', array(
+					'id'=>'proveedor-grid',
+					'dataProvider'=>$model->search(),
+					'summaryText' => "Mostrando {start} - {end} de {count} resultados", 
+					//widget de yii para cambiar el aspecto y textos de la paginación.
+					'pager'=>array('htmlOptions'=>array('class'=>'pagination'),
+						'header' => '', 'firstPageLabel' => '<< Primer Página', 'prevPageLabel' => 'Anterior', 
+						'nextPageLabel' => 'Siguiente', 'lastPageLabel' => 'Ultima Página >>'),
+					'filter'=>$model,
+					'columns'=>array(
+						//'idProveedor',
+						'nombreProveedor',
+						'codigoProveedor',
+						'numeroContacto',
+						'direccion',
+						'NIT_CC',
+						/*
+						'Usuario_idUsuario',
+						*/
+						array(
+							'class'=>'CButtonColumn',
+							//cambiar el mensaje se advertencia para la eliminación de registros
+								'deleteConfirmation'=>"js:'Registro >>>'+$(this).parent().parent().children(':first-child').text()+' <<< será borrado! Continuar?'",
+								'buttons'=>array
+							    (	//cambiar etiquetas de los botones
+							        'delete' => array
+							        (
+							            'label'=>'eliminar',							            
+							        ),
+							        'update' => array
+							        (
+							            'label'=>'actualizar',							            
+							        ),
+							        'view' => array
+							        (
+							            'label'=>'ver',							            
+							        ),
+
+							    ),			
+						),
+					),
+				)); ?>
+				</div>
+		</div>
+
+	</div>
+	<div class="col-md-2"></div>
+</div>

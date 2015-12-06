@@ -11,7 +11,7 @@
 	'enableAjaxValidation'=>false,
 )); ?>
 
-	<?php echo $form->errorSummary($model); ?>
+	<?php echo $form->errorSummary($model,'Por favor soluciones los siguientes errores: '); ?>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'nombreFrenteAprovechamiento'); ?>
@@ -26,7 +26,7 @@
 	</div>-->
 
 	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Guardar',array('class'=>'btn btn-success btn-md')); ?>
+		<?php echo CHtml::submitButton($model->isNewRecord ? 'Guardar' : 'Guardar',array('class'=>'btn btn-success btn-md')); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

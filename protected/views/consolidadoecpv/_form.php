@@ -20,7 +20,7 @@ $('#boton').submit(function(){
 ");
 ?>
 
-	<?php echo $form->errorSummary($model); ?>
+	<?php echo $form->errorSummary($model,'Por favor soluciones los siguientes errores: '); ?>
 
 	<div class="row">
 
@@ -38,7 +38,7 @@ $('#boton').submit(function(){
 								      ),
 								      'htmlOptions'=>array(
 								          'style'=>'height:20px;',
-								          'id'=>'fecha_i'
+								          //'id'=>'fecha_i'
 								      ),
 								  ),true);
 								?>
@@ -56,7 +56,7 @@ $('#boton').submit(function(){
 								      ),
 								      'htmlOptions'=>array(
 								          'style'=>'height:20px;',
-								          'id'=>'fecha_f'
+								          //'id'=>'fecha_f'
 								      ),
 								  ),true);
 								?>

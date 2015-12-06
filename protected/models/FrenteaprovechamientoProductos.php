@@ -18,15 +18,15 @@ class Frenteaprovechamientoproductos extends CActiveRecord
 {
 	public $nombre;
 	public $costo;
-	public  function getListFa(){
-	
-	return cHtml::listData(Frenteaprovechamiento::model()->findall(),'idFrenteAprovechamiento','nombreFrenteAprovechamiento');
-		
+
+	public  function getListFa()
+	{	
+		return cHtml::listData(Frenteaprovechamiento::model()->findall(),'idFrenteAprovechamiento','nombreFrenteAprovechamiento');
 	}
-	public  function getListProductos(){
-	
-	return cHtml::listData(Productos::model()->findall(),'idProductos','nombreProducto');
-		
+
+	public  function getListProductos()
+	{
+		return cHtml::listData(Productos::model()->findall(),'idProductos','nombreProducto');		
 	}
 	/**
 	 * Returns the static model of the specified AR class.
@@ -54,7 +54,7 @@ class Frenteaprovechamientoproductos extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('Productos_idProductos', 'required'),
+			array('Productos_idProductos', 'required','message'=>'Por favor Escriba un valor para: {attribute}.'),
 			array('CostoUnitario', 'numerical'),
 			array('idFrenteAprovechamiento_Productos, Productos_idProductos, id_FrenteAprovechamiento', 'length', 'max'=>30),
 			// The following rule is used by search().

@@ -3,8 +3,7 @@
 	/* @var $model Cuentapuc */
 
 	$this->breadcrumbs=array(
-		'Cuentapucs'=>array('index'),
-		'Administrar',
+	'Administrar Cuentas PUC',
 	);
 
 	$this->menu=array(
@@ -25,7 +24,7 @@
 	<div class="col-md-8">
 		<div class="panel panel-default">				
 			<div class="panel-heading">
-			<h4 class="text-center">Administrar Cuenta PUC</h4>				  
+				<h4 class="text-center">Administrar Cuenta PUC</h4>				  
 			</div>
 			<div class="panel-body">
 
@@ -54,13 +53,13 @@
 							//resultado sera presentado como el contenido de la celda de datos.
 							//$data: los datos del modelo para la fila. en este caso del modelo Cuentapuc se trae el nombre de la cuenta PUC
 							//'value'=>'$data->nombreCuentaPuc',
-							'filter'=>$model->getListCuentaPuc('nombre'),
+							'filter'=>$model->getListCuentaPucNombre('nombre'),
 							),
 						array(
 							//campo
 							'name'=>'codigoCuentaPuc',
 							//'value'=>'$data->codigoCuentaPuc',
-							'filter'=>$model->getListCuentaPuc('codigo'),
+							'filter'=>$model->getListCuentaPucCodigo('codigo'),
 							),
 						array(
 							//campo

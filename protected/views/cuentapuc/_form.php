@@ -16,7 +16,7 @@
 		'enableAjaxValidation'=>false,
 	)); ?>
 	<!--Muestra una grilla con un resumen de error-->
-	<?php echo $form->errorSummary($model); ?>
+	<?php echo $form->errorSummary($model,'Por favor soluciones los siguientes errores: '); ?>
 	<!--contenedor Cuenta Padre-->
 	<div class="panel panel-default">	  
 		<div class="panel-body">				

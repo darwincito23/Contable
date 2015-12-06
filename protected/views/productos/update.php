@@ -3,9 +3,14 @@
 /* @var $model Productos */
 
 $this->breadcrumbs=array(
-	'Productoses'=>array('index'),
-	$model->idProductos=>array('view','id'=>$model->idProductos),
-	'Actualizar',
+	'ECPV'=>array('site/ecpv'),	
+	'Adminsitrar FA y Productos'=>array('frenteaprovechamientoproductos/index'),
+	'Administrar Productos'=>array('admin'),
+	//Actualizar Producto: etiqueta 
+	//$model->nombreProducto: Muestra el nombre del producto actual
+	//array('view','id'=>$model->idProductos):ruta de archivo
+	'Actualizar Producto: '.$model->nombreProducto=>array('view','id'=>$model->idProductos),
+	
 );
 
 $this->menu=array(
@@ -15,9 +20,21 @@ $this->menu=array(
 	array('label'=>'Administrar Productos', 'url'=>array('admin')),
 );
 ?>
-
-<div class="container text-center">
-	<h1>Actualizar Productos <?php echo $model->idProductos; ?></h1>
-	<?php echo $this->renderPartial('_form', array('model'=>$model)); ?>
+<br>
+<br>
+<div class="container-fluid">
+	<div class="col-md-3"></div>
+	<div class="col-md-6">
+		<div class="panel panel-default">				
+			<div class="panel-heading">
+				<h2 class="text-center">Actualizar Producto <?php echo $model->nombreProducto; ?></h2>				  
+			</div>	
+			<div class="panel-body text-center">
+				<?php echo $this->renderPartial('_form', array('model'=>$model)); ?>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-3"></div>
 </div>
+			
 

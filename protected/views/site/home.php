@@ -2,7 +2,7 @@
 	<div class="col-md-4"></div>
 	<div class="col-md-4">
 		<contenido>
-
+<h1 class="text-center">Inicio</h1>
 			<div class="panel panel-default">
 				  <div class="panel-heading">
 					<h4 class="text-center">Bienvenido al Módulo Contable Distriguadua</h4>				  

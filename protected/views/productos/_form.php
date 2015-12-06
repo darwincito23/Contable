@@ -11,11 +11,11 @@
 	'enableAjaxValidation'=>false,
 )); ?>
 
-	<?php echo $form->errorSummary($model); ?>
+	<?php echo $form->errorSummary($model,'Por Favor Solucione los Siguientes Errores: '); ?>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'nombreProducto'); ?>
-		<?php echo $form->textField($model,'nombreProducto',array('size'=>60,'maxlength'=>255)); ?>
+		<?php echo $form->textField($model,'nombreProducto',array('size'=>40,'maxlength'=>255)); ?>
 		<?php echo $form->error($model,'nombreProducto'); ?>
 	</div>
 

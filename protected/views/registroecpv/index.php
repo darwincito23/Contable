@@ -3,31 +3,46 @@
 /* @var $model RegistroEcpv */
 /* @var $form CActiveForm */
 $this->breadcrumbs=array(
-	'Registroecpv',
+	'ECPV'=>array('site/ecpv'),
+	'Registro ECPV Selección FA'
+
 );
 ?>
-<div class="container-fluid text-center">
-	<div class="row">
-		<h1>Escoja el Frente de Aprovechamiento</h1>
-	</div>
-	<div class="row">		
-		<div class="form">
 
-		<?php $form=$this->beginWidget('CActiveForm', array(
-			'id'=>'registro-ecpv-index-form',
-			'enableAjaxValidation'=>false,
-		)); ?>
-			<?php //echo $form->errorSummary($model); ?>
-			
-			<div class="row">
-				<?php echo $form->dropDownList($model,'frenteA',FrenteaprovechamientoProductos::model()->getListFa()); ?>
+<br>
+<br>
+<div class="container-fluid">
+	<div class="col-md-4"></div>
+	<div class="col-md-4">
+		<div class="panel panel-default">				
+			<div class="panel-heading">
+			<h4 class="text-center">Realizar Registro ECPV</h4>				  
 			</div>
-		</div><!-- form -->
-	</div>
-		<div class="row buttons">
-				<?php echo CHtml::submitButton('Siguiente', array('class'=>'btn btn-success btn-md')); ?>
+			<div class="panel-body text-center">				
+					<div class="row">	
+						<!--form -->	
+						<div class="form">
+							<?php $form=$this->beginWidget('CActiveForm', array(
+								'id'=>'registro-ecpv-index-form',
+								'enableAjaxValidation'=>false,
+							)); ?>
+
+							<div class="row">
+								<?php echo $form->labelEx($model,'Escoja el Frente de Aprovechamiento'); ?>
+								<?php echo $form->dropDownList($model,'frenteA',FrenteaprovechamientoProductos::model()->getListFa()); ?>
+							</div>
+						</div><!-- end form -->
+					</div>
+
+					<div class="row buttons">
+								<?php echo CHtml::submitButton('Siguiente', array('class'=>'btn btn-success btn-md')); ?>
+					</div>
+					<?php $this->endWidget(); ?>
+			</div>
 		</div>
-		<?php $this->endWidget(); ?>
-	
+
+	</div>
+	<div class="col-md-4"></div>
 </div>
-<
+					
+				

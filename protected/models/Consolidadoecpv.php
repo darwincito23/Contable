@@ -107,7 +107,7 @@ class Consolidadoecpv extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('Registro_ECPV_idRegistro_ECPV', 'required'),
+			array('Registro_ECPV_idRegistro_ECPV', 'required','message'=>'Por favor Escriba un valor para: {attribute}.'),
 			array('Registro_ECPV_idRegistro_ECPV', 'numerical', 'integerOnly'=>true),
 			array('TotalCostoFA, Total_Cantidad_Producto, Total_Costo_Producto, Costo_Producto_Vendido_Final', 'length', 'max'=>45),
 			array('fecha_inicio, fecha_fin', 'safe'),

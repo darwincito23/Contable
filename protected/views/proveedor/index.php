@@ -3,7 +3,8 @@
 /* @var $dataProvider CActiveDataProvider */
 
 $this->breadcrumbs=array(
-	'Terceros',
+	'Administrar'=>array('admin'),
+	'Lista de Terceros',
 );
 
 $this->menu=array(
@@ -11,10 +12,32 @@ $this->menu=array(
 	array('label'=>'Administrar Tercero', 'url'=>array('admin')),
 );
 ?>
+<br>
+<br>
+<div class="container-fluid">
+	<div class="col-md-2"></div>
+	<div class="col-md-8">
+		<div class="panel panel-default">				
+			<div class="panel-heading">
+			<h4 class="text-center">Lista de Terceros</h4>				  
+			</div>
+			<div class="panel-body">
+				<?php $this->widget('zii.widgets.CListView', array(
+					'dataProvider'=>$dataProvider,
+					'summaryText' => "Mostrando {start} - {end} de {count} resultados", 
+					//widget de yii para cambiar el aspecto y textos de la paginación.
+					'pager'=>array('htmlOptions'=>array('class'=>'pagination'),
+						'header' => '', 'firstPageLabel' => '<< Primer Página', 'prevPageLabel' => 'Anterior', 
+						'nextPageLabel' => 'Siguiente', 'lastPageLabel' => 'Ultima Página >>'),
+					'itemView'=>'_view',
+					'summaryText' => "Mostrando {start} - {end} de {count} resultados", 
+					'pager'=>array('htmlOptions'=>array('class'=>'pagination'),
+						'header' => '', 'firstPageLabel' => '<< Primer Página', 'prevPageLabel' => 'Anterior', 
+						'nextPageLabel' => 'Siguiente', 'lastPageLabel' => 'Ultima Página >>'),
+				)); ?>
+			</div>
+		</div>
 
-<h1>Terceros</h1>
-
-<?php $this->widget('zii.widgets.CListView', array(
-	'dataProvider'=>$dataProvider,
-	'itemView'=>'_view',
-)); ?>
+	</div>
+	<div class="col-md-2"></div>
+</div>

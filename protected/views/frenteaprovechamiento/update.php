@@ -3,9 +3,11 @@
 /* @var $model Frenteaprovechamiento */
 
 $this->breadcrumbs=array(
-	'Frenteaprovechamientos'=>array('index'),
-	$model->idFrenteAprovechamiento=>array('view','id'=>$model->idFrenteAprovechamiento),
-	'Actualizar',
+	'ECPV'=>array('site/ecpv'),
+	'Administrar FA y Productos'=>array('frenteaprovechamientoproductos/index'),
+	'Administrar FA'=>array('admin'),
+	'Actualizar Frente de Aprovechamiento: '.$model->nombreFrenteAprovechamiento=>array('view','id'=>$model->idFrenteAprovechamiento),
+	
 );
 
 $this->menu=array(
@@ -15,8 +17,21 @@ $this->menu=array(
 	array('label'=>'Administrar Frente', 'url'=>array('admin')),
 );
 ?>
+<br>
+<br>
+<div class="container-fluid">
+	<div class="col-md-3"></div>
+	<div class="col-md-6">
+		<div class="panel panel-default">				
+			<div class="panel-heading">
+			<h2 class="text-center">Actualizar Frente de Aprovechamiento: <?php echo $model->nombreFrenteAprovechamiento; ?></h2>				  
+			</div>
+			<div class="panel-body text-center">	
+				<?php echo $this->renderPartial('_form', array('model'=>$model)); ?>
+			</div>
+		</div>
 
-<div class="container text-center">
-	<h1>Actualizar Frente de Aprovechamiento <?php echo $model->idFrenteAprovechamiento; ?></h1>
-	<?php echo $this->renderPartial('_form', array('model'=>$model)); ?>
+	</div>
+	<div class="col-md-3"></div>
 </div>
+

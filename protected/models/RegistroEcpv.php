@@ -28,23 +28,24 @@ class RegistroEcpv extends CActiveRecord
 	/**
 	 * Returns the static model of the specified AR class.
 	 * @param string $className active record class name.
-	 * @return RegistroEcpv the static model class
+	 * @return RegistroEcpv the static model class.
 	 */
-	public  function getListFap($id){
-	$criteria=new CDbCriteria();
-	$criteria->condition='id_FrenteAprovechamiento=:id';
-	$criteria->params=array(':id'=>$id);
-	$mod=FrenteaprovechamientoProductos::model()->findall($criteria);
-	$listData=array();
-			foreach($mod as $model)
-			{
-				$value=CHtml::value($model,'idFrenteAprovechamiento_Productos');
-				$text=self::getProducto($model->Productos_idProductos);
-				$listData[$value]=$text->nombreProducto;
-			}
-	return $listData;		
-		
+	public  function getListFap($id)
+	{
+		$criteria=new CDbCriteria();
+		$criteria->condition='id_FrenteAprovechamiento=:id';
+		$criteria->params=array(':id'=>$id);
+		$mod=FrenteaprovechamientoProductos::model()->findall($criteria);
+		$listData=array();
+				foreach($mod as $model)
+				{
+					$value=CHtml::value($model,'idFrenteAprovechamiento_Productos');
+					$text=self::getProducto($model->Productos_idProductos);
+					$listData[$value]=$text->nombreProducto;
+				}
+		return $listData;		
 	}
+
 	public function getFrenteN($id){
 		$criteria= new CDbCriteria;
 		$criteria->condition='idFrenteAprovechamiento=:id';
@@ -96,7 +97,7 @@ class RegistroEcpv extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('cantidad','required'),
+			array('cantidad','required','message'=>'Por favor Escriba un valor para: {attribute}.'),
 			array('CostoTotalUnitario', 'numerical'),
 			array('cantidad', 'length', 'max'=>45),
 			array('FrenteAprovechamiento_Productos_FrenteAprovechamiento_idFA', 'length', 'max'=>30),

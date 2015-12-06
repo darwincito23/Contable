@@ -41,7 +41,7 @@ class Cuentapuc extends CActiveRecord
 	 * @param  [type] $type [description] nombre, codigo
 	 * @return [type]       [description] lista de nombres, lista de códigos
 	 */
-	public  function getListCuentaPuc($type)
+	/*public  function getListCuentaPuc($type)
 	{
 		switch ($type) 
 		{
@@ -54,6 +54,14 @@ class Cuentapuc extends CActiveRecord
 			case 'codigo':				
 			return cHtml::listData(Cuentapuc::model()->findall(),'idCuentaPuc','codigoCuentaPuc');
 		}
+	}*/
+	public  function getListCuentaPucNombre($type)
+	{
+		return cHtml::listData(Cuentapuc::model()->findall(),'idCuentaPuc','nombreCuentaPuc');		
+	}
+	public  function getListCuentaPucCodigo($type)
+	{
+		return cHtml::listData(Cuentapuc::model()->findall(),'idCuentaPuc','codigoCuentaPuc');		
 	}
 
 	/**
@@ -123,6 +131,7 @@ class Cuentapuc extends CActiveRecord
 		}			
 		return $arr;
 	}
+	
 	/**
 	 * [findId description] Esta función busca la idCuentaPuc y la guarda en al variable $modelo
 	 * y retorna $modelo que contiene la idCuentaPuc
@@ -168,7 +177,7 @@ class Cuentapuc extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('nombreCuentaPuc, codigoCuentaPuc, TipoGasto_idTipoGasto', 'required'),
+			array('nombreCuentaPuc, codigoCuentaPuc, TipoGasto_idTipoGasto', 'required','message'=>'Por favor Escriba un valor para: {attribute}.'),
 			array('Usuario_idUsuario', 'numerical', 'integerOnly'=>true),
 			array('nombreCuentaPuc, codigoCuentaPuc', 'length', 'max'=>255),
 			array('TipoGasto_idTipoGasto', 'length', 'max'=>10),
@@ -201,9 +210,9 @@ class Cuentapuc extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'idCuentaPuc' => 'Id Cuenta Puc',
-			'nombreCuentaPuc' => 'Nombre Cuenta Puc',
-			'codigoCuentaPuc' => 'Codigo Cuenta Puc',
+			'idCuentaPuc' => 'Id Cuenta PUC',
+			'nombreCuentaPuc' => 'Nombre Cuenta PUC',
+			'codigoCuentaPuc' => 'Codigo Cuenta PUC',
 			'TipoGasto_idTipoGasto' => 'Tipo Gasto Id Tipo Gasto',
 			'CuentaPadre' => 'Cuenta Padre',
 			'Usuario_idUsuario' => 'Usuario Id Usuario',

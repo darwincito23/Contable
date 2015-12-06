@@ -3,9 +3,9 @@
 /* @var $model Proveedor */
 
 $this->breadcrumbs=array(
-	'Proveedors'=>array('index'),
-	$model->idProveedor=>array('view','id'=>$model->idProveedor),
-	'Actualizar',
+	'Administrar'=>array('admin'),	
+	'Actualizar: '.$model->nombreProveedor=>array('view','id'=>$model->idProveedor),
+	
 );
 
 $this->menu=array(
@@ -15,7 +15,17 @@ $this->menu=array(
 	array('label'=>'Administrar Tercero', 'url'=>array('admin')),
 );
 ?>
+<br>
+<br>
+<div class="container-fluid text-center">
+	<div class="col-md-3"></div>
+	<div class="col-md-6">
+		<div class="panel panel-default panel-creup">	
+			<h4>Actualizar Tercero <?php echo $model->nombreProveedor; ?></h4>
+		</div>		
+	</div>
+	<div class="col-md-3"></div>
+</div>
 
-<h1>Actualizar Tercero <?php echo $model->idProveedor; ?></h1>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>

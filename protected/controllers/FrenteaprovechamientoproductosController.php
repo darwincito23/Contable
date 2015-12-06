@@ -2,12 +2,11 @@
 
 class FrenteaprovechamientoproductosController extends Controller
 {
-	public function actionAdmin()
-	{
-		$this->render('admin');
-	}
-
-	
+	/**
+	 * [actionCreate description]
+	 * @param  [type] $id [description]
+	 * @return [type]     [description]
+	 */
 	public function actionCreate($id)
 	{
 	    $model=new FrenteaprovechamientoProductos;
@@ -23,8 +22,7 @@ class FrenteaprovechamientoproductosController extends Controller
 	    $model->id_FrenteAprovechamiento=$id;
 	    if(isset($_POST['Frenteaprovechamientoproductos']))
 	    {
-	        $model->attributes=$_POST['Frenteaprovechamientoproductos'];
-
+	        $model->attributes=$_POST['Frenteaprovechamientoproductos'];	        
 	        if($model->validate())
 	        {
 	            if($model->save()){
@@ -39,6 +37,25 @@ class FrenteaprovechamientoproductosController extends Controller
 	    $this->render('create',array('model'=>$model));
 	} 
 
+	public function actionUpdate($id)
+	{
+		//var_dump($_POST);
+		//yii::app()->end();
+		$model=$this->loadModel($id);
+ 		
+	    if(isset($_POST['Frenteaprovechamientoproductos']))
+	    {
+	         $model->attributes=$_POST['Frenteaprovechamientoproductos'];	    	
+	         if($model->save())
+	         {
+	            $this->redirect(array('frenteaprovechamientoproductos/create/'.$model->id_FrenteAprovechamiento));
+	         }				
+			
+	        }
+	   
+	    $this->render('update',array('model'=>$model));
+	}
+
 	public function actionDelete($id)
 	{
 
@@ -50,39 +67,35 @@ class FrenteaprovechamientoproductosController extends Controller
 	}
 
 	public function actionIndex()
-{
-    $model=new FrenteaprovechamientoProductos;
-
-    // uncomment the following code to enable ajax-based validation
-    /*
-    if(isset($_POST['ajax']) && $_POST['ajax']==='frenteaprovechamiento-productos-index-form')
-    {
-        echo CActiveForm::validate($model);
-        Yii::app()->end();
-    }
-    */
-
-    if(isset($_POST['Frenteaprovechamientoproductos']))
-    {
-        $model->attributes=$_POST['Frenteaprovechamientoproductos'];
-        if($model->id_FrenteAprovechamiento!=''){
-        	$this->redirect(array('create','id'=>$model->id_FrenteAprovechamiento));
-        }
-
-    }
-    $this->render('index',array('model'=>$model));
-}
-
-	public function actionUpdate($id)
 	{
-		$model=$this->loadModel($id);
-		$this->render('update',$model);
+	    //Se crea el objeto $model de tipo FrenteaprovechamientoProductos 
+	    $model=new FrenteaprovechamientoProductos;
+
+	    // uncomment the following code to enable ajax-based validation
+	    /*
+	    if(isset($_POST['ajax']) && $_POST['ajax']==='frenteaprovechamiento-productos-index-form')
+	    {
+	        echo CActiveForm::validate($model);
+	        Yii::app()->end();
+	    }
+	    */
+	    //Decisión que valida si existe una petición POST de Frenteaprovechamientoproductos
+	    if(isset($_POST['Frenteaprovechamientoproductos']))
+	    {
+	        //sentencia que captura todos los atributos del modelo.
+	        $model->attributes=$_POST['Frenteaprovechamientoproductos'];
+	        //Desición que valida si la variable id_FrenteAprovechamiento es diferente de vacio
+	        //si es así redirecciona a la vista create cargando el parámetro id_FrenteAprovechamiento.
+	        if($model->id_FrenteAprovechamiento!='')
+	        {
+	        	$this->redirect(array('create','id'=>$model->id_FrenteAprovechamiento));
+	        }
+	    }
+	    $this->render('index',array('model'=>$model));
 	}
 
-	public function actionView()
-	{
-		$this->render('view');
-	}
+
+	
 	public function loadModel($id)
 	{
 		$model=Frenteaprovechamientoproductos::model()->findByPk($id);

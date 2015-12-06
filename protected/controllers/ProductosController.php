@@ -86,6 +86,8 @@ class ProductosController extends Controller
 	 */
 	public function actionUpdate($id)
 	{
+		//var_dump($_POST);
+		//yii::app()->end();
 		$model=$this->loadModel($id);
 
 		// Uncomment the following line if AJAX validation is needed

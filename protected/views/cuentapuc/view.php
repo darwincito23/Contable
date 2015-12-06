@@ -3,8 +3,8 @@
 /* @var $model Cuentapuc */
 
 $this->breadcrumbs=array(
-	'Cuentapucs'=>array('index'),
-	$model->idCuentaPuc,
+	'Administrar Cuentas PUC'=>array('admin'),
+	'Cuenta PUC: '.$model->nombreCuentaPuc,
 );
 
 $this->menu=array(
@@ -15,16 +15,30 @@ $this->menu=array(
 	array('label'=>'Administrar Cuenta PUC', 'url'=>array('admin')),
 );
 ?>
+<br>
+<br>
+<div class="container-fluid">
+	<div class="col-md-3"></div>
+	<div class="col-md-6">
+		<div class="panel panel-default">				
+			<div class="panel-heading">
+			<h2 class="text-center"><?php echo $model->nombreCuentaPuc; ?></h2>				  
+			</div>
+			<div class="panel-body">
+				<?php $this->widget('zii.widgets.CDetailView', array(
+					'data'=>$model,
+					//'htmlOptions'=>array('class'=>'table table-striped'),
+					'attributes'=>array(
+						'idCuentaPuc',
+						'nombreCuentaPuc',
+						'codigoCuentaPuc',
+						'TipoGasto_idTipoGasto',
+						'CuentaPadre',		
+					),
+				)); ?>
+			</div>
+		</div>
 
-<h1>Ver Cuenta PUC Número: <?php echo $model->idCuentaPuc; ?></h1>
-
-<?php $this->widget('zii.widgets.CDetailView', array(
-	'data'=>$model,
-	//'htmlOptions'=>array('class'=>'table table-striped'),
-	'attributes'=>array(
-		'nombreCuentaPuc',
-		'codigoCuentaPuc',
-		'TipoGasto_idTipoGasto',
-		'CuentaPadre',		
-	),
-)); ?>
+	</div>
+	<div class="col-md-3"></div>
+</div>

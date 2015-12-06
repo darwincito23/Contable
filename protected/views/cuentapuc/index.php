@@ -3,8 +3,9 @@
 /* @var $dataProvider CActiveDataProvider */
 
 $this->breadcrumbs=array(
-	'Cuenta Puc',
-);
+		'Administrar Cuentas PUC'=>array('admin'),
+		'Lista De Cuentas PUC',
+	);
 
 $this->menu=array(
 	array('label'=>'Crear Cuenta PUC', 'url'=>array('create')),
@@ -18,7 +19,7 @@ $this->menu=array(
 	<div class="col-md-8">
 		<div class="panel panel-default">				
 			<div class="panel-heading">
-			<h4 class="text-center">Cuenta PUC</h4>				  
+			<h4 class="text-center">Lista de Cuentas PUC</h4>				  
 			</div>
 			<div class="panel-body">
 				<?php $this->widget('zii.widgets.CListView', array(

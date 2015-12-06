@@ -44,7 +44,7 @@ class Proveedor extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('nombreProveedor, codigoProveedor', 'required'),
+			array('nombreProveedor, codigoProveedor', 'required','message'=>'Por favor Escriba un valor para: {attribute}.'),
 			array('Usuario_idUsuario', 'numerical', 'integerOnly'=>true),
 			array('nombreProveedor, codigoProveedor, direccion, NIT_CC', 'length', 'max'=>255),
 			array('numeroContacto', 'length', 'max'=>45),

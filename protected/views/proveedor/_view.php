@@ -5,9 +5,9 @@
 
 <div class="view">
 
-	<!--<b><?php echo CHtml::encode($data->getAttributeLabel('idProveedor')); ?>:</b>
+	<b><?php echo CHtml::encode($data->getAttributeLabel('idProveedor')); ?>:</b>
 	<?php echo CHtml::link(CHtml::encode($data->idProveedor), array('view', 'id'=>$data->idProveedor)); ?>
-	<br />-->
+	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('nombreProveedor')); ?>:</b>
 	<?php echo CHtml::encode($data->nombreProveedor); ?>
@@ -32,6 +32,5 @@
 	<!--<b><?php echo CHtml::encode($data->getAttributeLabel('Usuario_idUsuario')); ?>:</b>
 	<?php echo CHtml::encode($data->Usuario_idUsuario); ?>
 	<br />-->
-
-
 </div>
+			

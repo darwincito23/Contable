@@ -106,9 +106,9 @@ class CuentapucController extends Controller
 	}
 
 	/**
-	 * Updates a particular model.
-	 * If update is successful, the browser will be redirected to the 'view' page.
-	 * @param integer $id the ID of the model to be updated
+	 * Actualiza un modelo en particular.
+	 * si la actualización es exitosa, el browser direcciona a la página view.
+	 * @param integer $id El Id del modelo a ser actualizado
 	 */
 	public function actionUpdate($id)
 	{

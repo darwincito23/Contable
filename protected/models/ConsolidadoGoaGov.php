@@ -51,7 +51,7 @@ class ConsolidadoGoaGov extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('idConsolidado_GOA_GOV, RegistroContableGastos_idRegistroContableGastos', 'required'),
+			array('idConsolidado_GOA_GOV, RegistroContableGastos_idRegistroContableGastos', 'required','message'=>'Por favor Escriba un valor para: {attribute}.'),
 			array('Total', 'numerical'),
 			array('idConsolidado_GOA_GOV, RegistroContableGastos_idRegistroContableGastos', 'length', 'max'=>30),
 			array('fecha_Inicio, fecha_fin', 'safe'),

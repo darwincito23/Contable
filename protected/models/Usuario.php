@@ -46,7 +46,7 @@ class Usuario extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('nombreUsuario, cedula, cargo, ocupacion, numeroContacto, contrasena', 'required'),
+			array('nombreUsuario, cedula, cargo, ocupacion, numeroContacto, contrasena', 'required','message'=>'Por favor Escriba un valor para: {attribute}.'),
 			array('nombreUsuario, cedula, cargo, ocupacion, contrasena', 'length', 'max'=>255),
 			array('numeroContacto', 'length', 'max'=>45),
 			// The following rule is used by search().
